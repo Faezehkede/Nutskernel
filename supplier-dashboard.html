@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutskernel Dashboard</title>
+  <link rel="stylesheet" href="assets/css/login-form.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="dashboard-sidebar">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Nutskernel</div>
+      <div class="user-info">
+        <div class="user-avatar"></div>
+        <div class="user-name">Pars Avesta</div>
+        <div class="user-country">Iran</div>
+      </div>
+      <div class="role-switch">
+        <button id="supplierBtn" class="role active">Supplier</button>
+        <button id="buyerBtn" class="role">
+            <a href="file:///C:/Users/PC/Desktop/nutskernel/buyer-dashboard.html">Buyer</a></button>
+      </div>
+      <nav class="nav-menu">
+        <ul class="sidebar-nav">
+            <li><a href="#" class="tab-link" data-tab="myNutskernel">My Nutskernel</a></li>
+            <li><a href="#" class="tab-link active" data-tab="newProduct">New Product</a></li>
+            <li><a href="#" class="tab-link" data-tab="newRFQ">New RFQ</a></li>
+            <li><a href="#" class="tab-link" data-tab="messages">Messages</a></li>
+            <li><a href="#" class="tab-link" data-tab="suggestedSuppliers">Suggested Suppliers</a></li>
+            <li><a href="#" class="tab-link" data-tab="verification">Verification</a></li>
+            <li><a href="#" class="tab-link" data-tab="saved">Saved</a></li>
+            <li><a href="#" class="tab-link" data-tab="feedback">Feedback</a></li>
+          </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard dashboard-content">
+        <header class="dashboard-header">
+        <a href="file:///C:/Users/PC/Desktop/nutskernel/index.html" class="return-home">
+            <span>
+                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"> <path d="M22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 
+                    20.7881C2 19.5763 2 17.6258 2 13.725V12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 
+                    2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274" 
+                    stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 18H9" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> </g>
+                </svg>
+            </span>
+        </a>
+        <span>Pars Avesta</span>
+        </header>
+
+        <!-- tabs -->
+         
+        <div class="tab-panel" id="myNutskernel">
+            
+            <div id="supplierContent" class="role-content">
+                <div class="main-profile-detail">
+                    <section class="profile-card">
+                        <div class="profile-info">
+                        <div class="avatar">
+                            <img src="assets/images/user-img1.jpg">
+                        </div>
+                        <div>
+                            <div class="name">Pars Avesta</div>
+                            <div class="role">Buyer</div>
+                        </div>
+                        </div>
+                    </section>
+        
+                    <section class="profile-verfying">
+                        <div class="profile-strength">
+                            <span>Profile strength: <strong>Weak</strong></span>
+                            <div class="strength-bar">
+                                <div class="progress" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        <div class="verification-box">
+                            <div class="Verify-text">
+                                <p>Verify your account</p>
+                                <p>Be the most reliable buyer for sellers by verifying your identity.</p>
+                            </div>
+                            <button class="btn-verify">Get Verified</button>
+                        </div>
+                    </section>
+        
+                    <section class="quick-links">
+                        <a href="#" class="quick-link-suppliers">Suppliers</a>
+                        <a href="#" class="quick-link-rfqs">My RFQs</a>
+                        <a href="#" class="quick-link-saved">Saved</a>
+                    </section>
+        
+                    <section class="important-links">
+                        <a href="#" class="dashboard-link">
+                            <span>
+                                <svg width="25px" height="25px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.1"></g><g id="SVGRepo_iconCarrier"> 
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.918 10.0005H7.082C6.66587 9.99708 6.26541 10.1591 5.96873 10.4509C5.67204 10.7427 5.50343 
+                                    11.1404 5.5 11.5565V17.4455C5.5077 18.3117 6.21584 19.0078 7.082 19.0005H9.918C10.3341 19.004 10.7346 18.842 11.0313 18.5502C11.328 18.2584 
+                                    11.4966 17.8607 11.5 17.4445V11.5565C11.4966 11.1404 11.328 10.7427 11.0313 10.4509C10.7346 10.1591 10.3341 9.99708 9.918 10.0005Z" 
+                                    stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path> 
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.918 4.0006H7.082C6.23326 3.97706 5.52559 4.64492 5.5 5.4936V6.5076C5.52559 7.35629 6.23326 
+                                    8.02415 7.082 8.0006H9.918C10.7667 8.02415 11.4744 7.35629 11.5 6.5076V5.4936C11.4744 4.64492 10.7667 3.97706 9.918 4.0006Z" stroke="#000000" 
+                                    stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" 
+                                    d="M15.082 13.0007H17.917C18.3333 13.0044 18.734 12.8425 19.0309 12.5507C19.3278 12.2588 19.4966 11.861 19.5 11.4447V5.55666C19.4966 5.14054 
+                                    19.328 4.74282 19.0313 4.45101C18.7346 4.1592 18.3341 3.9972 17.918 4.00066H15.082C14.6659 3.9972 14.2654 4.1592 13.9687 4.45101C13.672 4.74282 
+                                    13.5034 5.14054 13.5 5.55666V11.4447C13.5034 11.8608 13.672 12.2585 13.9687 12.5503C14.2654 12.8421 14.6659 13.0041 15.082 13.0007Z" 
+                                    stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" 
+                                    d="M15.082 19.0006H17.917C18.7661 19.0247 19.4744 18.3567 19.5 17.5076V16.4936C19.4744 15.6449 18.7667 14.9771 17.918 15.0006H15.082C14.2333 
+                                    14.9771 13.5256 15.6449 13.5 16.4936V17.5066C13.525 18.3557 14.2329 19.0241 15.082 19.0006Z" stroke="#000000" stroke-width="0.75" 
+                                    stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                                </svg>
+                            </span>
+                            <p>Dashboard</p>
+                        </a>
+                        <a href="#" class="edit-profile">
+                            <span>
+                                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                                    <path d="M11 15C10.1183 15 9.28093 14.8098 8.52682 14.4682C8.00429 14.2315 7.74302 14.1131 7.59797 14.0722C7.4472 14.0297 7.35983 14.0143 7.20361 
+                                    14.0026C7.05331 13.9914 6.94079 14 6.71575 14.0172C6.6237 14.0242 6.5425 14.0341 6.46558 14.048C5.23442 14.2709 4.27087 15.2344 4.04798 16.4656C4 
+                                    16.7306 4 17.0485 4 17.6841V19.4C4 19.9601 4 20.2401 4.10899 20.454C4.20487 20.6422 4.35785 20.7951 4.54601 20.891C4.75992 21 5.03995 21 5.6 21H8.4M15 
+                                    7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7ZM12.5898 21L14.6148 20.595C14.7914 20.5597 
+                                    14.8797 20.542 14.962 20.5097C15.0351 20.4811 15.1045 20.4439 15.1689 20.399C15.2414 20.3484 15.3051 20.2848 15.4324 20.1574L19.5898 16C20.1421 
+                                    15.4477 20.1421 14.5523 19.5898 14C19.0376 13.4477 18.1421 13.4477 17.5898 14L13.4324 18.1574C13.3051 18.2848 13.2414 18.3484 13.1908 18.421C13.1459 
+                                    18.4853 13.1088 18.5548 13.0801 18.6279C13.0478 18.7102 13.0302 18.7985 12.9948 18.975L12.5898 21Z" stroke="#000000" stroke-width="0.72" 
+                                    stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                                </svg>
+                            </span>
+                            <p>Edit profile</p>
+                        </a>
+                        <a href="#" class="verification-link">
+                            <span>
+                                <svg width="25px" height="25px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.44"> 
+                                    <path d="M4.39254 16.2614C2.64803 13.1941 1.66074 9.71783 1.51646 6.15051C1.50127 5.77507 1.70918 5.42812 2.04153 5.25282L11.5335 0.246091C11.8254 
+                                    0.0920859 12.1746 0.0920859 12.4665 0.246091L21.9585 5.25282C22.2908 5.42812 22.4987 5.77507 22.4835 6.15051C22.3393 9.71783 21.352 13.1941 19.6075 
+                                    16.2614C17.8618 19.3307 15.4169 21.8869 12.4986 23.7001C12.1931 23.8899 11.8069 23.8899 11.5014 23.7001C8.58313 21.8869 6.13817 19.3307 4.39254 16.2614Z" 
+                                    fill="#ffffff"></path> 
+                                    <path d="M8.25 12.75L11.25 15L17.25 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                                    <g id="SVGRepo_iconCarrier"> <path d="M4.39254 16.2614C2.64803 13.1941 1.66074 9.71783 1.51646 6.15051C1.50127 5.77507 1.70918 5.42812 2.04153 5.25282L11.5335 
+                                    0.246091C11.8254 0.0920859 12.1746 0.0920859 12.4665 0.246091L21.9585 5.25282C22.2908 5.42812 22.4987 5.77507 22.4835 6.15051C22.3393 9.71783 21.352 13.1941 
+                                    19.6075 16.2614C17.8618 19.3307 15.4169 21.8869 12.4986 23.7001C12.1931 23.8899 11.8069 23.8899 11.5014 23.7001C8.58313 21.8869 6.13817 19.3307 4.39254 
+                                    16.2614Z" fill="#ffffff"></path> <path d="M8.25 12.75L11.25 15L17.25 9" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></g>
+                                </svg>
+                            </span>
+                            <p>Verification</p>
+                        </a>
+                        <a href="#" class="upgrade-link">
+                            <span>
+                                <svg height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.091 197.091" stroke="#000000" stroke-width="0.00197091">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier"><g><g><g><path style="fill:#010002;" d="M32.131,184.928L32.131,184.928c-18.388,0-31.573-2.505-32.131-2.616l0.734-7.648 
+                                    c32.349,0,55.555-8.45,68.964-25.098c15.174-18.835,13.532-43.34,12.394-51.811H25.918l85.588-85.592l85.585,85.592h-53.976 
+                                    C136.315,173.487,70.922,184.928,32.131,184.928z M44.564,90.028h43.912l0.673,3.028c0.311,1.432,7.476,35.341-13.381,61.302 
+                                    c-8.425,10.475-20.113,18.041-34.94,22.651c42.867-1.882,90.753-18.714,94.861-83.362l0.229-3.618h42.527l-66.939-66.946 L44.564,90.028z"></path></g></g></g></g>
+                                </svg>
+                            </span>
+                            <p>Upgrade</p>
+                        </a>
+                        <a href="#" class="support-link">
+                            <span>
+                                <svg width="25px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.7" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier"> <title id="supportIconTitle">Support</title> <path d="M18,9 L16,9 C14.8954305,9 14,9.8954305 14,11 L14,13 C14,14.1045695 
+                                    14.8954305,15 16,15 L16,15 C17.1045695,15 18,14.1045695 18,13 L18,9 C18,4.02943725 13.9705627,0 9,0 C4.02943725,0 0,4.02943725 0,9 L0,13 
+                                    C1.3527075e-16,14.1045695 0.8954305,15 2,15 L2,15 C3.1045695,15 4,14.1045695 4,13 L4,11 C4,9.8954305 3.1045695,9 2,9 L0,9" transform="translate(3 3)"></path> 
+                                    <path d="M21,14 L21,18 C21,20 20.3333333,21 19,21 C17.6666667,21 16,21 14,21"></path> </g>
+                                </svg>
+                            </span>
+                            <p>Support</p>
+                        </a>
+                    </section>
+                </div> 
+            </div>
+
+        </div>
+
+
+        <div class="tab-panel active" id="newProduct">
+            <div id="supplierContent" class="product-content">
+                <h2>Looking for buyers of your product?</h2>
+                <p>Post your product now!</p>
+                <button class="btn-verify">New Product</button>
+            </div>
+        </div>
+
+
+        <div class="tab-panel" id="newRFQ">Post a new RFQ here</div>
+        <div class="tab-panel" id="messages">Here are your messages</div>
+        <div class="tab-panel" id="suggestedSuppliers">List of suggested suppliers</div>
+        <div class="tab-panel" id="verification">Verify your account info</div>
+        <div class="tab-panel" id="saved">Saved products and RFQs</div>
+        <div class="tab-panel" id="feedback">Send us your feedback</div>
+
+    </main>
+
+    <!-- Floating Button -->
+    <button class="floating-support-btn">
+      <i class="icon-headset"></i>
+    </button>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/login-form.js"></script>
+
+</body>
+</html>
+
+

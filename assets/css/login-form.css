@@ -1,0 +1,98 @@
+.login-register {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.login-register h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.login-register p {
+  color: #555;
+  margin-bottom: 20px;
+}
+.login-register .field-group {
+  margin-bottom: 15px;
+}
+.login-register label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.login-register input[type="text"],
+.login-register input[type="email"],
+.login-register input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.login-register .inline-group {
+  display: flex;
+  gap: 10px;
+}
+.login-register .inline-group .field-group {
+  flex: 1;
+}
+.login-register .phone-group {
+  display: flex;
+  gap: 5px;
+}
+.login-register .phone-group select,
+.login-register .phone-group input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.login-register .phone-group select {
+  width: 70px;
+}
+.login-register .radio-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.login-register .radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+}
+.login-register .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #ccc;
+  color: white;
+  cursor: not-allowed;
+  margin-top: 20px;
+}
+.login-register .submit-btn.active {
+  background: #00a055;
+  cursor: pointer;
+}
+.login-register small {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #888;
+}
+.login-register small a {
+  color: #00a055;
+  text-decoration: none;
+}
+
+
+
