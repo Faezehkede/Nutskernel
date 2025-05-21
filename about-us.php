@@ -15,7 +15,7 @@
 <body>
 
     <!-- Header -->
-    <header class="section header page-header">
+    <!-- <header class="section header page-header">
         <div class="container">
     
           <div class="inner-top">
@@ -25,7 +25,6 @@
                     <div class="product-category-dropdown">
                       <button class="dropbtn">Product Category</button>
                       <div class="mega-menu">
-                        <!-- Category Columns -->
                         <ul class="category-list">
                           <li class="has-sub">
                               Processed Fruits
@@ -151,7 +150,7 @@
     
           <div class="inner-section">
               <div class="header-logo">
-                  <img src="assets/images/B-logo.png" alt="Logo Image" class="logo">
+                  <img src="assets/images/B-logo.webp" alt="Logo Image" class="logo">
               </div>
               <div class="header-search search-box">
                 <input type="text" placeholder="Search products or suppliers..." />
@@ -228,7 +227,9 @@
           </div>
         </div>
         
-    </header>
+    </header> -->
+    <?php include 'components/header.php'; ?>
+
 
     <!-- Page Banner -->
     <section class="page-banner">
@@ -238,7 +239,7 @@
                     <h2>About Us</h2>
                 </div>
                 <div class="page-banner-img">
-                    <img src="assets/images/page-title (5).png" alt="Page Title">
+                    <img src="assets/images/page-title (5).webp" alt="Page Title">
                 </div>
                 
             </div>
@@ -251,8 +252,8 @@
             <div class="row about-us-content">
 
                 <div class="about-img">
-                    <img src="assets/images/about-img.jpg" alt="About Us">
-                    <img src="assets/images/about-img1.jpg" alt="About Us">
+                    <img src="assets/images/about-img.webp" alt="About Us">
+                    <img src="assets/images/about-img1.webp" alt="About Us">
                 </div>
 
                 <div class="about-text">
@@ -281,73 +282,73 @@
                       <!-- Example Slide -->
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img4.jpg" alt="Processed Fruits" />
+                            <img src="assets/images/category/quality/category-img4.webp" alt="Processed Fruits" />
                             <span>Processed Fruits</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img5.jpg" alt="Frozen Fruits" />
+                            <img src="assets/images/category/quality/category-img5.webp" alt="Frozen Fruits" />
                             <span>Nuts & Kernels</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img1.jpg" alt="Dried Fruits" />
+                            <img src="assets/images/category/quality/category-img1.webp" alt="Dried Fruits" />
                             <span>Grains , Cereal & Legume</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img7.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img7.webp" alt="Nuts & Kernels" />
                             <span>Vegetables</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img.webp" alt="Nuts & Kernels" />
                             <span>Meat</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img6.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img6.webp" alt="Nuts & Kernels" />
                             <span>Seafood</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img2.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img2.webp" alt="Nuts & Kernels" />
                             <span>Baked Goods</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img3.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img3.webp" alt="Nuts & Kernels" />
                             <span>Beverages</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img.webp" alt="Nuts & Kernels" />
                             <span>Meat</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img6.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img6.webp" alt="Nuts & Kernels" />
                             <span>Seafood</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img2.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img2.webp" alt="Nuts & Kernels" />
                             <span>Baked Goods</span>
                         </div>
                       </div>
                       <div class="swiper-slide category-card">
                         <div class="category-item">
-                            <img src="assets/images/category/category-img3.jpg" alt="Nuts & Kernels" />
+                            <img src="assets/images/category/quality/category-img3.webp" alt="Nuts & Kernels" />
                             <span>Beverages</span>
                         </div>
                       </div>
@@ -367,7 +368,7 @@
         <div class="container">
             <div class="row">
                 <div class="what-we-do-img">
-                    <img src="assets/images/about-img2.jpg" alt="Why Us Image">
+                    <img src="assets/images/about-img2.webp" alt="Why Us Image">
                 </div>
                 <div class="what-we-do-content">
                     <h2>What We Do At Nutskernel?</h2>
@@ -445,19 +446,19 @@
                 </div>
             </div>
             <div class="about-content-img">
-                <img src="assets/images/about-img3.jpg" alt="About Image">
+                <img src="assets/images/about-img3.webp" alt="About Image">
             </div>            
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
         <div class="container">
   
           <div class="footer-container">
   
             <div class="footer-column">
-              <img src="assets/images/B-logo.png" alt="">
+              <img src="assets/images/B-logo.webp" alt="">
               <p>We connect buyers and sellers of high-quality agricultural products and supplies across the country.</p>
             </div>
   
@@ -498,7 +499,10 @@
   
         </div>
   
-    </footer>
+    </footer> -->
+    <?php include 'components/footer.php'; ?>
+
+
 
     <!-- JS Files -->
 

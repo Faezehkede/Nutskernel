@@ -183,7 +183,7 @@ p {
   
 .first-section .swiper-slide {
     position: relative;
-    background-image: url("C:/Users/PC/Desktop/nutskernel/assets/images/starter-bg1.jpg");
+    background-image: url("C:/Users/PC/Desktop/nutskernel/assets/images/starter-bg1.webp");
     background-size: cover;
     background-position: center;
     height: 350px !important;
@@ -195,11 +195,11 @@ p {
 }
 
 .first-section .swiper-slide:nth-child(2) {
-    background-image: url("C:/Users/PC/Desktop/nutskernel/assets/images/starter-bg2.jpg");
+    background-image: url("C:/Users/PC/Desktop/nutskernel/assets/images/starter-bg2.webp");
 }
 
 .first-section .swiper-slide:nth-child(3) {
-    background-image: url("C:/Users/PC/Desktop/nutskernel/assets/images/starter-bg3.jpg");
+    background-image: url("C:/Users/PC/Desktop/nutskernel/assets/images/starter-bg3.webp");
 }
 
 .first-section .overlay {
@@ -455,7 +455,7 @@ p {
   
 .form-section .inner-wrapper {
     width: 100%;
-    background-image: url(file:///C:/Users/PC/Desktop/nutskernel/assets/images/assorted-nuts.jpg);
+    background-image: url(file:///C:/Users/PC/Desktop/nutskernel/assets/images/assorted-nuts.webp);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -658,7 +658,7 @@ p {
 
 .ads-section .container {
   position: relative;
-  background-image: url(C:/Users/PC/Desktop/nutskernel/assets/images/ads-bg.jpg);
+  background-image: url(C:/Users/PC/Desktop/nutskernel/assets/images/ads-bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

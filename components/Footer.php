@@ -4,7 +4,7 @@
         <div class="footer-container">
 
           <div class="footer-column">
-            <img src="assets/images/B-logo.png" alt="">
+            <img src="assets/images/B-logo.webp" alt="">
             <p>We connect buyers and sellers of high-quality agricultural products and supplies across the country.</p>
           </div>
 
