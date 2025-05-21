@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Nutskernel Dashboard</title>
-  <link rel="stylesheet" href="assets/css/login-form.css">
+    <link rel="stylesheet" href="assets/css/login-form.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/account.css">
+    <link rel="stylesheet" href="assets/css/buyer-dashboard.css">
+
+    
+
 </head>
 <body>
   <div id="dashboard-sidebar">
@@ -218,9 +222,77 @@
 
         <div class="tab-panel" id="messages">Here are your messages</div>
         <div class="tab-panel" id="suggestedSuppliers">List of suggested suppliers</div>
-        <div class="tab-panel" id="verification">Verify your account info</div>
+
+
+        <div class="tab-panel" id="verification">
+
+            <div class="upload-id-container">
+                <h2>Upload your ID (Passport) following the correct sample</h2>
+                <p>Make sure the photo of your passport isn’t blurry and that it clearly shows your face.</p>
+              
+                <div class="sample-gallery">
+                  <div class="sample-item valid">
+                    <img src="assets/images/sample-3-compact.jpg" alt="Correct passport sample" />
+                    <p>All information is clearly visible.</p>
+                  </div>
+                  <div class="sample-item invalid">
+                    <img src="assets/images/sample-2-compact.jpg" alt="Blurry passport" />
+                    <p>The photo is blurry.</p>
+                  </div>
+                  <div class="sample-item invalid">
+                    <img src="assets/images/sample-1-compact.jpg" alt="Cropped passport" />
+                    <p>Passport is cropped.</p>
+                  </div>
+                  <div class="sample-item invalid">
+                    <img src="assets/images/sample-4-compact.jpg" alt="Covered passport" />
+                    <p>Part of passport is covered.</p>
+                  </div>
+                </div>
+              
+                <div class="upload-box">
+                    <input type="file" id="fileInput" accept="image/jpeg, image/png" hidden />
+                  <!--  -->
+                    <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+                      <i class="upload-icon">
+                        <svg width="35px" height="35px" viewBox="0 0 48 48" id="a" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                            <path class="b" d="m19.83,8.77l-2.77,2.84H6.29c-.9886,0-1.79.8014-1.79,1.79v23.22c0,.9902.7998,1.7945,1.79,1.8h35.42c.9902-.0055,1.79-.8098,1.79-1.8V13.4c0-.9886-.8014-1.79-1.79-1.79h-10.77l-2.77-2.84h-8.34Zm18.9162,5.58c1.1645,0,2.1086.8954,2.1086,2s-.944,2-2.1086,2c-1.1584-.1133-1.9995-1.1063-1.8801-2.2051.1024-.9423.8878-1.6873,1.8801-1.7949Z"></path>
+                            <g> <circle class="b" cx="24" cy="26.2231" r="8.5069"></circle> <g> <polygon class="b" points="26.4543 21.9723 21.5457 21.9723 19.0914 26.2231 21.5457 30.4739 26.4543 30.4739 
+                            28.9086 26.2231 26.4543 21.9723"></polygon> <line class="b" x1="28.9086" y1="26.2231" x2="31.3693" y2="30.4852"></line> <line class="b" x1="16.6372" y1="21.9723" x2="19.0914" 
+                            y2="26.2231"></line> <line class="b" x1="24" y1="17.7163" x2="21.5457" y2="21.9722"></line> <line class="b" x1="26.4543" y1="30.4741" x2="24" y2="34.73"></line> 
+                            <line class="b" x1="21.5457" y1="30.4741" x2="16.6304" y2="30.4741"></line> <line class="b" x1="26.4543" y1="21.9722" x2="31.3693" y2="21.9722"></line> </g> </g> </g>
+                        </svg>
+                      </i>
+                      <p><strong>Add photo</strong></p>
+                      <p><small>JPEG or PNG only</small></p>
+                    </div>
+                  
+                    <button class="upload-btn" id="submitBtn" disabled>Save & continue</button>
+                </div>
+
+            </div>              
+
+        </div>
+
+
         <div class="tab-panel" id="saved">Saved products and RFQs</div>
-        <div class="tab-panel" id="feedback">Send us your feedback</div>
+
+        
+        <div class="tab-panel" id="feedback">
+            <div class="feedback-container">
+                <h2>How would you describe your experience with Rexcer?</h2>
+                <p class="description">Your feedback is used to improve Rexcer</p>
+            
+                <div class="emoji-list" id="emojiList">
+                  <!-- Emojis will be dynamically inserted here -->
+                </div>
+            
+                <div id="emojiText" class="emoji-label">Average</div>
+            
+                <textarea id="opinionBox" placeholder="Write your opinion"></textarea>
+                <button onclick="submitFeedback()">Submit</button>
+            </div>
+        </div>
 
     </main>
 
@@ -231,8 +303,9 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/login-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/buyer.js"></script>
+    <script src="assets/js/account.js"></script>
 
 </body>
 </html>
