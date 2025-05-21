@@ -11,20 +11,20 @@
           <div class="footer-column">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Categories</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/themes/nutskernel/">Home</a></li>
+              <li><a href="/themes/nutskernel/shop.php">Our Products</a></li>
+              <li><a href="/themes/nutskernel/about-us.php">About Us</a></li>
+              <li><a href="/themes/nutskernel/contact-us.php">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h4>Company</h4>
+            <h4>Popular Categories</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Categories</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/themes/nutskernel/">Processed Fruits</a></li>
+              <li><a href="/themes/nutskernel/">Nuts & Kernels</a></li>
+              <li><a href="/themes/nutskernel/">Vegetables</a></li>
+              <li><a href="/themes/nutskernel/">Baked Goods</a></li>
             </ul>
           </div>
 

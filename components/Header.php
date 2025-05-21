@@ -1,160 +1,144 @@
 <header class="section header page-header">
         <div class="container">
+
           <div class="inner-top">
-              <nav class="main-nav">
-                  <div class="container">
+            <nav class="main-nav">
+                <div class="container">
           
                     <div class="product-category-dropdown">
-                      <button class="dropbtn">Product Category</button>
-                      <div class="mega-menu">
-                        <!-- Category Columns -->
-                        <ul class="category-list">
-                          <li class="has-sub">
-                              Processed Fruits
-                              <ul class="subcategory-list">
-                                  <li>Frozen Fruits</li>
-                                  <li>Dried Fruits</li>
-                                  <li>Fruit Pulp & Concentrates</li>
-                                  <li>Packed Fruits</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Nuts & Kernels
-                              <ul class="subcategory-list">
-                              <li>Pistachio</li>
-                              <li>Almond</li>
-                              <li>Walnuts</li>
-                              <li>Hazelnuts</li>
-                              <li>Date fruit</li>
-                              <li>Date products</li>
-                              <li>Peanuts</li>
-                              <li>Macadamia</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Seeds and Oil Seeds
-                              <ul class="subcategory-list">
-                              <li>Sunflower oil</li>
-                              <li>Palm oil</li>
-                              <li>Olive oil</li>
-                              <li>Soybean oil</li>
-                              <li>Corn oil</li>
-                              <li>Rapeseed oil</li>
-                              <li>Sesame oil</li>
-                              <li>Coconut oil</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Vegetables
-                              <ul class="subcategory-list">
-                              <li>Fresh Vegetables</li>
-                              <li>Frozen Vegetables</li>
-                              <li>Dried Vegetables</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Herbs, Spices & Seasonings
-                              <ul class="subcategory-list">
-                              <li>Herbs</li>
-                              <li>Spices</li>
-                              <li>Honey</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Meat & Seafood
-                              <ul class="subcategory-list">
-                              <li>Beef</li>
-                              <li>Lamb & Mutton</li>
-                              <li>Poultry</li>
-                              <li>Fish</li>
-                              <li>Shellfish</li>
-                              <li>Frozen Meat</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Dairy & Eggs
-                              <ul class="subcategory-list">
-                              <li>Milk</li>
-                              <li>Cheese</li>
-                              <li>Yogurt</li>
-                              <li>Butter</li>
-                              <li>Eggs</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Baked Goods
-                              <ul class="subcategory-list">
-                              <li>Breads</li>
-                              <li>Cakes & Pastries</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Beverages
-                              <ul class="subcategory-list">
-                              <li>Coffee</li>
-                              <li>Tea</li>
-                              <li>Juices</li>
-                              <li>Soft Drinks</li>
-                              <li>Water</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Snacks & Confectionary
-                              <ul class="subcategory-list">
-                              <li>Chips</li>
-                              <li>Popcorn</li>
-                              <li>Chocolate</li>
-                              <li>Candy</li>
-                              </ul>
-                          </li>
-                          <li class="has-sub">
-                              Other
-                              <ul class="subcategory-list">
-                              <li>Baby Food</li>
-                              <li>Pet Food</li>
-                              <li>Supplements</li>
-                              </ul>
-                          </li>
-                        </ul>
-          
-                      </div>
-          
+                        
+                        <button class="dropbtn">Product Category</button>
+                        <div class="mega-menu">
+
+                            <ul class="category-list">
+                            <li class="has-sub">
+                                Processed Fruits
+                                <ul class="subcategory-list">
+                                    <li>Frozen Fruits</li>
+                                    <li>Dried Fruits</li>
+                                    <li>Fruit Pulp & Concentrates</li>
+                                    <li>Packed Fruits</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Nuts & Kernels
+                                <ul class="subcategory-list">
+                                <li>Pistachio</li>
+                                <li>Almond</li>
+                                <li>Walnuts</li>
+                                <li>Hazelnuts</li>
+                                <li>Date fruit</li>
+                                <li>Date products</li>
+                                <li>Peanuts</li>
+                                <li>Macadamia</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Seeds and Oil Seeds
+                                <ul class="subcategory-list">
+                                <li>Sunflower oil</li>
+                                <li>Palm oil</li>
+                                <li>Olive oil</li>
+                                <li>Soybean oil</li>
+                                <li>Corn oil</li>
+                                <li>Rapeseed oil</li>
+                                <li>Sesame oil</li>
+                                <li>Coconut oil</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Vegetables
+                                <ul class="subcategory-list">
+                                <li>Fresh Vegetables</li>
+                                <li>Frozen Vegetables</li>
+                                <li>Dried Vegetables</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Herbs, Spices & Seasonings
+                                <ul class="subcategory-list">
+                                <li>Herbs</li>
+                                <li>Spices</li>
+                                <li>Honey</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Meat & Seafood
+                                <ul class="subcategory-list">
+                                <li>Beef</li>
+                                <li>Lamb & Mutton</li>
+                                <li>Poultry</li>
+                                <li>Fish</li>
+                                <li>Shellfish</li>
+                                <li>Frozen Meat</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Dairy & Eggs
+                                <ul class="subcategory-list">
+                                <li>Milk</li>
+                                <li>Cheese</li>
+                                <li>Yogurt</li>
+                                <li>Butter</li>
+                                <li>Eggs</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Baked Goods
+                                <ul class="subcategory-list">
+                                <li>Breads</li>
+                                <li>Cakes & Pastries</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Beverages
+                                <ul class="subcategory-list">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Juices</li>
+                                <li>Soft Drinks</li>
+                                <li>Water</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Snacks & Confectionary
+                                <ul class="subcategory-list">
+                                <li>Chips</li>
+                                <li>Popcorn</li>
+                                <li>Chocolate</li>
+                                <li>Candy</li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                Other
+                                <ul class="subcategory-list">
+                                <li>Baby Food</li>
+                                <li>Pet Food</li>
+                                <li>Supplements</li>
+                                </ul>
+                            </li>
+                            </ul>
+            
+                        </div>
+            
                     </div>
-                  </div>
-              </nav> 
-              <div class="social-icon">
-                  <a href="" class="icon">
-                      <svg viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#000" stroke="#fff" stroke-width="3">
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                          <g id="SVGRepo_iconCarrier"><path class="cls-1" d="M35.38,10.46a2.19,2.19,0,1,0,2.16,2.22v-.06A2.18,2.18,0,0,0,35.38,10.46Z"></path>
-                          <path class="cls-1" d="M40.55,5.5H7.45a2,2,0,0,0-1.95,2v33.1a2,2,0,0,0,2,2h33.1a2,2,0,0,0,2-2V7.45A2,2,0,0,0,40.55,5.5Z"></path>
-                          <path class="cls-1" d="M24,15.72A8.28,8.28,0,1,0,32.28,24h0A8.28,8.28,0,0,0,24,15.72Z"></path></g>
-                      </svg>
-                  </a>
-                  <a href="" class="icon">
-                      <svg viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#000" stroke="#fff" stroke-width="3">
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                          <g id="SVGRepo_iconCarrier">
-                          <path class="cls-1" d="M40.83,8.48c1.14,0,2,1,1.54,2.86l-5.58,26.3c-.39,1.87-1.52,2.32-3.08,1.45L20.4,29.26a.4.4,0,0,1,0-.65L35.77,14.73c.7-.62-.15-.92-1.07-.36L15.41,26.54a.46.46,0,0,1-.4.05L6.82,24C5,23.47,5,22.22,7.23,21.33L40,8.69a2.16,2.16,0,0,1,.83-.21Z">
-                          </path></g>
-                      </svg>
-                  </a>
-                  <a href="" class="icon">
-                      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000" stroke="#fff" stroke-width="3">>
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
-                          <path class="a" d="M43.1124,14.394a5.0056,5.0056,0,0,0-3.5332-3.5332c-2.3145-.8936-24.7326-1.3314-31.2358.0256A5.0059,5.0059,0,0,0,4.81,14.42c-1.0446,4.583-1.1239,14.4914.0256,19.1767A5.006,5.006,0,0,0,8.369,37.13c4.5829,1.0548,26.3712,1.2033,31.2358,0a5.0057,5.0057,0,0,0,3.5332-3.5333C44.2518,28.6037,44.3311,19.31,43.1124,14.394Z">
-                          </path>
-                          <path class="a" d="M30.5669,23.9952,20.1208,18.004V29.9863Z"></path></g>
-                      </svg>
-                  </a>
-              </div>
+
+                </div>
+            </nav> 
+
+            <nav class="main-menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="/themes/nutskernel/">Home</a></li>
+                    <li class="menu-item"><a href="/themes/nutskernel/about-us.php">About Us</a></li>
+                    <li class="menu-item"><a href="/themes/nutskernel/contact-us.php">Contact Us</a></li>
+                </ul>
+            </nav> 
+
           </div>
+
           <div class="inner-section">
               <div class="header-logo">
-                  <img src="assets/images/B-logo.webp" alt="Logo Image" class="logo">
+                <a href="/themes/nutskernel/"><img src="assets/images/B-logo.webp" alt="Logo Image" class="logo"></a>
               </div>
               <div class="header-search search-box">
                 <input type="text" placeholder="Search products or suppliers..." />
@@ -169,7 +153,7 @@
                 </button>
               </div>
               <div class="header-btn">
-                  <a href="#">
+                  <a href="/themes/nutskernel/buyer-dashboard.html">
                       <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                           <path data-v-fa57b318="" d="M13.1216 13C14.0531 13 14.8365 13.6372 15.0586 14.5H13.8716C13.7 14.5 13.5342 14.5247 13.3775 14.5707C13.3271 14.5405 13.2709 
                           14.5189 13.2112 14.5081L13.1216 14.5L4.12158 14.499L4.02093 14.509C3.89654 14.5343 3.81158 14.6018 3.76758 14.645C3.72438 14.689 3.65686 14.7733 3.63158 
@@ -190,7 +174,7 @@
                       </svg>
                       <button class="buyers-btn">Buyers</button>
                   </a>
-                  <a href="#">
+                  <a href="/themes/nutskernel/supplier-dashboard.html">
                       <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                           <path data-v-fa57b318="" d="M14.8716 15C15.8381 15 16.6216 15.7835 16.6216 16.75L16.6205 17.7121C16.7372 19.9012 15.1095 21.009 12.1884 21.009C9.27944 21.009 
                           7.62158 19.9192 7.62158 17.75V16.75C7.62158 15.7835 8.40508 15 9.37158 15H14.8716ZM14.8716 16.5H9.37158C9.23351 16.5 9.12158 16.6119 9.12158 16.75V17.75C9.12158 
@@ -210,7 +194,7 @@
                       </svg>
                       <button class="suppliers-btn">Suppliers</button>
                   </a>
-                  <a href="#">
+                  <a href="/themes/nutskernel/login-form.html">
                       <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                           <path data-v-fa57b318="" d="M17.6219 12C20.6595 12 23.1219 14.4624 23.1219 17.5C23.1219 20.5376 20.6595 23 17.6219 23C14.5844 23 12.1219 20.5376 12.1219 
                           17.5C12.1219 14.4624 14.5844 12 17.6219 12ZM12.1442 13.9993C11.8475 14.4626 11.608 14.966 11.4356 15.4996L4.37436 15.4999C3.96077 15.4999 3.62549 15.8352 
@@ -229,5 +213,6 @@
                   </a>
               </div>
           </div>
+
         </div>
   </header>
