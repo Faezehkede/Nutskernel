@@ -560,6 +560,10 @@ p {
     margin-top: 70px;
 }
 
+.product-carousel-section .swiper-horizontal {
+  padding: 20px 0;
+}
+
 .carousel-header {
     display: flex;
     align-items: center;
@@ -800,140 +804,6 @@ p {
       justify-content: space-between;
       margin-bottom: 20px;
   }
-
-  /* Responsive */
-
-  @media (max-width: 992px) {
-
-    /* Global */
-    
-    .container {
-        padding: 10px;
-      }
-    
-    .header .container, .starter .container {
-        padding: 0;
-    }
-    
-    .btn {
-        height: 35px;
-        width: 120px;
-    }
-
-    .product-grid-wrapper h2, .category-title h2,
-    .buyers-wrapper h2, .carousel-header h2 {
-        font-size: 20px;
-    }
-    
-    /* Hero Slider */
-
-    .first-section .hero-content {
-      padding: 20px;
-  }
-    
-    .first-section .hero-content h2 {
-        font-size: 25px;
-        text-align: center;
-    }
-    
-    .first-section .hero-content p {
-        font-size: 16px;
-        text-align: center;
-    }
-    
-    /* Request Form Q */
-      
-    .form-wrapper h2 {
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .form-wrapper {
-        padding: 15px;
-        width: 100% !important;
-    }
-    
-    .inner-wrapper {
-        padding: 15px;
-        height: 600px;
-        display: flex;
-        align-items: flex-end;
-    }
-    
-    .form-wrapper p {
-        text-align: center;
-    }
-    
-    .form-wrapper input {
-        height: 30px;
-        border-radius: 7px;
-        margin-bottom: 5px;
-    }
-    
-    .form-wrapper form button {
-        padding: 0px;
-        height: 35px;
-        margin-top: 0;
-    }
-    
-    .extra-info {
-        flex-wrap: wrap;
-        gap: 10px 0;
-    }
-    
-    .information {
-        width: 49%;
-    }
-    
-    .information img {
-        width: 50px;
-    }
-    
-    /* Ads */
-    
-    .ads-wrapper {
-      padding: 20px;
-      height: 230px;
-      background-position: center right;
-      position: relative;
-      z-index: 1;
-  }
-
-    .ads-wrapper::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: #00000020;
-      left: 0;
-      border-radius: 15px;
-      z-index: 0;
-  }
-    
-    .ads-wrapper h2 {
-        font-size: 25px;
-        z-index: 1;
-    }
-    
-    .ads-wrapper p {
-        font-size: 15px;
-        z-index: 1;
-    }
-    
-    /* Product Grid */
-    
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
-    }
-
-    .product-card {
-      padding: 10px;
-  }
-
-    .product-title {
-      font-size: 16px;
-  }
-    }
 
 /* Blog */
 

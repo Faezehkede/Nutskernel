@@ -120,14 +120,13 @@ const blogSwiper = new Swiper('.blog-carousel', {
     delay: 4000,
   },
   breakpoints: {
-    320: { slidesPerView: 1 },
+    320: { slidesPerView: 2 },
     768: { slidesPerView: 3 },
     1024: { slidesPerView: 4 },
   }
 });
 
 // Single Product Countdown
-
 $(function () {
   // Set deadline (Year, Month-1, Day, Hour, Minute, Second)
   var deadline = new Date(2025, 4, 15, 23, 59, 59).getTime(); // May 15, 2025, 11:59:59 PM

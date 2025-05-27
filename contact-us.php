@@ -39,7 +39,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie nec nisl eget scelerisque.
                 Quisque placerat suscipit eros, eu tincidunt tellus blandit vel. Donec pellentesque dapibus interdum.
                 Mauris et tellus congue, rutrum neque a, varius felis. Phasellus nibh diam, tincidunt nec risus ut, auctor gravida metus.</p>
-                <button><a href="#">Read About Us</a></button>
+                <button class="btn"><a href="#">Read About Us</a></button>
             </div>
         </div>
     </section>

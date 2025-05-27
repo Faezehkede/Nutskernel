@@ -84,7 +84,7 @@
 }
 .login-register small {
   display: block;
-  text-align: center;
+  text-align: left;
   margin-top: 15px;
   font-size: 12px;
   color: #888;

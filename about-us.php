@@ -165,7 +165,6 @@
                             </div>
                             <div class="box-content">
                                 <h3>List and promote food and agricultural products</h3>
-                                <p></p>
                             </div>
                         </div>
                         <div class="what-we-do-box">
@@ -174,7 +173,6 @@
                             </div>
                             <div class="box-content">
                                 <h3>Find qualified buyers or suppliers with ease</h3>
-                                <p></p>
                             </div>
                         </div>
                         <div class="what-we-do-box">
@@ -183,7 +181,6 @@
                             </div>
                             <div class="box-content">
                                 <h3>Negotiate and manage inquiries directly via our secure platform</h3>
-                                <p></p>
                             </div>
                         </div>
                         <div class="what-we-do-box">
@@ -192,7 +189,6 @@
                             </div>
                             <div class="box-content">
                                 <h3>Build global trade relationships in key markets</h3>
-                                <p></p>
                             </div>
                         </div>
                     </div>

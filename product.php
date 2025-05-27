@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <?php include 'components/haeder.php'; ?>
+  <?php include 'components/header.php'; ?>
 
   <section class="single-product">
     <div class="container">
@@ -275,7 +275,6 @@
   
 
   <?php include 'components/footer.php'; ?>
-
     
   <script src="assets/js/shop.js"></script>
     
