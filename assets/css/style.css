@@ -227,6 +227,7 @@ p {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
+    color: #fff;
   }
   
 .first-section .hero-content p {
@@ -659,7 +660,7 @@ p {
 
 .ads-section .container {
   position: relative;
-  background-image: url(/themes/nutskernel//ads-bg.webp);
+  background-image: url(assets/images/ads-bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
