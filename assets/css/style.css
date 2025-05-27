@@ -659,7 +659,7 @@ p {
 
 .ads-section .container {
   position: relative;
-  background-image: url(/themes/nutskernel//ads-bg.webp);
+  background-image: url(/themes/nutskernel/assets/images/ads-bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
