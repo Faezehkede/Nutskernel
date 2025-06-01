@@ -51,6 +51,7 @@ body {
 }
 
 a {
+  color: #333;
   text-decoration: none;
 }
 
@@ -230,6 +231,10 @@ p {
 
 /* Section one */
 
+.main {
+  margin-top: 40px;
+}
+
 .overlay {
   width: 100%;
   height: 450px;
@@ -244,13 +249,13 @@ p {
   border-radius: 10px;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination .swiper-pagination-bullet {
   width: 25px;
   height: 7px;
   border-radius: 10px;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #00a055;
 }
 
@@ -263,7 +268,7 @@ p {
 }
 
 .category-nav {
-  padding: 25px;
+  padding: 15px 30px;
   border-radius: 10px;
   box-shadow: 0 0 15px 1px #00000020;
 }
@@ -281,20 +286,74 @@ p {
   transition: all 0.5s ease-in-out;
 }
 
+.has-sub #SVGRepo_iconCarrier path {
+  fill: #00a055;
+}
+
 .subcategory-list {
   background-color: #fff;
   list-style: none;
   transition: all 0.5s ease-in-out;
   padding: 0;
-  margin: 5px 0 5px 10px;
+  margin: 5px 0 5px 40px;
 }
 
 .subcategory-list li {
   transition: all 0.5s ease-in-out;
-  height: 25px;
+  position: relative;
+  margin: 5px 0;
 }
 
+.subcategory-list li::before {
+  content: "";
+  position: absolute;
+  background-color: #4c7239;
+  height: 4px;
+  width: 4px;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
+.subcategory-list li:hover {
+  color: #00a055;
+}
+
+.view-all {
+  background-color: transparent;
+  border: 0;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.view-all a {
+  color: #00a055;
+  font-size: 15px;
+  position: relative;
+transition: all 0.5s ease;
+}
+
+.view-all a::after {
+content: "";
+border: 1px solid #00894a;
+border-bottom: 0;
+border-left: 0px;
+position: absolute;
+right: -10px;
+width: 7px;
+height: 7px;
+transform: rotate(45deg) translateY(-50%);
+top: 50%;
+transition: all 0.5s ease-in-out;
+}
+
+.view-all:hover a::after {
+left: -5px;
+}
+
+.view-all:hover a {
+padding-left: 10px;
+}
 
 /* Section two */
 
@@ -318,8 +377,7 @@ p {
 
 .category-card .category-item {
   display: flex;
-  /* flex-direction: column; */
-  gap: 15px;
+  gap: 5px;
   align-items: center;
 }
 
@@ -587,7 +645,7 @@ p {
 }
 
 .service-item {
-  width: 22%;
+  width: 25%;
   height: 100px;
   display: flex;
   align-items: center;
@@ -617,7 +675,7 @@ p {
 }
 
 .supplier-service, .customer-service {
-  width: 48%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   gap: 15px 0;

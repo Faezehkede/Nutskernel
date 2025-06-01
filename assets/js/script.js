@@ -49,10 +49,12 @@ $('.search-box input').on('keypress', function (e) {
 // Category carousel section
 const categorySwiper = new Swiper('.category-swiper', {
     slidesPerView: 8,
-    spaceBetween: 0,
+    spaceBetween: 10,
+    speed: 1500,
     loop: true,
     autoplay: {
-      delay: 1000
+      delay: 3000,
+      disableOnInteraction: false,
     },
 
     navigation: {
