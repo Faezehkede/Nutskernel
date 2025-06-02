@@ -7,24 +7,21 @@
   position: relative;
 }
 
-.header::after {
-  content: "";
-  width: 83%;
-  height: 1px;
-  background-color: #ddd;
-  position: absolute;
-  bottom: -20px;
-}
-
 .header .container {
   padding-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
 .haeder-top-part {
-  background-color: #303030;
+  background-color: #38572d;
   height: 45px;
   justify-content: center;
   margin-bottom: 20px;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 .haeder-top-part p {
@@ -72,7 +69,7 @@
 
 .header .logo {
   width: 100%;
-  max-width: 170px;
+  max-width: 225px;
 }
 
 .header .col-6 {
@@ -82,13 +79,14 @@
 
 .header-btn {
   display: flex;
-  gap: 0 10px;
+  gap: 0 20px;
   justify-content: flex-end;
+  position: relative;
 }
 
 .header .header-btn a {
   display: flex;
-  gap: 0;
+  gap: 3px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -101,11 +99,31 @@
   transform: scale(1.1);
 }
 
+.header-btn a::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #00a055;
+  right: -11px;
+  position: absolute;
+}
+
+.header-btn a:last-child::after {
+  width: 0;
+}
+
+.header-btn a svg {
+  width: 30px;
+  height: 30px;
+  stroke-width: 0;
+}
+
 .header .header-btn button {
   background-color: transparent;
   border: 0;
   color: #000000;
   font-size: 14px;
+  padding: 0;
 }
 
 .header .header-btn a svg path {
