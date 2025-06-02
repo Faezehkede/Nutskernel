@@ -111,6 +111,10 @@ h6 {
   color: #222;
 }
 
+h2 {
+  font-size: 30px !important;
+}
+
 p {
   margin: 0;
 }
