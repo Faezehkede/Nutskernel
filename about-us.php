@@ -57,95 +57,81 @@
     </section>
 
     <section class="popular-category">
-        <div class="container">
-            <h2 class="popular-category-title">Popular Categories</h2>
-            <div class="row">
-
-                <div class="swiper category-swiper">
-                    <div class="swiper-wrapper">
-                      <!-- Example Slide -->
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img4.webp" alt="Processed Fruits" />
-                            <span>Processed Fruits</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img5.webp" alt="Frozen Fruits" />
-                            <span>Nuts & Kernels</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img1.webp" alt="Dried Fruits" />
-                            <span>Grains , Cereal & Legume</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img7.webp" alt="Nuts & Kernels" />
-                            <span>Vegetables</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img.webp" alt="Nuts & Kernels" />
-                            <span>Meat</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img6.webp" alt="Nuts & Kernels" />
-                            <span>Seafood</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img2.webp" alt="Nuts & Kernels" />
-                            <span>Baked Goods</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img3.webp" alt="Nuts & Kernels" />
-                            <span>Beverages</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img.webp" alt="Nuts & Kernels" />
-                            <span>Meat</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img6.webp" alt="Nuts & Kernels" />
-                            <span>Seafood</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img2.webp" alt="Nuts & Kernels" />
-                            <span>Baked Goods</span>
-                        </div>
-                      </div>
-                      <div class="swiper-slide category-card">
-                        <div class="category-item">
-                            <img src="assets/images/category/quality/category-img3.webp" alt="Nuts & Kernels" />
-                            <span>Beverages</span>
-                        </div>
-                      </div>
-                      <!-- Add more categories here -->
-                    </div>
-        
-                    <div class="swiper-button swiper-button-next"></div>
-                    <div class="swiper-button swiper-button-prev"></div>
-        
-                </div>
-
+    <div class="category-section container">
+      <div class="section-title">
+        <h2>Hight Demand</h2>
+      </div>
+      <div class="swiper category-swiper">
+        <div class="swiper-wrapper">
+          <!-- Example Slide -->
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/berry.webp" alt="Processed Fruits" />
+              <span>StrawBerry</span>
             </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/bread.webp" alt="Frozen Fruits" />
+              <span>Bread</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/chipes.webp" alt="Dried Fruits" />
+              <span>Chipes</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/vegtebales.webp" alt="Nuts & Kernels" />
+              <span>Vegetables</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/crunchi.webp" alt="Nuts & Kernels" />
+              <span>Crunchies</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/cupcake.webp" alt="Nuts & Kernels" />
+              <span>Cupcake</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/fish.webp" alt="Nuts & Kernels" />
+              <span>Fish</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/soda.webp" alt="Nuts & Kernels" />
+              <span>Soda</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/meat.webp" alt="Nuts & Kernels" />
+              <span>Meat</span>
+            </div>
+          </div>
+          <div class="swiper-slide category-card">
+            <div class="category-item">
+              <img src="assets/images/product/quality/snacks.webp" alt="Nuts & Kernels" />
+              <span>Sanck</span>
+            </div>
+          </div>
+          <!-- Add more categories here -->
         </div>
+
+        <div class="swiper-button swiper-button-next"></div>
+        <div class="swiper-button swiper-button-prev"></div>
+
+      </div>
+    </div>
     </section>
 
     <section class="what-we-do">

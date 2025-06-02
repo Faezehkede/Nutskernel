@@ -69,7 +69,7 @@ const categorySwiper = new Swiper('.category-swiper', {
 // Product swiper
 const productcarousel = new Swiper('.product-swiper', {
     slidesPerView: 5,
-    spaceBetween: 20,
+    spaceBetween: 10,
     loop: true,
     autoplay: {
       delay: 3000,
