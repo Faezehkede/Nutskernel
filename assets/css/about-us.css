@@ -61,7 +61,7 @@
 }
 
 .what-we-do {
-    background-image: url(/themes/nutskernel/assets/images/about-bg.webp);
+    background-image: url(./assets/images/about-bg.webp);
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;

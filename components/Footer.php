@@ -11,10 +11,10 @@
       <div class="footer-column">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/themes/nutskernel/">Home</a></li>
-          <li><a href="/themes/nutskernel/shop.php">Our Products</a></li>
-          <li><a href="/themes/nutskernel/about-us.php">About Us</a></li>
-          <li><a href="/themes/nutskernel/contact-us.php">Contact Us</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./shop.php">Our Products</a></li>
+          <li><a href="./about-us.php">About Us</a></li>
+          <li><a href="./contact-us.php">Contact Us</a></li>
         </ul>
       </div>
 

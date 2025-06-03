@@ -34,7 +34,7 @@
     
         <!-- Product 1 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
             <span class="badge discount">-15%</span>
@@ -56,7 +56,7 @@
   
         <!-- Product 2 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
             <span class="badge discount">-10%</span>
@@ -78,7 +78,7 @@
   
         <!-- Product 3 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
           </div>
@@ -99,7 +99,7 @@
   
         <!-- Product 4 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
           </div>
@@ -120,7 +120,7 @@
   
         <!-- Product 5 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
           </div>
@@ -141,7 +141,7 @@
   
         <!-- Product 6 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
             <span class="badge discount">-20%</span>
@@ -163,7 +163,7 @@
 
         <!-- Product 1 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
             <span class="badge discount">-15%</span>
@@ -185,7 +185,7 @@
   
         <!-- Product 2 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
             <span class="badge discount">-10%</span>
@@ -207,7 +207,7 @@
   
         <!-- Product 3 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
           </div>
@@ -228,7 +228,7 @@
   
         <!-- Product 4 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
           </div>
@@ -249,7 +249,7 @@
   
         <!-- Product 5 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
           </div>
@@ -270,7 +270,7 @@
   
         <!-- Product 6 -->
         <div class="product-card">
-          <a href="/themes/nutskernel/product.php">
+          <a href="./product.php">
           <div class="product-top">
             <span class="badge category">Nuts</span>
             <span class="badge discount">-20%</span>

@@ -28,7 +28,7 @@
 
             <div class="col">
                 <div class="header-btn">
-                    <a href="/themes/nutskernel/buyer-dashboard.html">
+                    <a href="./buyer-dashboard.html">
                         <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                             fill="none">
                             <path data-v-fa57b318=""
@@ -52,7 +52,7 @@
                         </svg>
                         <button class="buyers-btn">Buyers</button>
                     </a>
-                    <a href="/themes/nutskernel/supplier-dashboard.html">
+                    <a href="./supplier-dashboard.html">
                         <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                             fill="none">
                             <path data-v-fa57b318=""
@@ -75,7 +75,7 @@
                         </svg>
                         <button class="suppliers-btn">Suppliers</button>
                     </a>
-                    <a href="/themes/nutskernel/login-form.html">
+                    <a href="./login-form.html">
                         <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                             fill="none">
                             <path data-v-fa57b318=""
