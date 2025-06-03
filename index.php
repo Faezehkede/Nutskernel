@@ -518,7 +518,7 @@
   <section class="section second-section">
     <div class="category-section container">
       <div class="section-title">
-        <h2>Hight Demand</h2>
+        <h2>High Demand</h2>
       </div>
       <div class="swiper category-swiper">
         <div class="swiper-wrapper">
@@ -609,7 +609,7 @@
             <label>Required Quantity (kg): *</label>
             <input type="text" name="quantity" required placeholder='Example: "50,000"' />
 
-            <button class="btn" type="submit">Send Message</button>
+            <button class="btn" type="submit">Contact Supplier</button>
           </form>
         </div>
       </div>
