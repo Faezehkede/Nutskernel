@@ -89,9 +89,9 @@ body, input, button, a, select {
   width: 75%;
 }
 
-.form-section, .product-carousel-section,
+.second-section, .form-section, .product-carousel-section,
 .product-grid-section, .vip-supplier,
-.buyer-carousel, .services {
+.buyer-carousel, .services, .data-analytics {
   margin-top: 70px;
 }
 
@@ -112,7 +112,7 @@ h6 {
 }
 
 h2 {
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 p {
@@ -305,10 +305,14 @@ p {
 .swiper-pagination .swiper-pagination-bullet {
   width: 25px;
   height: 7px;
+  border-radius: 0;
+  background-color: #fff;
+  opacity: 0.5;
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #00a055;
+  opacity: 1;
 }
 
 /* Category nav */
@@ -400,7 +404,6 @@ padding-left: 10px;
 .second-section {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
 }
 
 .category-section {
@@ -713,11 +716,10 @@ section.extra-infos {
   background-repeat: no-repeat;
   height: 100%;
   min-height: 550px;
-  max-height: 50px;
+  max-height: 600px;
   display: flex;
   align-items: flex-start;
 	justify-content: center;
-  display: flex;
   flex-direction: column;
   gap: 15px;
 	width: 100%;
@@ -725,12 +727,6 @@ section.extra-infos {
 	border: 10px solid #00894a;
 	border-top: 0;
 	border-bottom: 0;
-}
-
-.service {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .services h3 {
@@ -969,4 +965,57 @@ section.extra-infos {
 .blog-carousel .swiper-button-next:hover::after,
 .blog-carousel .swiper-button-prev:hover::after {
   color: #fff;
+}
+
+
+
+/* Data Analytics */
+
+.analytic {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/analytics-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  border: 5px solid #00a055;
+}
+
+.analytic::before {
+content: "";
+width: 100%;
+height: 100%;
+background-color: #ffffff90;
+position: absolute;
+z-index: 0;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+
+.analytic p {
+  z-index: 1;
+  display: flex;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 55px;
+  width: 60%;
+}
+
+.analytic p:nth-child(2) {
+  justify-content: center;
+}
+
+.analytic p:last-child {
+  justify-content: end;
+  margin-top: auto;
+  width: 65%;
+  color: #00743d;
 }

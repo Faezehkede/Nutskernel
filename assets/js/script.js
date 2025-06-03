@@ -52,7 +52,10 @@ const categorySwiper = new Swiper('.category-swiper', {
     spaceBetween: 10,
     speed: 1500,
     loop: true,
-
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
 
     navigation: {
       nextEl: '.swiper-button-next',
