@@ -14,6 +14,7 @@
 
   <!-- Header -->
   <?php include 'components/header.php'; ?>
+  
 
   <!-- Blog Details Section -->
   <main class="blog-details">
