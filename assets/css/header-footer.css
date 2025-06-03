@@ -14,7 +14,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-.haeder-top-part {
+.header-top-part {
   background-color: #38572d;
   height: 45px;
   justify-content: center;
@@ -25,7 +25,7 @@
   margin-right: calc(-50vw + 50%);
 }
 
-.haeder-top-part p {
+.header-top-part p {
   color: #fff;
 }
 

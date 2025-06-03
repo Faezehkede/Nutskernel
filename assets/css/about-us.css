@@ -494,7 +494,7 @@ justify-content: end;
         padding-right: 10px;
         height: 410px;
         justify-content: center;
-        background-image: url(/themes/nutskernel/assets/images/about-img2.webp);
+        background-image: url(../images/about-img2.webp);
         border-radius: 10px;
         background-position: center;
         background-repeat: no-repeat;

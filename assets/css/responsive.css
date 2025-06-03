@@ -229,7 +229,7 @@
             padding: 0 10px 15px 10px;
         }
 
-        .haeder-top-part {
+        .header-top-part {
             margin-bottom: 15px;
         }
 
@@ -443,7 +443,7 @@
             padding-bottom: 15px;
         }
 
-        .haeder-top-part {
+        .header-top-part {
             margin-bottom: 15px;
         }
 
@@ -660,7 +660,7 @@
     
         /* Header */
 
-        .haeder-top-part p {
+        .header-top-part p {
             color: #fff;
             font-size: 14px;
         }
@@ -924,12 +924,12 @@
         display: none;
     }
 
-    .haeder-top-part {
+    .header-top-part {
         height: 50px;
         margin-bottom: 10px;
     }
 
-    .haeder-top-part p {
+    .header-top-part p {
         color: #fff;
         font-size: 13px;
         text-align: center;

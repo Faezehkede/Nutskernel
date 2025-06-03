@@ -483,18 +483,22 @@ padding-left: 10px;
 
 .form-section {
   position: relative;
-  padding-bottom: 55px;
+  background-image: url(../images/form-bg3.webp);
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 0px;
   height: 100%;
   max-height: 650px !important;
   min-height: 625px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+
 }
 
-.form-section::before {
+/* .form-section::before {
   content: "";
-  background-image: url(../images/form-bg.png);
+  background-image: url(../images/form-bg2.webp);
   background-position: center center;
   background-size: cover;
   position: absolute;
@@ -503,7 +507,7 @@ padding-left: 10px;
   z-index: -1;
   top: 0;
   bottom: 0;
-}
+} */
 
 .form-section .container {
   display: flex;

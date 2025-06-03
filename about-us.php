@@ -16,7 +16,7 @@
 
     <!-- Header -->
     <?php include 'components/header.php'; ?>
-
+    <?php echo "PHP is working"; ?>
 
     <section class="page-banner">
         <div class="container">
