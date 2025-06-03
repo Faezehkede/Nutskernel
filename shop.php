@@ -12,8 +12,7 @@
 </head>
 <body>
 
-  <?php include 'components/haeder.php'; ?>
-
+<?php include 'components/header.php'; ?>
 
   <!-- Shop Page Content -->
   <section class="shop-container">
