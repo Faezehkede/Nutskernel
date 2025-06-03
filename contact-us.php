@@ -13,7 +13,7 @@
 <body>
 
     <!-- Header -->
-    <?php include 'components/header.php'; ?>
+    <?php include 'components/temp-header.php'; ?>
 
     <section class="page-banner">
         <div class="container">
@@ -195,7 +195,7 @@
     </section>
 
     <!-- Footer -->
-    <?php include 'components/footer.php'; ?>
+    <?php include 'components/temp-footer.php'; ?>
 
 </body>
 </html>

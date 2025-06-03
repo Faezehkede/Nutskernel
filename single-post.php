@@ -13,8 +13,8 @@
 <body>
 
   <!-- Header -->
-  <?php include 'components/header.php'; ?>
-  
+  <?php include 'components/temp-header.php'; ?>
+
 
   <!-- Blog Details Section -->
   <main class="blog-details">
@@ -166,7 +166,7 @@
   </main>
 
   <!-- Footer -->
-  <?php include 'components/footer.php'; ?>
+  <?php include 'components/temp-footer.php'; ?>
 
 </body>
 </html>

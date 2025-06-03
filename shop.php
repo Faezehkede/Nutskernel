@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<?php include 'components/header.php'; ?>
+<?php include 'components/temp-header.php'; ?>
 
   <!-- Shop Page Content -->
   <section class="shop-container">
@@ -302,7 +302,7 @@
     </div>
   </section>
 
-  <?php include 'components/footer.php'; ?>
+  <?php include 'components/temp-footer.php'; ?>
 
     
   <script src="assets/js/main.js"></script>

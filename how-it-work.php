@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <?php include 'components/header.php'; ?>
+    <?php include 'components/temp-header.php'; ?>
     
     <section id="how-it-works">
         <div class="container">
@@ -94,7 +94,7 @@
         </div>
     </section>
       
-    <?php include 'components/footer.php'; ?>
+    <?php include 'components/temp-footer.php'; ?>
 
 
 </body>

@@ -15,7 +15,7 @@
 <body>
 
     <!-- Header -->
-    <?php include 'components/header.php'; ?>
+    <?php include 'components/temp-header.php'; ?>
     <?php echo "PHP is working"; ?>
 
     <section class="page-banner">
@@ -217,7 +217,7 @@
     </section>
 
     <!-- Footer -->
-    <?php include 'components/footer.php'; ?>
+    <?php include 'components/temp-footer.php'; ?>
 
 
     <script src="assets/js/jquery.min.js"></script>

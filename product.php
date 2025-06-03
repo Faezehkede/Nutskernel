@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <?php include 'components/header.php'; ?>
+  <?php include 'components/temp-header.php'; ?>
 
   <section class="single-product">
     <div class="container">
@@ -274,7 +274,7 @@
   </section>
   
 
-  <?php include 'components/footer.php'; ?>
+  <?php include 'components/temp-footer.php'; ?>
     
   <script src="assets/js/shop.js"></script>
     
