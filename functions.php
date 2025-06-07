@@ -12,6 +12,8 @@ define('AGRIFOODZ_CSS', AGRIFOODZ_ASSETS . '/css');
 define('AGRIFOODZ_JS', AGRIFOODZ_ASSETS . '/js');
 define('AGRIFOODZ_INC', AGRIFOODZ_DIR . '/inc');
 
+add_action('after_setup_theme', 'agrifoodz_theme_setup');
+
 // راه‌اندازی قالب
 function agrifoodz_theme_setup() {
     // پشتیبانی از ترجمه
@@ -31,9 +33,9 @@ function agrifoodz_theme_setup() {
     // پشتیبانی از ووکامرس
     add_theme_support('woocommerce');
 }
-add_action('after_setup_theme', 'agrifoodz_theme_setup');
 
-require_once  AGRIFOODZ_INC . '/woo/fun.php'; // شامل فایل scripts.php برای اسکریپت‌ها و استایل‌ها
+
+// require_once  AGRIFOODZ_INC . '/woo/fun.php'; // شامل فایل scripts.php برای اسکریپت‌ها و استایل‌ها
 include 'include/helper.php'; // شامل فایل helper.php برای توابع کمکی
 include 'include/acf.php'; // شامل فایل acf.php برای تنظیمات ACF   
 include 'include/woocommerce.php'; // شامل فایل woocommerce.php برای تنظیمات ووکامرس
