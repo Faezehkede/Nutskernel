@@ -1,6 +1,15 @@
-<?php
+<?php 
+
+defined('ABSPATH') || exit;
+// بارگذاری استایل و اسکریپت‌ها
 function agrifoodz_enqueue_scripts() {
-    wp_enqueue_style('agrifoodz-main', get_template_directory_uri() . '/assets/css/main.css', [], '1.0');
-    wp_enqueue_script('agrifoodz-main', get_template_directory_uri() . '/assets/js/main.js', [], '1.0', true);
+    // استایل اصلی
+    wp_enqueue_style('agrifoodz-style', get_stylesheet_uri());
+
+    // فایل‌های اضافی CSS
+    wp_enqueue_style('agrifoodz-custom',AGRIFOODZ_CSS .'/custom.css', array(), AGRIFOODZ_VERSION);
+
+    // فایل‌های JS اختصاصی
+    wp_enqueue_script('agrifoodz-scripts', AGRIFOODZ_JS . '/scripts.js', array('jquery'), AGRIFOODZ_VERSION, true);
 }
 add_action('wp_enqueue_scripts', 'agrifoodz_enqueue_scripts');

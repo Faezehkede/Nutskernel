@@ -1,8 +1,51 @@
 <?php
-// Load theme setup
-require get_template_directory() . '/inc/theme-setup.php';
-require get_template_directory() . '/inc/enqueue.php';
-require get_template_directory() . '/inc/custom-post-types.php';
-require get_template_directory() . '/inc/widgets.php';
-require get_template_directory() . '/inc/template-tags.php';
 
+// ===========================
+// تعریف ثابت‌ها برای مسیرها و اطلاعات پایه قالب
+// ===========================
+define('AGRIFOODZ_VERSION', '1.0.0');
+define('AGRIFOODZ_DIR', get_template_directory());
+define('AGRIFOODZ_URI', get_template_directory_uri());
+
+define('AGRIFOODZ_ASSETS', AGRIFOODZ_URI . '/assets');
+define('AGRIFOODZ_CSS', AGRIFOODZ_ASSETS . '/css');
+define('AGRIFOODZ_JS', AGRIFOODZ_ASSETS . '/js');
+define('AGRIFOODZ_INC', AGRIFOODZ_DIR . '/inc');
+
+// راه‌اندازی قالب
+function agrifoodz_theme_setup() {
+    // پشتیبانی از ترجمه
+    load_theme_textdomain('agrifoodz', get_template_directory() . '/languages');
+
+    // پشتیبانی از تگ title
+    add_theme_support('title-tag');
+
+    // پشتیبانی از تصویر شاخص
+    add_theme_support('post-thumbnails');
+
+    // ثبت یک منوی اصلی
+    register_nav_menus(array(
+        'primary' => __('Primary Menu', 'agrifoodz'),
+    ));
+
+    // پشتیبانی از ووکامرس
+    add_theme_support('woocommerce');
+}
+add_action('after_setup_theme', 'agrifoodz_theme_setup');
+
+require_once  AGRIFOODZ_INC . '/woo/fun.php'; // شامل فایل scripts.php برای اسکریپت‌ها و استایل‌ها
+include 'include/helper.php'; // شامل فایل helper.php برای توابع کمکی
+include 'include/acf.php'; // شامل فایل acf.php برای تنظیمات ACF   
+include 'include/woocommerce.php'; // شامل فایل woocommerce.php برای تنظیمات ووکامرس
+include 'include/shortcodes.php'; // شامل فایل shortcodes.php برای شورت‌کدها 
+include 'include/widgets.php'; // شامل فایل widgets.php برای ویجت‌ها
+
+
+// فعال کردن ویژگی‌های ووکامرس بیشتر در صورت نیاز
+function agrifoodz_woocommerce_support() {
+    // فعال کردن پشتیبانی از تصاویر گالری
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
+}
+add_action('after_setup_theme', 'agrifoodz_woocommerce_support');
