@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     autoplay: {
       delay: 5000,
-    },
+    },    
     effect: 'fade',
     speed: 800,
   });

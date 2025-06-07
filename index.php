@@ -487,18 +487,30 @@
               <div class="swiper-slide">
                 <div class="overlay">
                   <img src="assets/images/green-drink.webp" alt="Slide 1" class="swiper-img">
+                  <div class="main-content">
+                    <h3>Global B2B for Foods and Agri Products</h3>
+                    <a href="" class="main-btn">List Your Products</a>
+                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="overlay">
                   <img src="assets/images/sushi.webp" class="swiper-img">
+                  <div class="main-content">
+                    <h3>Global B2B for Foods and Agri Products</h3>
+                    <a href="" class="main-btn">List Your Products</a>
+                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="overlay">
                   <img src="assets/images/oil.webp" alt="Slide 1" class="swiper-img">
+                  <div class="main-content">
+                    <h3>Global B2B for Foods and Agri Products</h3>
+                    <a href="" class="main-btn">List Your Products</a>
+                  </div>
                 </div>
               </div>
 
@@ -1045,14 +1057,24 @@
 
       <div class="row">
         <div class="service">
-          <h3>Featured Services</h3>
-            <p>Subscription Plans</p>
-            <p>Marketing Research</p>
-            <p>Business Partnership</p>
-            <p>Advertising with Us</p>
-            <p>Logistic Advising</p>
-          </h2>
+
+          <div class="feature-service">
+            <h3>Featured Services</h3>
+              <p>Subscription Plans</p>
+              <p>Marketing Research</p>
+              <p>Business Partnership</p>
+              <p>Advertising with Us</p>
+              <p>Logistic Advising</p>
+            </h2>
+          </div>
+
+          <div class="service-singup">
+            <h3>Sign up now and start using our services — fast, easy, and free to join!</h3>
+            <a href="">Join Us Now</a>
+          </div>
+
         </div>
+        
         <!-- <div class="service-item">
           <h3>Plans</h3>
         </div>
@@ -1146,6 +1168,15 @@
       </div>
 
 
+    </div>
+  </section>
+
+  <section class="ads-banner">
+    <div class="container">
+      <div class="row">
+        <img src="assets/images/ads-banner.webp" alt="Ads Banner 1">
+        <img src="assets/images/ads-banner.webp" alt="Ads Banner 2">
+      </div>
     </div>
   </section>
 
