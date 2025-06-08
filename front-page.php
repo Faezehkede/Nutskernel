@@ -1,313 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php get_header(); ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agrifoodz</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/header-footer.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-
-</head>
-
-<body>
-
-  <!-- <header class="section header">
-      <div class="container">
-
-        <div class="inner-top">
-            <nav class="main-nav">
-                <div class="container">
-        
-                  <div class="product-category-dropdown">
-                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
-                        <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" 
-                        stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" 
-                        stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> 
-                        <path d="M6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10Z" stroke="#fff" stroke-width="1.5" 
-                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> 
-                        <path d="M18 22C20.2091 22 22 20.2091 22 18C22 15.7909 20.2091 14 18 14C15.7909 14 14 15.7909 14 18C14 20.2091 15.7909 22 18 22Z" stroke="#fff" 
-                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g>
-                    </svg>
-                    <button class="dropbtn">Product Category</button>
-                    <div class="mega-menu">
-                      <ul class="category-list">
-                        <li class="has-sub">
-                            Processed Fruits
-                            <ul class="subcategory-list">
-                                <li>Frozen Fruits</li>
-                                <li>Dried Fruits</li>
-                                <li>Fruit Pulp & Concentrates</li>
-                                <li>Packed Fruits</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Nuts & Kernels
-                            <ul class="subcategory-list">
-                            <li>Pistachio</li>
-                            <li>Almond</li>
-                            <li>Walnuts</li>
-                            <li>Hazelnuts</li>
-                            <li>Date fruit</li>
-                            <li>Date products</li>
-                            <li>Peanuts</li>
-                            <li>Macadamia</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Seeds and Oil Seeds
-                            <ul class="subcategory-list">
-                            <li>Sunflower oil</li>
-                            <li>Palm oil</li>
-                            <li>Olive oil</li>
-                            <li>Soybean oil</li>
-                            <li>Corn oil</li>
-                            <li>Rapeseed oil</li>
-                            <li>Sesame oil</li>
-                            <li>Coconut oil</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Vegetables
-                            <ul class="subcategory-list">
-                            <li>Fresh Vegetables</li>
-                            <li>Frozen Vegetables</li>
-                            <li>Dried Vegetables</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Herbs, Spices & Seasonings
-                            <ul class="subcategory-list">
-                            <li>Herbs</li>
-                            <li>Spices</li>
-                            <li>Honey</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Meat & Seafood
-                            <ul class="subcategory-list">
-                            <li>Beef</li>
-                            <li>Lamb & Mutton</li>
-                            <li>Poultry</li>
-                            <li>Fish</li>
-                            <li>Shellfish</li>
-                            <li>Frozen Meat</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Dairy & Eggs
-                            <ul class="subcategory-list">
-                            <li>Milk</li>
-                            <li>Cheese</li>
-                            <li>Yogurt</li>
-                            <li>Butter</li>
-                            <li>Eggs</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Baked Goods
-                            <ul class="subcategory-list">
-                            <li>Breads</li>
-                            <li>Cakes & Pastries</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Beverages
-                            <ul class="subcategory-list">
-                            <li>Coffee</li>
-                            <li>Tea</li>
-                            <li>Juices</li>
-                            <li>Soft Drinks</li>
-                            <li>Water</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Snacks & Confectionary
-                            <ul class="subcategory-list">
-                            <li>Chips</li>
-                            <li>Popcorn</li>
-                            <li>Chocolate</li>
-                            <li>Candy</li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            Other
-                            <ul class="subcategory-list">
-                            <li>Baby Food</li>
-                            <li>Pet Food</li>
-                            <li>Supplements</li>
-                            </ul>
-                        </li>
-                      </ul>
-        
-                    </div>
-        
-                  </div>
-                </div>
-            </nav> 
-            <nav class="main-menu">
-              <ul class="menu-list">
-                <li class="menu-item"><a href="./">Home</a></li>
-                <li class="menu-item"><a href="./about-us.php">About Us</a></li>
-                <li class="menu-item"><a href="./contact-us.php">Contact Us</a></li>
-              </ul>
-            </nav> 
-        </div>
-
-        <div class="inner-section">
-            <div class="header-logo">
-                <img src="assets/images/Logo.webp" alt="Logo Image" class="logo">
-            </div>
-            <div class="header-btn">
-              <a href="./buyer-dashboard.html">
-                  <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                      <path data-v-fa57b318="" d="M13.1216 13C14.0531 13 14.8365 13.6372 15.0586 14.5H13.8716C13.7 14.5 13.5342 14.5247 13.3775 14.5707C13.3271 14.5405 13.2709 
-                      14.5189 13.2112 14.5081L13.1216 14.5L4.12158 14.499L4.02093 14.509C3.89654 14.5343 3.81158 14.6018 3.76758 14.645C3.72438 14.689 3.65686 14.7733 3.63158 
-                      14.898L3.62158 14.999V16.5C3.62158 17.509 4.07158 18.222 5.03858 18.742C5.86474 19.1869 7.04109 19.4563 8.30416 19.4951L8.62158 19.5L8.93899 19.4951C10.1604 
-                      19.4576 11.3002 19.2044 12.1219 18.7853C12.1313 19.2609 12.3305 19.69 12.6468 20C12.5512 20.0937 12.4663 20.1983 12.3941 20.3117C11.2146 20.8115 9.83032 21 
-                      8.62158 21C5.89945 21 2.28628 20.044 2.12704 16.7296L2.12158 16.5V14.999C2.12158 13.9452 2.93798 13.0809 3.97239 13.0045L4.12158 12.999L13.1216 13ZM16.0706 
-                      14.5C15.9866 13.9986 15.777 13.5432 15.4761 13.1598L15.3416 13H20.1216C21.1078 13 21.928 13.715 22.0918 14.6546C21.8722 14.5553 21.6283 14.5 21.3716 
-                      14.5H16.0706ZM21.3716 15.5C21.7617 15.5 22.0822 15.7979 22.1182 16.1786C22.1204 16.2021 22.1216 16.2259 22.1216 16.25C22.1216 16.3073 22.1152 16.3631 22.103 
-                      16.4167C22.0272 16.7507 21.7285 17 21.3716 17H13.8716C13.7717 17 13.6764 16.9805 13.5892 16.945C13.315 16.8335 13.1216 16.5643 13.1216 16.25C13.1216 15.9234 
-                      13.3303 15.6456 13.6216 15.5427C13.6998 15.515 13.7839 15.5 13.8716 15.5H21.3716ZM21.3716 18C21.4416 18 21.5094 18.0096 21.5738 18.0276C21.8898 18.1158 22.1216 
-                      18.4058 22.1216 18.75C22.1216 19.1642 21.7858 19.5 21.3716 19.5H13.8716C13.8347 19.5 13.7984 19.4973 13.763 19.4922C13.4002 19.4396 13.1216 19.1273 13.1216 
-                      18.75C13.1216 18.3358 13.4574 18 13.8716 18H21.3716ZM8.62158 2C11.1066 2 13.1216 4.015 13.1216 6.5C13.1216 8.985 11.1066 11 8.62158 11C6.13658 11 
-                      4.12158 8.985 4.12158 6.5C4.12158 4.015 6.13658 2 8.62158 2ZM8.62158 3.5C6.96758 3.5 5.62158 4.846 5.62158 6.5C5.62158 8.154 6.96758 9.5 8.62158 9.5C10.2756 9.5 
-                      11.6216 8.154 11.6216 6.5C11.6216 4.846 10.2756 3.5 8.62158 3.5ZM17.6216 4C19.5546 4 21.1216 5.567 21.1216 7.5C21.1216 9.433 19.5546 11 17.6216 11C15.6886 
-                      11 14.1216 9.433 14.1216 7.5C14.1216 5.567 15.6886 4 17.6216 4ZM17.6216 5.5C16.5186 5.5 15.6216 6.397 15.6216 7.5C15.6216 8.603 16.5186 9.5 17.6216 9.5C18.7246 
-                      9.5 19.6216 8.603 19.6216 7.5C19.6216 6.397 18.7246 5.5 17.6216 5.5ZM13.1216 21.25C13.1216 20.8358 13.4574 20.5 13.8716 20.5H21.3716C21.7858 20.5 22.1216 20.8358 
-                      22.1216 21.25C22.1216 21.6642 21.7858 22 21.3716 22H13.8716C13.4574 22 13.1216 21.6642 13.1216 21.25Z" fill="#212121"></path>
-                  </svg>
-                  <button class="buyers-btn">Buyers</button>
-              </a>
-              <a href="./supplier-dashboard.html">
-                  <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                      <path data-v-fa57b318="" d="M14.8716 15C15.8381 15 16.6216 15.7835 16.6216 16.75L16.6205 17.7121C16.7372 19.9012 15.1095 21.009 12.1884 21.009C9.27944 21.009 
-                      7.62158 19.9192 7.62158 17.75V16.75C7.62158 15.7835 8.40508 15 9.37158 15H14.8716ZM14.8716 16.5H9.37158C9.23351 16.5 9.12158 16.6119 9.12158 16.75V17.75C9.12158 
-                      18.9262 10.0082 19.509 12.1884 19.509C14.3563 19.509 15.1841 18.9455 15.1216 17.752V16.75C15.1216 16.6119 15.0097 16.5 14.8716 16.5ZM3.87158 10L8.24758 
-                      10.0001C8.16533 10.3197 8.12158 10.6547 8.12158 11C8.12158 11.1691 8.13208 11.3358 8.15245 11.4993L3.87158 11.5C3.73351 11.5 3.62158 11.6119 3.62158 
-                      11.75V12.75C3.62158 13.9262 4.50825 14.509 6.68837 14.509C7.15027 14.509 7.55134 14.4835 7.89593 14.4317C7.33075 14.7897 6.90704 15.349 6.7228 16.0082L6.68837 
-                      16.009C3.77944 16.009 2.12158 14.9192 2.12158 12.75V11.75C2.12158 10.7835 2.90508 10 3.87158 10ZM20.3716 10C21.3381 10 22.1216 10.7835 22.1216 11.75L22.1205 
-                      12.7121C22.2372 14.9012 20.6095 16.009 17.6884 16.009L17.5201 16.0073C17.3306 15.3302 16.8885 14.7587 16.3019 14.4008C16.6885 14.4733 17.1488 14.509 17.6884 
-                      14.509C19.8563 14.509 20.6841 13.9455 20.6216 12.752V11.75C20.6216 11.6119 20.5097 11.5 20.3716 11.5L16.0907 11.4992C16.1111 11.3357 16.1216 11.1691 16.1216 
-                      11C16.1216 10.6547 16.0778 10.3197 15.9956 10.0001L20.3716 10ZM12.1216 8C13.7784 8 15.1216 9.34315 15.1216 11C15.1216 12.6569 13.7784 14 12.1216 14C10.4647 
-                      14 9.12158 12.6569 9.12158 11C9.12158 9.34315 10.4647 8 12.1216 8ZM12.1216 9.5C11.2932 9.5 10.6216 10.1716 10.6216 11C10.6216 11.8284 11.2932 12.5 12.1216 
-                      12.5C12.95 12.5 13.6216 11.8284 13.6216 11C13.6216 10.1716 12.95 9.5 12.1216 9.5ZM6.62158 3C8.27844 3 9.62158 4.34315 9.62158 6C9.62158 7.65685 8.27844 9 
-                      6.62158 9C4.96473 9 3.62158 7.65685 3.62158 6C3.62158 4.34315 4.96473 3 6.62158 3ZM17.6216 3C19.2784 3 20.6216 4.34315 20.6216 6C20.6216 7.65685 19.2784 9 17.6216 
-                      9C15.9647 9 14.6216 7.65685 14.6216 6C14.6216 4.34315 15.9647 3 17.6216 3ZM6.62158 4.5C5.79315 4.5 5.12158 5.17157 5.12158 6C5.12158 6.82843 5.79315 7.5 
-                      6.62158 7.5C7.45001 7.5 8.12158 6.82843 8.12158 6C8.12158 5.17157 7.45001 4.5 6.62158 4.5ZM17.6216 4.5C16.7932 4.5 16.1216 5.17157 16.1216 6C16.1216 6.82843 
-                      16.7932 7.5 17.6216 7.5C18.45 7.5 19.1216 6.82843 19.1216 6C19.1216 5.17157 18.45 4.5 17.6216 4.5Z" fill="#212121"></path>
-                  </svg>
-                  <button class="suppliers-btn">Suppliers</button>
-              </a>
-              <a href="./login-form.html">
-                  <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                      <path data-v-fa57b318="" d="M17.6219 12C20.6595 12 23.1219 14.4624 23.1219 17.5C23.1219 20.5376 20.6595 23 17.6219 23C14.5844 23 12.1219 20.5376 12.1219 
-                      17.5C12.1219 14.4624 14.5844 12 17.6219 12ZM12.1442 13.9993C11.8475 14.4626 11.608 14.966 11.4356 15.4996L4.37436 15.4999C3.96077 15.4999 3.62549 15.8352 
-                      3.62549 16.2488V16.8265C3.62549 17.3622 3.8166 17.8802 4.16446 18.2876C5.41776 19.7553 7.38364 20.5011 10.1219 20.5011C10.7184 20.5011 11.2783 20.4657 11.8022 
-                      20.3952C12.0474 20.8901 12.3549 21.3486 12.7137 21.7615C11.9182 21.9217 11.0533 22.0011 10.1219 22.0011C6.97608 22.0011 4.59007 21.0959 3.02377 19.2617C2.44401 
-                      18.5828 2.12549 17.7193 2.12549 16.8265V16.2488C2.12549 15.0068 3.13234 13.9999 4.37436 13.9999L12.1442 13.9993ZM17.6219 14L17.5321 14.0081C17.328 14.0451 17.167 
-                      14.206 17.13 14.4101L17.1219 14.5L17.1209 17H14.6259L14.536 17.0081C14.3319 17.0451 14.171 17.206 14.1339 17.4101L14.1259 17.5L14.1339 17.5899C14.171 17.794 
-                      14.3319 17.9549 14.536 17.992L14.6259 18H17.1209L17.1219 20.5L17.13 20.5899C17.167 20.794 17.328 20.9549 17.5321 20.9919L17.6219 21L17.7118 20.9919C17.9159 
-                      20.9549 18.0768 20.794 18.1139 20.5899L18.1219 20.5L18.1209 18H20.6259L20.7157 17.992C20.9198 17.9549 21.0808 17.794 21.1178 17.5899L21.1259 17.5L21.1178 
-                      17.4101C21.0808 17.206 20.9198 17.0451 20.7157 17.0081L20.6259 17H18.1209L18.1219 14.5L18.1139 14.4101C18.0768 14.206 17.9159 14.0451 17.7118 14.0081L17.6219 
-                      14ZM10.1219 2.00464C12.8834 2.00464 15.1219 4.24321 15.1219 7.00464C15.1219 9.76606 12.8834 12.0046 10.1219 12.0046C7.36052 12.0046 5.12195 9.76606 5.12195 
-                      7.00464C5.12195 4.24321 7.36052 2.00464 10.1219 2.00464ZM10.1219 3.50464C8.18895 3.50464 6.62195 5.07164 6.62195 7.00464C6.62195 8.93764 8.18895 10.5046 10.1219 
-                      10.5046C12.0549 10.5046 13.6219 8.93764 13.6219 7.00464C13.6219 5.07164 12.0549 3.50464 10.1219 3.50464Z" fill="#212121"></path>
-                  </svg>
-                  <button class="log-reg-btn">Login | Register</button>
-              </a>
-            </div>
-        </div>
-      </div>
-    </header> -->
-
-  <!-- <section class="section first-section starter">
-      <div class="container">
-        <div class="swiper hero-swiper">
-          <div class="swiper-wrapper">
-    
-            <div class="swiper-slide">
-              <div class="overlay">
-                <div class="hero-content">
-                  <h2>Use a concise, value-driven headline</h2>
-                  <p>Your trusted B2B partner for reliable sourcing and efficient trade.</p>
-                  <div class="search-box">
-                    <input type="text" placeholder="Search products or suppliers..." />
-                    <button>
-                        <svg width="25px" height="25px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#fff" stroke-width="3">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>                            
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">                            
-                            <path class="a" d="M42.5011,42.5,35.15,34.7245a17.244,17.244,0,1,0-7.0752,4.4212"></path>
-                            </g>                            
-                        </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="swiper-slide">
-              <div class="overlay">
-                <div class="hero-content">
-                  <h2>Fast & Reliable Wholesale Deals</h2>
-                  <p>Find verified suppliers and top-tier products at great prices.</p>
-                  <div class="search-box">
-                    <input type="text" placeholder="Search deals..." />
-                    <button>
-                        <svg width="25px" height="25px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#fff" stroke-width="3">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>                            
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">                            
-                            <path class="a" d="M42.5011,42.5,35.15,34.7245a17.244,17.244,0,1,0-7.0752,4.4212"></path>
-                            </g>                            
-                        </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="swiper-slide">
-              <div class="overlay">
-                <div class="hero-content">
-                  <h2>Connect with Global Suppliers</h2>
-                  <p>Streamline your supply chain and grow your business internationally.</p>
-                  <div class="search-box">
-                    <input type="text" placeholder="Search global suppliers..." />
-                    <button>
-                        <svg width="25px" height="25px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#fff" stroke-width="3">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>                            
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">                            
-                            <path class="a" d="M42.5011,42.5,35.15,34.7245a17.244,17.244,0,1,0-7.0752,4.4212"></path>
-                            </g>                            
-                        </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-          </div>
-    
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-    </section> -->
-
-
-  <?php include 'components/temp-header.php'; ?>
+<main id="primary" class="site-main">
 
   <section class="main">
     <div class="container">
@@ -627,35 +320,6 @@
       </div>
     </div>
   </section>
-
-  <!-- <section class="extra-infos">
-    <div class="container">
-
-      <div class="extra-info">
-        <div class="information">
-          <img src="assets/images/consumer.webp" alt="This is an image">
-          <h3>500k</h3>
-          <p>Avtive Buyers</p>
-        </div>
-        <div class="information">
-          <img src="assets/images/suppliers.webp" alt="This is an image">
-          <h3>724k</h3>
-          <p>Active Suppliers</p>
-        </div>
-        <div class="information">
-          <img src="assets/images/user.webp" alt="This is an image">
-          <h3>2475K</h3>
-          <p>Trusted Customers</p>
-        </div>
-        <div class="information">
-          <img src="assets/images/walnut.webp" alt="This is an image">
-          <h3>433</h3>
-          <p>Variety of Product</p>
-        </div>
-      </div>
-
-    </div>
-  </section> -->
 
   <section class="section product-carousel-section">
     <div class="container">
@@ -1053,18 +717,18 @@
 
   <section class="services">
     <div class="container">
-      
+
 
       <div class="row">
         <div class="service">
 
           <div class="feature-service">
             <h3>Featured Services</h3>
-              <p>Subscription Plans</p>
-              <p>Marketing Research</p>
-              <p>Business Partnership</p>
-              <p>Advertising with Us</p>
-              <p>Logistic Advising</p>
+            <p>Subscription Plans</p>
+            <p>Marketing Research</p>
+            <p>Business Partnership</p>
+            <p>Advertising with Us</p>
+            <p>Logistic Advising</p>
             </h2>
           </div>
 
@@ -1074,22 +738,9 @@
           </div>
 
         </div>
-        
-        <!-- <div class="service-item">
-          <h3>Plans</h3>
-        </div>
-        <div class="service-item">
-          <h3>Marketing</h3>
-        </div>
-        <div class="service-item">
-          <h3>Market & product research</h3>
-        </div>
-        <div class="service-item">
-          <h3>Free Advertise with Us</h3>
-        </div> -->
       </div>
 
-     
+
 
     </div>
     </div>
@@ -1100,7 +751,7 @@
 
       <h2 class="section-title">VIP Supplier</h2>
 
-       <div class="row">
+      <div class="row">
         <div class="supplier-service">
           <!-- <a href="#" class="service-btn">For Suppliers</a> -->
           <div class="user-item">
@@ -1878,29 +1529,27 @@
 
   <section class="data-analytics">
     <div class="container">
-      
+
 
       <div class="row">
         <div class="analytic">
-            <p>Market Overview</p>
-            <p>Data & Analytics</p>
-            <p>Trade with awareness....</p>
+          <p>Market Overview</p>
+          <p>Data & Analytics</p>
+          <p>Trade with awareness....</p>
           </h2>
         </div>
-          
+
       </div>
 
-     
+
 
     </div>
     </div>
   </section>
+</main>
 
-  <?php include 'components/temp-footer.php'; ?>
+<?php get_footer(); ?>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</body>
-
-</html>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
