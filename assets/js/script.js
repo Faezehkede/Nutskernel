@@ -119,7 +119,7 @@ const blogSwiper = new Swiper('.blog-carousel', {
     prevEl: '.swiper-button-prev',
   },
   autoplay: {
-    delay: 4000,
+    delay: 1000,
   },
   breakpoints: {
     320: { slidesPerView: 2 },
@@ -153,4 +153,40 @@ $(function () {
     $('#minutes').text(String(minutes).padStart(2, '0'));
     $('#seconds').text(String(seconds).padStart(2, '0'));
   }, 1000);
+});
+
+// blog list carousel on footer
+
+const swiper = new Swiper('.blog-list-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  breakpoints: {
+    640: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 4 },
+  }
+});
+
+// VIP Supplier
+
+const vipSwiper = new Swiper('.vip-supplier-carousel', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3
+    },
+    1024: {
+      slidesPerView: 5
+    }
+  }
 });

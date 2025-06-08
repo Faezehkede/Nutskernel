@@ -212,8 +212,25 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
 p {
   margin: 0;
+  font-size: 16px;
 }
 
 .section-title {
@@ -697,44 +714,33 @@ p {
   cursor: pointer;
 }
 
-section.extra-infos {
-  margin-top: 20px;
-}
-
-.extra-info {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.information {
+.list-product {
   background-color: #fff;
-  width: 330px;
-  height: 150px;
-  border: 1px solid #ddd;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 25px;
+  width: 60%;
+  border: 4px inset #00a055;
   align-items: flex-start;
-  justify-content: center;
-  padding: 20px;
 }
 
-.information img {
-  width: 50px;
-  background-color: #00a0551c;
-  padding: 10px;
+.list-product p {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.information h3 {
-  margin: 0;
-  font-size: 27px;
-  font-weight: 700;
+.list-product a {
+  background-color: #00a05594;
+  padding: 7px 20px;
+  font-size: 14px;
+  color: #fff;
 }
 
-.information p {
-  margin: 0;
+.list-product a:hover {
+  background-color: #00502a;
 }
 
 /* Section Four - Products */
@@ -835,52 +841,121 @@ section.extra-infos {
 
 /* section five */
 
+.services {
+  background-color: #002916;
+  position: relative;
+  padding: 70px 0;
+}
+
+.services::before {
+  content: "";
+  background-image: url(../images/hand-shake.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 350px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: auto;
+}
+
+.services::after {
+  content: "";
+  background-image: url(../images/idea.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 0;
+  bottom: 0;
+  top: auto;
+  right: auto;
+}
+
 .services .row {
   margin: 20px 0 0;
 }
 
 .service {
-  background-image: url(../images/services-bg1.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  min-height: 550px;
-  max-height: 600px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 15px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 100px;
   width: 100%;
-  padding: 0 0 0 170px;
-  border: 10px solid #00894a;
+  padding: 0;
   border-top: 0;
   border-bottom: 0;
+  justify-content: center;
 }
 
 .feature-service {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
 }
 
-.feature-service h3 {
-  font-size: 50px;
+.feature-service h2 {
   color: #fff;
-  font-weight: 700;
-  margin-bottom: 30px;
 }
 
-.services p {
-  font-size: 30px;
-  color: #07830b;
-  font-weight: 500;
+.feature-service-item {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.feature-service-item a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  overflow: hidden;
+  background-color: #ffffff70;
+}
+
+.feature-service-item a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.feature-service-item a:hover::before {
+  right: 0;
+  transform: translateX(0);
+}
+
+.feature-service-item i {
+  display: flex;
+}
+
+.feature-service-item svg {
+  width: 25px;
+  height: 25px;
+}
+
+.feature-service-item span {
+  color: #fff;
+  font-size: 18px;
 }
 
 .service-singup {
-  width: 35%;
+  width: 95%;
   padding: 20px;
   background-color: #ffffff50;
 }
@@ -905,6 +980,11 @@ section.extra-infos {
   justify-content: space-between;
 }
 
+.user-items {
+  display: grid;
+  gap: 15px;
+}
+
 .user-item {
   display: flex;
   align-items: center;
@@ -912,7 +992,7 @@ section.extra-infos {
   gap: 5px;
   padding: 10px;
   border: 1px solid #ddd;
-  width: 19%;
+  width: 100%;
 }
 
 .user-item img {
@@ -1112,47 +1192,85 @@ section.extra-infos {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   padding: 80px 0;
+}
+
+.data-analytics::after {
+  content: "";
+  background-image: url(../images/advertising.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 360px;
+  height: 325px;
+  left: -80px;
+  top: -70px;
+  z-index: 99;
 }
 
 .analytic {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  width: 45%;
   height: 260px;
-}
-
-.analytic::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff90;
-  position: absolute;
-  z-index: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  background-color: #ffffffd4;
+  padding: 30px;
+  gap: 15px;
 }
 
 .analytic p {
   z-index: 1;
   display: flex;
-  font-size: 45px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 55px;
-  width: 60%;
+  /* line-height: 55px; */
+  /* width: 60%; */
+  flex-direction: column;
 }
 
-.analytic p:nth-child(2) {
-  justify-content: center;
+.analytic span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
 }
 
 .analytic p:last-child {
   justify-content: end;
   margin-top: auto;
-  width: 65%;
   color: #00743d;
+}
+
+.analytic-btn {
+  background-color: #f9faf9c7;
+  width: 45%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border: 4px outset;
+}
+
+.analytic-btn a {
+  background-color: #00a055;
+  padding: 7px 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.analytic-btn p {
+  line-height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.analytic-btn #b path {
+  stroke-width: 2px;
+  stroke: #00a055;
 }
