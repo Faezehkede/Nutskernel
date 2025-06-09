@@ -7,7 +7,7 @@ function agrifoodz_enqueue_scripts() {
     wp_enqueue_style('agrifoodz-style', get_stylesheet_uri());
 
     // فایل‌های اضافی CSS
-    wp_enqueue_style('agrifoodz-custom',AGRIFOODZ_CSS .'/custom.css', array(), AGRIFOODZ_VERSION);
+    wp_enqueue_style('agrifoodz-custom',AGRIFOODZ_CSS .'/style.css', array(), AGRIFOODZ_VERSION);
 
     // فایل‌های JS اختصاصی
     wp_enqueue_script('agrifoodz-scripts', AGRIFOODZ_JS . '/scripts.js', array('jquery'), AGRIFOODZ_VERSION, true);

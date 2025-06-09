@@ -1,39 +1,42 @@
 <header class="header">
     <div class="container">
-        <div class="row header-top-part">
-            <p>Not a member of AgriFoodz yet? Sign up now to connect with global agri-food buyers and suppliers!</p>
-            <a href="#" class="signup">Join Us Now</a>
+      <div class="row header-top-part">
+        <p>Not a member of AgriFoodz yet? Sign up now to connect with global agri-food buyers and suppliers!</p>
+        <a href="#" class="signup">Join Us Now</a>
+      </div>
+      <div class="row">
+
+        <div class="col">
+          <img src="assets/images/main-logo.png" alt="Logo" class="logo">
         </div>
-        <div class="row">
 
-            <div class="col">
-                <img src="assets/images/main-logo.png" alt="Logo" class="logo">
-            </div>
+        <div class="col-6">
+          <div class="search-box">
+            <input type="text" placeholder="Search deals..." />
+            <button>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M17 17L21 21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                  <path
+                    d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                    stroke="#fff" stroke-width="2"></path>
+                </g>
+              </svg>
+              Search
+            </button>
+          </div>
+        </div>
 
-            <div class="col-6">
-                <div class="search-box">
-                    <input type="text" placeholder="Search deals..." />
-                    <button>
-                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M17 17L21 21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#fff" stroke-width="2"></path>
-                            </g>
-                        </svg>
-                        Search
-                    </button>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="header-btn">
-                    <a href="./buyer-dashboard.html">
-                        <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
-                            fill="none">
-                            <path data-v-fa57b318=""
-                                d="M13.1216 13C14.0531 13 14.8365 13.6372 15.0586 14.5H13.8716C13.7 14.5 13.5342 14.5247 13.3775 14.5707C13.3271 14.5405 13.2709 
+        <div class="col">
+          <div class="header-btn">
+            <a href="./buyer-dashboard.html" class="buyers-btn">
+              <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                fill="none">
+                <path data-v-fa57b318=""
+                  d="M13.1216 13C14.0531 13 14.8365 13.6372 15.0586 14.5H13.8716C13.7 14.5 13.5342 14.5247 13.3775 14.5707C13.3271 14.5405 13.2709 
                       14.5189 13.2112 14.5081L13.1216 14.5L4.12158 14.499L4.02093 14.509C3.89654 14.5343 3.81158 14.6018 3.76758 14.645C3.72438 14.689 3.65686 14.7733 3.63158 
                       14.898L3.62158 14.999V16.5C3.62158 17.509 4.07158 18.222 5.03858 18.742C5.86474 19.1869 7.04109 19.4563 8.30416 19.4951L8.62158 19.5L8.93899 19.4951C10.1604 
                       19.4576 11.3002 19.2044 12.1219 18.7853C12.1313 19.2609 12.3305 19.69 12.6468 20C12.5512 20.0937 12.4663 20.1983 12.3941 20.3117C11.2146 20.8115 9.83032 21 
@@ -49,15 +52,15 @@
                       11 14.1216 9.433 14.1216 7.5C14.1216 5.567 15.6886 4 17.6216 4ZM17.6216 5.5C16.5186 5.5 15.6216 6.397 15.6216 7.5C15.6216 8.603 16.5186 9.5 17.6216 9.5C18.7246 
                       9.5 19.6216 8.603 19.6216 7.5C19.6216 6.397 18.7246 5.5 17.6216 5.5ZM13.1216 21.25C13.1216 20.8358 13.4574 20.5 13.8716 20.5H21.3716C21.7858 20.5 22.1216 20.8358 
                       22.1216 21.25C22.1216 21.6642 21.7858 22 21.3716 22H13.8716C13.4574 22 13.1216 21.6642 13.1216 21.25Z" fill="#212121">
-                            </path>
-                        </svg>
-                        <button class="buyers-btn">Buyers</button>
-                    </a>
-                    <a href="./supplier-dashboard.html">
-                        <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
-                            fill="none">
-                            <path data-v-fa57b318=""
-                                d="M14.8716 15C15.8381 15 16.6216 15.7835 16.6216 16.75L16.6205 17.7121C16.7372 19.9012 15.1095 21.009 12.1884 21.009C9.27944 21.009 
+                </path>
+              </svg>
+              Buyers
+            </a>
+            <a href="./supplier-dashboard.html" class="buyers-btn">
+              <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                fill="none">
+                <path data-v-fa57b318=""
+                  d="M14.8716 15C15.8381 15 16.6216 15.7835 16.6216 16.75L16.6205 17.7121C16.7372 19.9012 15.1095 21.009 12.1884 21.009C9.27944 21.009 
                       7.62158 19.9192 7.62158 17.75V16.75C7.62158 15.7835 8.40508 15 9.37158 15H14.8716ZM14.8716 16.5H9.37158C9.23351 16.5 9.12158 16.6119 9.12158 16.75V17.75C9.12158 
                       18.9262 10.0082 19.509 12.1884 19.509C14.3563 19.509 15.1841 18.9455 15.1216 17.752V16.75C15.1216 16.6119 15.0097 16.5 14.8716 16.5ZM3.87158 10L8.24758 
                       10.0001C8.16533 10.3197 8.12158 10.6547 8.12158 11C8.12158 11.1691 8.13208 11.3358 8.15245 11.4993L3.87158 11.5C3.73351 11.5 3.62158 11.6119 3.62158 
@@ -72,15 +75,15 @@
                       9C15.9647 9 14.6216 7.65685 14.6216 6C14.6216 4.34315 15.9647 3 17.6216 3ZM6.62158 4.5C5.79315 4.5 5.12158 5.17157 5.12158 6C5.12158 6.82843 5.79315 7.5 
                       6.62158 7.5C7.45001 7.5 8.12158 6.82843 8.12158 6C8.12158 5.17157 7.45001 4.5 6.62158 4.5ZM17.6216 4.5C16.7932 4.5 16.1216 5.17157 16.1216 6C16.1216 6.82843 
                       16.7932 7.5 17.6216 7.5C18.45 7.5 19.1216 6.82843 19.1216 6C19.1216 5.17157 18.45 4.5 17.6216 4.5Z" fill="#212121">
-                            </path>
-                        </svg>
-                        <button class="suppliers-btn">Suppliers</button>
-                    </a>
-                    <a href="./login-form.html">
-                        <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
-                            fill="none">
-                            <path data-v-fa57b318=""
-                                d="M17.6219 12C20.6595 12 23.1219 14.4624 23.1219 17.5C23.1219 20.5376 20.6595 23 17.6219 23C14.5844 23 12.1219 20.5376 12.1219 
+                </path>
+              </svg>
+              Suppliers
+            </a>
+            <a href="./login-form.html" class="buyers-btn">
+              <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                fill="none">
+                <path data-v-fa57b318=""
+                  d="M17.6219 12C20.6595 12 23.1219 14.4624 23.1219 17.5C23.1219 20.5376 20.6595 23 17.6219 23C14.5844 23 12.1219 20.5376 12.1219 
                       17.5C12.1219 14.4624 14.5844 12 17.6219 12ZM12.1442 13.9993C11.8475 14.4626 11.608 14.966 11.4356 15.4996L4.37436 15.4999C3.96077 15.4999 3.62549 15.8352 
                       3.62549 16.2488V16.8265C3.62549 17.3622 3.8166 17.8802 4.16446 18.2876C5.41776 19.7553 7.38364 20.5011 10.1219 20.5011C10.7184 20.5011 11.2783 20.4657 11.8022 
                       20.3952C12.0474 20.8901 12.3549 21.3486 12.7137 21.7615C11.9182 21.9217 11.0533 22.0011 10.1219 22.0011C6.97608 22.0011 4.59007 21.0959 3.02377 19.2617C2.44401 
@@ -92,13 +95,13 @@
                       14ZM10.1219 2.00464C12.8834 2.00464 15.1219 4.24321 15.1219 7.00464C15.1219 9.76606 12.8834 12.0046 10.1219 12.0046C7.36052 12.0046 5.12195 9.76606 5.12195 
                       7.00464C5.12195 4.24321 7.36052 2.00464 10.1219 2.00464ZM10.1219 3.50464C8.18895 3.50464 6.62195 5.07164 6.62195 7.00464C6.62195 8.93764 8.18895 10.5046 10.1219 
                       10.5046C12.0549 10.5046 13.6219 8.93764 13.6219 7.00464C13.6219 5.07164 12.0549 3.50464 10.1219 3.50464Z"
-                                fill="#212121"></path>
-                        </svg>
-                        <button class="log-reg-btn">Login</button>
-                    </a>
-                </div>
-            </div>
-
+                  fill="#212121"></path>
+              </svg>
+              Login
+            </a>
+          </div>
         </div>
+
+      </div>
     </div>
-</header>
+  </header>
