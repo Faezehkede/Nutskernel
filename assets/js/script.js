@@ -119,7 +119,7 @@ const blogSwiper = new Swiper('.blog-carousel', {
     prevEl: '.swiper-button-prev',
   },
   autoplay: {
-    delay: 1000,
+    delay: 2500,
   },
   breakpoints: {
     320: { slidesPerView: 2 },
@@ -187,6 +187,29 @@ const vipSwiper = new Swiper('.vip-supplier-carousel', {
     },
     1024: {
       slidesPerView: 5
+    }
+  }
+});
+
+// Events Slider
+
+const eventsSwiper = new Swiper('.event-swiper', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: { 
+      slidesPerView: 1
+    },
+    640: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
     }
   }
 });
