@@ -36,11 +36,9 @@ function agrifoodz_theme_setup() {
 
 
 // require_once  AGRIFOODZ_INC . '/woo/fun.php'; // شامل فایل scripts.php برای اسکریپت‌ها و استایل‌ها
-include 'include/helper.php'; // شامل فایل helper.php برای توابع کمکی
-include 'include/acf.php'; // شامل فایل acf.php برای تنظیمات ACF   
-include 'include/woocommerce.php'; // شامل فایل woocommerce.php برای تنظیمات ووکامرس
-include 'include/shortcodes.php'; // شامل فایل shortcodes.php برای شورت‌کدها 
-include 'include/widgets.php'; // شامل فایل widgets.php برای ویجت‌ها
+include AGRIFOODZ_DIR . 'template-tags.php'; // شامل فایل helper.php برای توابع کمکی
+include AGRIFOODZ_DIR . 'acf.php'; // شامل فایل acf.php برای تنظیمات ACF   
+include AGRIFOODZ_DIR . 'enqueue.php'; // شامل فایل widgets.php برای ویجت‌ها
 
 
 // فعال کردن ویژگی‌های ووکامرس بیشتر در صورت نیاز
