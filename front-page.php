@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agrifoodz</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/header-footer.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-
-</head>
-
-<body>
-
-  <?php include 'components/temp-header.php'; ?>
+<?php get_header(); ?>
 
   <section class="main">
     <div class="container">
@@ -1941,12 +1921,4 @@
     </div>
   </section>  
   
-  <?php include 'components/temp-footer.php'; ?>
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
-
-</body>
-
-</html>
+  <?php get_footer(); ?>
