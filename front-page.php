@@ -394,23 +394,57 @@
       <div class="swiper product-swiper">
         <div class="swiper-wrapper">
 
+        <?php
+          $args = array(
+            'post_type' => 'product',
+            'posts_per_page' => 8, // Number of products to show
+            'orderby' => 'date',
+            'order' => 'DESC'
+          );
+
+          $loop = new WP_Query($args);
+          if ($loop->have_posts()) :
+            while ($loop->have_posts()) : $loop->the_post();
+              global $product;
+        ?>
+
           <!-- Almonds -->
           <div class="swiper-slide">
             <div class="product-card">
-              <a href="./product.php">
+              <a href="<?php the_permalink(); ?>">
+
                 <div class="product-top">
-                  <span class="badge category">Nuts</span>
-                  <span class="badge discount">-15%</span>
+                <?php
+                  $categories = wc_get_product_category_list($product->get_id());
+                  if ($categories) {
+                    echo '<span class="badge category">' . strip_tags($categories) . '</span>';
+                  }
+
+                  if ($product->is_on_sale()) {
+                    $regular_price = $product->get_regular_price();
+                    $sale_price = $product->get_sale_price();
+                    if ($regular_price > 0) {
+                      $discount = round((($regular_price - $sale_price) / $regular_price) * 100);
+                      echo '<span class="badge discount">-' . $discount . '%</span>';
+                    }
+                  }
+                ?>
                 </div>
+
                 <div class="product-image">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
+                  <?php echo $product->get_image(); ?>
                 </div>
+
                 <div class="product-rating">
-                  <span class="stars">★★★★☆</span>
-                  <span class="rating">(4.5)</span>
+                  <?php
+                    $average = $product->get_average_rating();
+                    echo '<span class="stars">' . wc_get_rating_html($average) . '</span>';
+                    echo '<span class="rating">(' . number_format($average, 1) . ')</span>';
+                  ?>
                 </div>
-                <h3 class="product-title">Almonds Supreme</h3>
-                <p class="product-pack">Pack No: ALM-1023</p>
+
+                <h3 class="product-title"><?php the_title(); ?></h3>
+                <p class="product-pack">SKU: <?php echo $product->get_sku(); ?></p>
                 <!-- <div class="product-price">
                   <span class="new-price">$25.00</span>
                   <span class="old-price">$29.00</span>
@@ -419,155 +453,13 @@
             </div>
           </div>
 
-          <!-- Cashew -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <a href="./product.php">
-                <div class="product-top">
-                  <span class="badge category">Nuts</span>
-                  <span class="badge discount">-10%</span>
-                </div>
-                <div class="product-image">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
-                </div>
-                <div class="product-rating">
-                  <span class="stars">★★★★★</span>
-                  <span class="rating">(5.0)</span>
-                </div>
-                <h3 class="product-title">Raw Cashew Delight</h3>
-                <p class="product-pack">Pack No: CAS-2041</p>
-                <!-- <div class="product-price">
-                  <span class="new-price">$30.00</span>
-                  <span class="old-price">$33.00</span>
-                </div> -->
-              </a>
-            </div>
-          </div>
-
-          <!-- Hazelnut -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <a href="./product.php">
-                <div class="product-top">
-                  <span class="badge category">Nuts</span>
-                  <span class="badge discount">-12%</span>
-                </div>
-                <div class="product-image">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
-                </div>
-                <div class="product-rating">
-                  <span class="stars">★★★★☆</span>
-                  <span class="rating">(4.2)</span>
-                </div>
-                <h3 class="product-title">Hazelnut Crunch</h3>
-                <p class="product-pack">Pack No: HAZ-7732</p>
-                <!-- <div class="product-price">
-                  <span class="new-price">$22.00</span>
-                  <span class="old-price">$25.00</span>
-                </div> -->
-              </a>
-            </div>
-          </div>
-
-          <!-- Pistachios -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <a href="./product.php">
-                <div class="product-top">
-                  <span class="badge category">Nuts</span>
-                  <span class="badge discount">-18%</span>
-                </div>
-                <div class="product-image">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
-                </div>
-                <div class="product-rating">
-                  <span class="stars">★★★★☆</span>
-                  <span class="rating">(4.4)</span>
-                </div>
-                <h3 class="product-title">Roasted Pistachios</h3>
-                <p class="product-pack">Pack No: PIS-3198</p>
-                <!-- <div class="product-price">
-                  <span class="new-price">$35.00</span>
-                  <span class="old-price">$42.00</span>
-                </div> -->
-              </a>
-            </div>
-          </div>
-
-          <!-- Walnuts -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <a href="./product.php">
-                <div class="product-top">
-                  <span class="badge category">Nuts</span>
-                  <span class="badge discount">-20%</span>
-                </div>
-                <div class="product-image">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/walnut.webp" alt="Golden Walnuts">
-                </div>
-                <div class="product-rating">
-                  <span class="stars">★★★☆☆</span>
-                  <span class="rating">(3.8)</span>
-                </div>
-                <h3 class="product-title">Golden Walnuts</h3>
-                <p class="product-pack">Pack No: WAL-5610</p>
-                <!-- <div class="product-price">
-                  <span class="new-price">$18.00</span>
-                  <span class="old-price">$22.00</span>
-                </div> -->
-              </a>
-            </div>
-          </div>
-
-          <!-- Groundnut -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <a href="./product.php">
-                <div class="product-top">
-                  <span class="badge category">Nuts</span>
-                  <span class="badge discount">-8%</span>
-                </div>
-                <div class="product-image">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/groundnut.webp" alt="Groundnut Classic Roast">
-                </div>
-                <div class="product-rating">
-                  <span class="stars">★★★☆☆</span>
-                  <span class="rating">(3.9)</span>
-                </div>
-                <h3 class="product-title">Groundnut Classic Roast</h3>
-                <p class="product-pack">Pack No: GND-2087</p>
-                <!-- <div class="product-price">
-                  <span class="new-price">$16.00</span>
-                  <span class="old-price">$17.50</span>
-                </div> -->
-              </a>
-            </div>
-          </div>
-
-          <!-- Macadamia -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <a href="./product.php">
-                <div class="product-top">
-                  <span class="badge category">Nuts</span>
-                  <span class="badge discount">-25%</span>
-                </div>
-                <div class="product-image">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
-                </div>
-                <div class="product-rating">
-                  <span class="stars">★★★★★</span>
-                  <span class="rating">(5.0)</span>
-                </div>
-                <h3 class="product-title">Macadamia Bliss</h3>
-                <p class="product-pack">Pack No: MAC-3850</p>
-                <!-- <div class="product-price">
-                  <span class="new-price">$40.00</span>
-                  <span class="old-price">$54.00</span>
-                </div> -->
-              </a>
-            </div>
-          </div>
+          <?php
+              endwhile;
+              wp_reset_postdata();
+            else :
+              echo '<p>No products found</p>';
+            endif;
+          ?>
 
         </div>
 
