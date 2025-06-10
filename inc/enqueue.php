@@ -7,7 +7,7 @@ function agrifoodz_enqueue_scripts() {
     wp_enqueue_style('agrifoodz-style', get_stylesheet_uri());
 
     // Styles
-    wp_enqueue_style('agrifoodz-style', AGRIFOODZ_CSS . '/style.css', [], AGRIFOODZ_VERSION);
+    wp_enqueue_style('main-style', AGRIFOODZ_CSS . '/style.css', [], AGRIFOODZ_VERSION);
     wp_enqueue_style('agrifoodz-header-footer', AGRIFOODZ_CSS . '/header-footer.css', [], AGRIFOODZ_VERSION);
     wp_enqueue_style('agrifoodz-swiper', AGRIFOODZ_CSS . '/swiper-bundle.min.css', [], AGRIFOODZ_VERSION);
     wp_enqueue_style('agrifoodz-responsive', AGRIFOODZ_CSS . '/responsive.css', [], AGRIFOODZ_VERSION);

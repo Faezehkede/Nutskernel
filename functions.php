@@ -50,6 +50,14 @@ function agrifoodz_woocommerce_support() {
 }
 add_action('after_setup_theme', 'agrifoodz_woocommerce_support');
 
+
+// Activing style
+function agrifoodz_enqueue_styles() {
+    wp_enqueue_style('agrifoodz-style', AGRIFOODZ_CSS . '/style.css', array(), '1.0', 'all');
+}
+add_action('wp_enqueue_scripts', 'agrifoodz_enqueue_styles');
+
+
 remove_action('wp_head', 'yoast_head_json');            // Yoast JSON-LD
 remove_action('wp_head', 'wp_generator');               // WP version info
 // ... and so on
