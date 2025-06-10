@@ -12,12 +12,14 @@
     <div class="container">
       <div class="row header-top-part">
         <p>Not a member of AgriFoodz yet? Sign up now to connect with global agri-food buyers and suppliers!</p>
-        <a href="#" class="signup">Join Us Now</a>
+        <a href="<?php echo home_url('/login-form'); ?>" class="signup">Join Us Now</a>
       </div>
       <div class="row">
 
         <div class="col">
-          <img src="assets/images/main-logo.png" alt="Logo" class="logo">
+            <a href="<?php echo home_url(); ?>">    
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-logo.png" alt="Logo" class="logo">
+            </a>
         </div>
 
         <div class="col-6">
@@ -42,7 +44,7 @@
 
         <div class="col">
           <div class="header-btn">
-            <a href="./buyer-dashboard.html" class="buyers-btn">
+            <a href="<?php echo home_url('/buyer-dashboard'); ?>" class="buyers-btn">
               <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                 fill="none">
                 <path data-v-fa57b318=""
@@ -66,7 +68,7 @@
               </svg>
               Buyers
             </a>
-            <a href="./supplier-dashboard.html" class="buyers-btn">
+            <a href="<?php echo home_url('/supplier-dashboard'); ?>" class="buyers-btn">
               <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                 fill="none">
                 <path data-v-fa57b318=""
@@ -89,7 +91,7 @@
               </svg>
               Suppliers
             </a>
-            <a href="./login-form.html" class="buyers-btn">
+            <a href="<?php echo wp_login_url(); ?>" class="buyers-btn">
               <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                 fill="none">
                 <path data-v-fa57b318=""
