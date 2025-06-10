@@ -4,8 +4,8 @@
 // تعریف ثابت‌ها برای مسیرها و اطلاعات پایه قالب
 // ===========================
 define('AGRIFOODZ_VERSION', '1.0.0');
-define('AGRIFOODZ_DIR', get_template_directory());
-define('AGRIFOODZ_URI', get_template_directory_uri());
+define('CHILD_THEME_URI', get_stylesheet_directory_uri());
+define('CHILD_THEME_DIR', get_stylesheet_directory());
 
 define('AGRIFOODZ_ASSETS', AGRIFOODZ_URI . '/assets');
 define('AGRIFOODZ_CSS', AGRIFOODZ_ASSETS . '/css');

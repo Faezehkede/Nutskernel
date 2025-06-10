@@ -167,7 +167,7 @@
 
               <div class="swiper-slide">
                 <div class="overlay">
-                  <img src="assets/images/slide6.webp" alt="Slide 1" class="swiper-img">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide6.webp" alt="Slide 1" class="swiper-img">
                   <div class="main-content">
                     <h3>Global B2B platform for Food & Agriculture Products</h3>
                     <p>Join a worldwide network of buyers and suppliers in the agri-food industry.<br>
@@ -179,7 +179,7 @@
 
               <div class="swiper-slide">
                 <div class="overlay">
-                  <img src="assets/images/slide5.webp" class="swiper-img">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide5.webp" class="swiper-img">
                   <div class="main-content">
                     <h3>Streamline your agri-trade operations with our B2B platform</h3>
                     <p>Manage sourcing, negotiations, and logistics all in one place.<br>
@@ -191,7 +191,7 @@
 
               <div class="swiper-slide">
                 <div class="overlay">
-                  <img src="assets/images/slide2.webp" alt="Slide 1" class="swiper-img">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide2.webp" alt="Slide 1" class="swiper-img">
                   <div class="main-content">
                     <h3>Connecting Global Buyers with Trusted Agri-Food Suppliers</h3>
                     <p>Find certified suppliers and grow your agri-business with confidence.<br>
@@ -203,7 +203,7 @@
 
               <div class="swiper-slide">
                 <div class="overlay">
-                  <img src="assets/images/slide1.webp" alt="Slide 1" class="swiper-img">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide1.webp" alt="Slide 1" class="swiper-img">
                   <div class="main-content">
                     <h3>From Farm to Market — Smarter B2B for Agri-Food Trade</h3>
                     <p>Digitize your supply chain from field to shelf.<br>
@@ -215,7 +215,7 @@
 
               <div class="swiper-slide">
                 <div class="overlay">
-                  <img src="assets/images/slide9.webp" alt="Slide 1" class="swiper-img">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide9.webp" alt="Slide 1" class="swiper-img">
                   <div class="main-content">
                     <h3>Trusted Gateway to Wholesale Food & Agriculture Markets</h3>
                     <p>Access a vetted marketplace built for bulk agri-food trade.<br>
@@ -247,61 +247,61 @@
           <!-- Example Slide -->
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/berry.webp" alt="StrawBerry" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/berry.webp" alt="StrawBerry" />
               <span>StrawBerry</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/bread.webp" alt="Bread" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/bread.webp" alt="Bread" />
               <span>Bread</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/chipes.webp" alt="Chips" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/chipes.webp" alt="Chips" />
               <span>Chips</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/vegtebales.webp" alt="Vegetables" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/vegtebales.webp" alt="Vegetables" />
               <span>Vegetables</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/crunchi.webp" alt="Crunchies" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/crunchi.webp" alt="Crunchies" />
               <span>Crunchies</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/cupcake.webp" alt="Cupcake" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cupcake.webp" alt="Cupcake" />
               <span>Cupcake</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/fish.webp" alt="Fish" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/fish.webp" alt="Fish" />
               <span>Fish</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/soda.webp" alt="Soda" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/soda.webp" alt="Soda" />
               <span>Soda</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/meat.webp" alt="Meat" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/meat.webp" alt="Meat" />
               <span>Meat</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/snacks.webp" alt="Snack" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/snacks.webp" alt="Snack" />
               <span>Snack</span>
             </div>
           </div>
@@ -403,7 +403,7 @@
                   <span class="badge discount">-15%</span>
                 </div>
                 <div class="product-image">
-                  <img src="assets/images/product/quality/almonds.webp" alt="Almonds Supreme">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
                 </div>
                 <div class="product-rating">
                   <span class="stars">★★★★☆</span>
@@ -428,7 +428,7 @@
                   <span class="badge discount">-10%</span>
                 </div>
                 <div class="product-image">
-                  <img src="assets/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
                 </div>
                 <div class="product-rating">
                   <span class="stars">★★★★★</span>
@@ -453,7 +453,7 @@
                   <span class="badge discount">-12%</span>
                 </div>
                 <div class="product-image">
-                  <img src="assets/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
                 </div>
                 <div class="product-rating">
                   <span class="stars">★★★★☆</span>
@@ -478,7 +478,7 @@
                   <span class="badge discount">-18%</span>
                 </div>
                 <div class="product-image">
-                  <img src="assets/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
                 </div>
                 <div class="product-rating">
                   <span class="stars">★★★★☆</span>
@@ -503,7 +503,7 @@
                   <span class="badge discount">-20%</span>
                 </div>
                 <div class="product-image">
-                  <img src="assets/images/product/quality/walnut.webp" alt="Golden Walnuts">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/walnut.webp" alt="Golden Walnuts">
                 </div>
                 <div class="product-rating">
                   <span class="stars">★★★☆☆</span>
@@ -528,7 +528,7 @@
                   <span class="badge discount">-8%</span>
                 </div>
                 <div class="product-image">
-                  <img src="assets/images/product/quality/groundnut.webp" alt="Groundnut Classic Roast">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/groundnut.webp" alt="Groundnut Classic Roast">
                 </div>
                 <div class="product-rating">
                   <span class="stars">★★★☆☆</span>
@@ -553,7 +553,7 @@
                   <span class="badge discount">-25%</span>
                 </div>
                 <div class="product-image">
-                  <img src="assets/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
                 </div>
                 <div class="product-rating">
                   <span class="stars">★★★★★</span>
@@ -611,7 +611,7 @@
               <div class="user-information-wrapper">
                 <div class="user-content">
                   <div class="user-avatar">
-                    <img src="assets/images/user-img4.webp" alt="user image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="user image">
                   </div>
                   <span class="user-name-link">Ali Alaei</span>
                 </div>
@@ -632,7 +632,7 @@
               <div class="user-information-wrapper">
                 <div class="user-content">
                   <div class="user-avatar">
-                    <img src="assets/images/user-img.webp" alt="user image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="user image">
                   </div>
                   <span class="user-name-link">Sara Johnson</span>
                 </div>
@@ -653,7 +653,7 @@
               <div class="user-information-wrapper">
                 <div class="user-content">
                   <div class="user-avatar">
-                    <img src="assets/images/user-img1.webp" alt="user image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="user image">
                   </div>
                   <span class="user-name-link">Mohammad Reza</span>
                 </div>
@@ -674,7 +674,7 @@
               <div class="user-information-wrapper">
                 <div class="user-content">
                   <div class="user-avatar">
-                    <img src="assets/images/user-img2.webp" alt="user image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="user image">
                   </div>
                   <span class="user-name-link">Emily Carter</span>
                 </div>
@@ -695,7 +695,7 @@
               <div class="user-information-wrapper">
                 <div class="user-content">
                   <div class="user-avatar">
-                    <img src="assets/images/user-img3.webp" alt="user image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="user image">
                   </div>
                   <span class="user-name-link">John Miller</span>
                 </div>
@@ -716,7 +716,7 @@
               <div class="user-information-wrapper">
                 <div class="user-content">
                   <div class="user-avatar">
-                    <img src="assets/images/user-img4.webp" alt="user image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="user image">
                   </div>
                   <span class="user-name-link">Leila Kamali</span>
                 </div>
@@ -737,7 +737,7 @@
               <div class="user-information-wrapper">
                 <div class="user-content">
                   <div class="user-avatar">
-                    <img src="assets/images/user-img.webp" alt="user image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="user image">
                   </div>
                   <span class="user-name-link">David Smith</span>
                 </div>
@@ -963,15 +963,15 @@
             <div class="user-items">
 
               <div class="user-item">
-                <img src="assets/images/user-img1.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="">
                 <h3>Gloria Folkhensio</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img4.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
                 <h3>Liam Hardly</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>James Carly</h3>
               </div>
 
@@ -981,15 +981,15 @@
             <div class="user-items">
 
               <div class="user-item">
-                <img src="assets/images/user-img3.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
                 <h3>Sara Oberian</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img4.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
                 <h3>James Marly</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>Helen Wokmy</h3>
               </div>
 
@@ -999,15 +999,15 @@
             <div class="user-items">
 
               <div class="user-item">
-                <img src="assets/images/user-img.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="">
                 <h3>Kyli Marly</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img3.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
                 <h3>Fred Marly</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="">
                 <h3>James Komeron</h3>
               </div>
 
@@ -1017,15 +1017,15 @@
             <div class="user-items">
 
               <div class="user-item">
-                <img src="assets/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>Michel Prichent</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img4.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
                 <h3>James Marly</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img3.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
                 <h3>Ali Rasoli</h3>
               </div>
 
@@ -1035,15 +1035,15 @@
             <div class="user-items">
 
               <div class="user-item">
-                <img src="assets/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>Maryam Marly</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img1.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="">
                 <h3>James Liam</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="">
                 <h3>Tomas Fredlim</h3>
               </div>
 
@@ -1053,15 +1053,15 @@
             <div class="user-items">
 
               <div class="user-item">
-                <img src="assets/images/user-img1.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="">
                 <h3>Gloria Folkhensio</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img4.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
                 <h3>Liam Hardly</h3>
               </div>
               <div class="user-item">
-                <img src="assets/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>James Carly</h3>
               </div>
 
@@ -1076,8 +1076,8 @@
   <section class="ads-banner">
     <div class="container">
       <div class="row">
-        <img src="assets/images/ads-banner.webp" alt="Ads Banner 1">
-        <img src="assets/images/ads-banner.webp" alt="Ads Banner 2">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/ads-banner.webp" alt="Ads Banner 1">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/ads-banner.webp" alt="Ads Banner 2">
       </div>
     </div>
   </section>
@@ -1111,7 +1111,7 @@
               <span class="badge discount">-15%</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/almonds.webp" alt="Almonds Supreme">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★☆</span>
@@ -1132,7 +1132,7 @@
               <span class="badge discount">-10%</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★★</span>
@@ -1152,7 +1152,7 @@
               <span class="badge category">Nuts</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
             </div>
             <div class="product-rating">
               <span class="stars">★★★☆☆</span>
@@ -1172,7 +1172,7 @@
               <span class="badge category">Nuts</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★☆</span>
@@ -1192,7 +1192,7 @@
               <span class="badge category">Nuts</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/walnut.webp" alt="Golden Walnuts">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/walnut.webp" alt="Golden Walnuts">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★★</span>
@@ -1213,7 +1213,7 @@
               <span class="badge discount">-20%</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★☆</span>
@@ -1234,7 +1234,7 @@
               <span class="badge discount">-15%</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/almonds.webp" alt="Almonds Supreme">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★☆</span>
@@ -1255,7 +1255,7 @@
               <span class="badge discount">-10%</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★★</span>
@@ -1275,7 +1275,7 @@
               <span class="badge category">Nuts</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
             </div>
             <div class="product-rating">
               <span class="stars">★★★☆☆</span>
@@ -1295,7 +1295,7 @@
               <span class="badge category">Nuts</span>
             </div>
             <div class="product-image">
-              <img src="assets/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
             </div>
             <div class="product-rating">
               <span class="stars">★★★★☆</span>
@@ -1343,7 +1343,7 @@
               <div class="swiper-slide">
                 <div class="event-item">
                   <div class="event-img">
-                    <img src="assets/images/events/quality/event-img4.webp" alt="Event Image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img4.webp" alt="Event Image">
                   </div>
                   <div class="event-content">  
                     <h3>Future Food-Tech London</h3>
@@ -1356,7 +1356,7 @@
               <div class="swiper-slide">
                 <div class="event-item">
                   <div class="event-img">
-                    <img src="assets/images/events/quality/event-img5.webp" alt="Event Image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img5.webp" alt="Event Image">
                   </div>
                   <div class="event-content">  
                     <h3>IFT First Expo</h3>
@@ -1369,7 +1369,7 @@
               <div class="swiper-slide">
                 <div class="event-item">
                   <div class="event-img">
-                    <img src="assets/images/events/quality/event-img2.jpg" alt="Event Image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img2.jpg" alt="Event Image">
                   </div>
                   <div class="event-content">  
                     <h3>Asia-Pacific Agri-Food Summit</h3>
@@ -1382,7 +1382,7 @@
               <div class="swiper-slide">
                 <div class="event-item">
                   <div class="event-img">
-                    <img src="assets/images/events/quality/event-img1.webp" alt="Event Image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img1.webp" alt="Event Image">
                   </div>
                   <div class="event-content">  
                     <h3>Anuga FoodTec</h3>
@@ -1395,7 +1395,7 @@
               <div class="swiper-slide">
                 <div class="event-item">
                   <div class="event-img">
-                    <img src="assets/images/events/quality/event-img3.webp" alt="Asiafruit Congress">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img3.webp" alt="Asiafruit Congress">
                   </div>
                   <div class="event-content">  
                     <h3>Asia Fruit Congress</h3>
@@ -1408,7 +1408,7 @@
               <div class="swiper-slide">
                 <div class="event-item">
                   <div class="event-img">
-                    <img src="assets/images/events/quality/event-img6.webp" alt="Global Organic Expo">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img6.webp" alt="Global Organic Expo">
                   </div>
                   <div class="event-content">  
                     <h3>Global Organic Expo 2025</h3>
@@ -1502,7 +1502,7 @@
               <div class="swiper-slide">
                 <div class="blog-card">
                   <a href="./single-post.php">
-                    <img src="assets/images/blog/quality/Agri-Product.webp" alt="Blog Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Agri-Product.webp" alt="Blog Title">
                     <div class="blog-content">
                       <h3>Top 7 Agri Products in High Demand for 2025</h3>
     
@@ -1586,7 +1586,7 @@
               <div class="swiper-slide">
                 <div class="blog-card">
                   <a href="./single-post.php">
-                    <img src="assets/images/blog/quality/Sustainable-Produce.webp" alt="Blog Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Sustainable-Produce.webp" alt="Blog Title">
                     <div class="blog-content">
                       <h3>Inside the Shift: Why Sustainable Produce Is Driving Global Sourcing Trends</h3>
     
@@ -1667,7 +1667,7 @@
               <div class="swiper-slide">
                 <div class="blog-card">
                   <a href="./single-post.php">
-                    <img src="assets/images/blog/quality/Agri-Trade-Forecast.webp" alt="Blog Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Agri-Trade-Forecast.webp" alt="Blog Title">
                     <div class="blog-content">
                       <h3>Agri Trade Forecast: What Exporters Need to Know in 2025</h3>
     
@@ -1749,7 +1749,7 @@
               <div class="swiper-slide">
                 <div class="blog-card">
                   <a href="./single-post.php">
-                    <img src="assets/images/blog/quality/Farm-to-Market.webp" alt="Blog Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Farm-to-Market.webp" alt="Blog Title">
                     <div class="blog-content">
                       <h3>From Farm to Market: How to Source Sustainable Produce Without Sacrificing Profit</h3>
     
@@ -1830,7 +1830,7 @@
               <div class="swiper-slide">
                 <div class="blog-card">
                   <a href="./single-post.php">
-                    <img src="assets/images/blog/quality/Farming.webp" alt="Blog Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Farming.webp" alt="Blog Title">
                     <div class="blog-content">
                       <h3>The Future of Farming: 2025 Trends Every Supplier Should Watch</h3>
     
