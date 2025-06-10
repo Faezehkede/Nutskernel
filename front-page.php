@@ -308,8 +308,8 @@
           <!-- Add more categories here -->
         </div>
 
-        <div class="swiper-button swiper-button-next" aria-hidden="true"></div>
-        <div class="swiper-button swiper-button-prev" aria-hidden="true"></div>
+        <div class="swiper-button swiper-button-next category-next" aria-hidden="true"></div>
+        <div class="swiper-button swiper-button-prev category-prev" aria-hidden="true"></div>
 
       </div>
     </div>
@@ -571,8 +571,8 @@
 
         </div>
 
-        <div class="swiper-button swiper-button-prev" aria-hidden="true"></div>
-        <div class="swiper-button swiper-button-next" aria-hidden="true"></div>
+        <div class="swiper-button swiper-button-prev product-next" aria-hidden="true"></div>
+        <div class="swiper-button swiper-button-next product-prev" aria-hidden="true"></div>
 
         <!-- <div class="swiper-pagination"></div> -->
 
@@ -1911,8 +1911,8 @@
               
             </div>
     
-            <div class="swiper-button swiper-button-next"></div>
-            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next blog-next"></div>
+            <div class="swiper-button swiper-button-prev blog-prev"></div>
     
           </div>
 
