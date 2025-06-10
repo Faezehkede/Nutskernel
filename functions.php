@@ -49,3 +49,15 @@ function agrifoodz_woocommerce_support() {
     add_theme_support('wc-product-gallery-slider');
 }
 add_action('after_setup_theme', 'agrifoodz_woocommerce_support');
+
+remove_action('wp_head', 'yoast_head_json');            // Yoast JSON-LD
+remove_action('wp_head', 'wp_generator');               // WP version info
+// ... and so on
+
+function dequeue_unwanted_assets() {
+    wp_dequeue_style('elementor-icons');
+    wp_dequeue_script('emoji');
+    // . . .
+  }
+  add_action('wp_enqueue_scripts', 'dequeue_unwanted_assets', 20);
+  
