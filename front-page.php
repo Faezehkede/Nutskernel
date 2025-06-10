@@ -247,7 +247,7 @@
           <!-- Example Slide -->
           <div class="swiper-slide category-card">
             <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/berry.webp" alt="StrawBerry" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/berry.webp" alt="StrawBerry" />
               <span>StrawBerry</span>
             </div>
           </div>
