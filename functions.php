@@ -68,4 +68,36 @@ function dequeue_unwanted_assets() {
     // . . .
   }
   add_action('wp_enqueue_scripts', 'dequeue_unwanted_assets', 20);
+
+
+// disable Elementor & Elementor Pro & Yoast SEO of homepage
+
+add_action('wp_enqueue_scripts', 'agrifoodz_dequeue_home_assets', 100);
+function agrifoodz_dequeue_home_assets() {
+    if (is_front_page()) {
+        // 🔹 Elementor styles
+        wp_dequeue_style('elementor-frontend');
+        wp_dequeue_style('elementor-post-' . get_the_ID());
+        wp_dequeue_style('widget-icon-list-css');
+        wp_dequeue_style('widget-heading-css');
+        wp_dequeue_style('widget-image-css');
+        wp_dequeue_style('widget-post-info-css');
+        wp_dequeue_style('elementor-wp-admin-bar-css');
+        wp_dequeue_style('elementor-gf-local-roboto-css');
+        wp_dequeue_style('elementor-gf-local-robotoslab-css');
+        wp_dequeue_style('elementor-gf-local-lato-css');
+
+        // 🔹 Elementor Pro styles
+        wp_dequeue_style('elementor-pro');
+        wp_dequeue_style('elementor-pro-notes-frontend-css');
+
+        // 🔹 Elementor scripts
+        wp_dequeue_script('elementor-frontend');
+        wp_dequeue_script('elementor-pro-frontend');
+
+        // 🔹 Yoast SEO admin bar CSS
+        wp_dequeue_style('yoast-seo-adminbar');
+    }
+}
+
   
