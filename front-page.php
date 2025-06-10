@@ -444,8 +444,7 @@
                 </div>
 
                 <h3 class="product-title"><?php the_title(); ?></h3>
-                <p class="product-pack">SKU: <?php echo $product->get_sku(); ?></p>
-                <p class="available_quantity">Available Quantity <?php the_field('available_quantity'); ?></p>
+                <p class="available_quantity">Available Quantity: <?php the_field('available_quantity'); ?></p>
                 <!-- <div class="product-price">
                   <span class="new-price">$25.00</span>
                   <span class="old-price">$29.00</span>
@@ -1407,7 +1406,6 @@
               <div class="swiper-slide">
                 <div class="blog-card">
                   <a href="<?php the_permalink(); ?>">
-                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Agri-Product.webp" alt="Blog Title">
 
                     <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail('medium', ['alt' => get_the_title()]); ?>
