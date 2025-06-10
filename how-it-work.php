@@ -24,7 +24,7 @@
                     and close deals with confidence. Whether you're a supplier or a buyer, here’s how you can get started:</p>
                 </div>
                 <div class="how-it-works-img">
-                    <img src="assets/images/page-title (4).webp" alt="Page Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title (4).webp" alt="Page Title">
                 </div>
                 
             </div>

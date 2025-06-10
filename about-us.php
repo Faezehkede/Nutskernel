@@ -25,7 +25,7 @@
                     <h2>About Us</h2>
                 </div>
                 <div class="page-banner-img">
-                    <img src="assets/images/page-title (5).webp" alt="Page Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title (5).webp" alt="Page Title">
                 </div>
                 
             </div>
@@ -37,8 +37,8 @@
             <div class="row about-us-content">
 
                 <div class="about-img">
-                    <img src="assets/images/about-img.webp" alt="About Us">
-                    <img src="assets/images/about-img1.webp" alt="About Us">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/about-img.webp" alt="About Us">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/about-img1.webp" alt="About Us">
                 </div>
 
                 <div class="about-text">
@@ -66,61 +66,61 @@
           <!-- Example Slide -->
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/berry.webp" alt="Processed Fruits" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/berry.webp" alt="Processed Fruits" />
               <span>StrawBerry</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/bread.webp" alt="Frozen Fruits" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/bread.webp" alt="Frozen Fruits" />
               <span>Bread</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/chipes.webp" alt="Dried Fruits" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/chipes.webp" alt="Dried Fruits" />
               <span>Chipes</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/vegtebales.webp" alt="Nuts & Kernels" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/vegtebales.webp" alt="Nuts & Kernels" />
               <span>Vegetables</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/crunchi.webp" alt="Nuts & Kernels" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/crunchi.webp" alt="Nuts & Kernels" />
               <span>Crunchies</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/cupcake.webp" alt="Nuts & Kernels" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cupcake.webp" alt="Nuts & Kernels" />
               <span>Cupcake</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/fish.webp" alt="Nuts & Kernels" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/fish.webp" alt="Nuts & Kernels" />
               <span>Fish</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/soda.webp" alt="Nuts & Kernels" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/soda.webp" alt="Nuts & Kernels" />
               <span>Soda</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/meat.webp" alt="Nuts & Kernels" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/meat.webp" alt="Nuts & Kernels" />
               <span>Meat</span>
             </div>
           </div>
           <div class="swiper-slide category-card">
             <div class="category-item">
-              <img src="assets/images/product/quality/snacks.webp" alt="Nuts & Kernels" />
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/snacks.webp" alt="Nuts & Kernels" />
               <span>Sanck</span>
             </div>
           </div>
@@ -138,7 +138,7 @@
         <div class="container">
             <div class="row">
                 <div class="what-we-do-img">
-                    <img src="assets/images/about-img2.webp" alt="Why Us Image">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/about-img2.webp" alt="Why Us Image">
                 </div>
                 <div class="what-we-do-content">
                     <h2>What We Do At Nutskernel?</h2>
@@ -211,7 +211,7 @@
                 </div>
             </div>
             <div class="about-content-img">
-                <img src="assets/images/about-img3.webp" alt="About Image">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/about-img3.webp" alt="About Image">
             </div>            
         </div>
     </section>

@@ -22,7 +22,7 @@
                     <h2>Contact Us</h2>
                 </div>
                 <div class="page-banner-img">
-                    <img src="assets/images/page-title (3).webp" alt="Page Title">
+                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title (3).webp" alt="Page Title">
                 </div>
                 
             </div>

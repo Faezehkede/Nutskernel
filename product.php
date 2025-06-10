@@ -44,7 +44,7 @@
             
                     <!-- Product Image -->
                     <div class="product-image">
-                        <img src="assets/images/product/quality/walnut.webp" alt="Product Image" class="rounded-xl shadow">
+                        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/walnut.webp" alt="Product Image" class="rounded-xl shadow">
 
                         <div class="single-product-mobile">
                           <h1 class="prduct-name">Fresh Broccoli</h1>
@@ -119,7 +119,7 @@
                   
                     <div class="profile">
                       <div class="avatar-img">
-                        <img src="assets/images/user-img.webp" class="verified" alt="Verified">
+                        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" class="verified" alt="Verified">
                       </div>
                       <div class="avatar-info">
                         <h3>Michael Tierney</h3> 
@@ -163,7 +163,7 @@
                             <span class="badge discount">-15%</span>
                           </div>
                           <div class="product-image">
-                            <img src="assets/images/product/quality/almonds.webp" alt="Almonds Supreme">
+                            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
                           </div>
                           <div class="product-rating">
                             <span class="stars">★★★★☆</span>
@@ -183,7 +183,7 @@
                             <span class="badge discount">-10%</span>
                           </div>
                           <div class="product-image">
-                            <img src="assets/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
+                            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
                           </div>
                           <div class="product-rating">
                             <span class="stars">★★★★★</span>
@@ -202,7 +202,7 @@
                             <span class="badge category">Nuts</span>
                           </div>
                           <div class="product-image">
-                            <img src="assets/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
+                            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
                           </div>
                           <div class="product-rating">
                             <span class="stars">★★★☆☆</span>
@@ -221,7 +221,7 @@
                             <span class="badge category">Nuts</span>
                           </div>
                           <div class="product-image">
-                            <img src="assets/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
+                            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
                           </div>
                           <div class="product-rating">
                             <span class="stars">★★★★☆</span>
@@ -248,7 +248,7 @@
 
                     <div class="profile">
                       <div class="avatar-img">
-                        <img src="assets/images/user-img.webp" class="verified" alt="Verified">
+                        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" class="verified" alt="Verified">
                       </div>
                       <div class="avatar-info">
                         <h3>Michael Tierney</h3> 

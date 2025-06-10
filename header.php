@@ -17,7 +17,7 @@
 
         <div class="col">
             <a href="<?php echo home_url(); ?>">    
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-logo.png" alt="Logo" class="logo">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.png" alt="Logo" class="logo">
             </a>
         </div>
 

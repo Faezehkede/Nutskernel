@@ -4,7 +4,7 @@
       <div class="row">
   
         <div class="footer-column">
-          <img src="assets/images/main-logo.png" alt="">
+          <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.png" alt="">
           <p>Agrifoodz.com is a global B2B marketplace for sourcing and trading food and agricultural products. We
             connect trusted suppliers and serious buyers to grow business worldwide.</p>
         </div>
@@ -135,7 +135,7 @@
   
           <div class="swiper-slide">
             <article class="blog-card-list">
-              <img src="assets/images/blog/quality/Farm-to-Market.webp" alt="Blog 1" class="blog-image">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Farm-to-Market.webp" alt="Blog 1" class="blog-image">
               <div class="blog-content-list">
                 <h3 class="blog-title">From Farm to Market: How to Source Sustainable Produce Without Sacrificing Profit</h3>
                 <p class="blog-excerpt">Sustainable doesn’t have to mean expensive. Learn actionable strategies to source ethically grown produce while staying competitive in pricing and margins.</p>
@@ -145,7 +145,7 @@
   
           <div class="swiper-slide">
             <article class="blog-card-list">
-              <img src="assets/images/blog/quality/Agri-Trade-Forecast.webp" alt="Blog 2" class="blog-image">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Agri-Trade-Forecast.webp" alt="Blog 2" class="blog-image">
               <div class="blog-content-list">
                 <h3 class="blog-title">Agri Trade Forecast: What Exporters Need to Know in 2025</h3>
                 <p class="blog-excerpt">Planning to expand your agri business internationally? Our latest forecast reveals the top importing countries, changing trade policies, and the products they’ll be buying most.</p>
@@ -155,7 +155,7 @@
   
           <div class="swiper-slide">
             <article class="blog-card-list">
-              <img src="assets/images/blog/Farming.jpg" alt="Blog 3" class="blog-image">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/Farming.jpg" alt="Blog 3" class="blog-image">
               <div class="blog-content-list">
                 <h3 class="blog-title">The Future of Farming: 2025 Trends Every Supplier Should Watch</h3>
                 <p class="blog-excerpt">Climate-resilient crops, AI-powered agriculture, and changing consumer demands—these aren’t science fiction anymore. Discover the major trends shaping farming and agribusiness next year.</p>
@@ -165,7 +165,7 @@
   
           <div class="swiper-slide">
             <article class="blog-card-list">
-              <img src="assets/images/blog/quality/Sustainable-Produce.webp" alt="Blog 4" class="blog-image">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Sustainable-Produce.webp" alt="Blog 4" class="blog-image">
               <div class="blog-content-list">
                 <h3 class="blog-title">Inside the Shift: Why Sustainable Produce Is Driving Global Sourcing Trends</h3>
                 <p class="blog-excerpt">From eco-conscious consumers to new import regulations, sustainability isn’t just a buzzword—it’s a market force shaping the future of food trade.</p>
@@ -175,7 +175,7 @@
 
           <div class="swiper-slide">
             <article class="blog-card-list">
-              <img src="assets/images/blog/quality/Sustainable-Produce.webp" alt="Blog 4" class="blog-image">
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Sustainable-Produce.webp" alt="Blog 4" class="blog-image">
               <div class="blog-content-list">
                 <h3 class="blog-title">Inside the Shift: Why Sustainable Produce Is Driving Global Sourcing Trends</h3>
                 <p class="blog-excerpt">From eco-conscious consumers to new import regulations, sustainability isn’t just a buzzword—it’s a market force shaping the future of food trade.</p>

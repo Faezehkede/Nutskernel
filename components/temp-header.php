@@ -7,7 +7,7 @@
       <div class="row">
 
         <div class="col">
-          <img src="assets/images/main-logo.png" alt="Logo" class="logo">
+          <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.png" alt="Logo" class="logo">
         </div>
 
         <div class="col-6">

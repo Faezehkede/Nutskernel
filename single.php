@@ -140,7 +140,7 @@
     <div class="blog-sidebar">
 
         <div class="blog-info">
-        <img src="assets/images/blog/Agri-Product.jpg" alt="Featured Image" />
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/Agri-Product.jpg" alt="Featured Image" />
         <p>Agriculture is undergoing a revolution. From smart farms and regenerative soil practices to climate-resilient crops and changing consumer demands,
             farming in 2025 looks vastly different from even five years ago.....</p>
         </div>
@@ -154,7 +154,7 @@
         </div>
 
         <div class="author-box">
-            <img src="assets/images/user-img.webp" alt="Author">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="Author">
             <div>
             <h3>Author Name</h3>
             <p>Short author bio goes here...</p>

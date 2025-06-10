@@ -39,7 +39,7 @@
             <span class="badge discount">-15%</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/almonds.webp" alt="Almonds Supreme">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★☆</span>
@@ -61,7 +61,7 @@
             <span class="badge discount">-10%</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★★</span>
@@ -82,7 +82,7 @@
             <span class="badge category">Nuts</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
           </div>
           <div class="product-rating">
             <span class="stars">★★★☆☆</span>
@@ -103,7 +103,7 @@
             <span class="badge category">Nuts</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★☆</span>
@@ -124,7 +124,7 @@
             <span class="badge category">Nuts</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/walnut.webp" alt="Golden Walnuts">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/walnut.webp" alt="Golden Walnuts">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★★</span>
@@ -146,7 +146,7 @@
             <span class="badge discount">-20%</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★☆</span>
@@ -168,7 +168,7 @@
             <span class="badge discount">-15%</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/almonds.webp" alt="Almonds Supreme">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★☆</span>
@@ -190,7 +190,7 @@
             <span class="badge discount">-10%</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★★</span>
@@ -211,7 +211,7 @@
             <span class="badge category">Nuts</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
           </div>
           <div class="product-rating">
             <span class="stars">★★★☆☆</span>
@@ -232,7 +232,7 @@
             <span class="badge category">Nuts</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★☆</span>
@@ -253,7 +253,7 @@
             <span class="badge category">Nuts</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/walnut.webp" alt="Golden Walnuts">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/walnut.webp" alt="Golden Walnuts">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★★</span>
@@ -275,7 +275,7 @@
             <span class="badge discount">-20%</span>
           </div>
           <div class="product-image">
-            <img src="assets/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
           </div>
           <div class="product-rating">
             <span class="stars">★★★★☆</span>
