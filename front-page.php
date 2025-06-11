@@ -857,10 +857,22 @@
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="">
                 <h3>Gloria Folkhensio</h3>
               </div>
+      
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="user-items">
+
               <div class="user-item">
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
                 <h3>Liam Hardly</h3>
               </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="user-items">
+
               <div class="user-item">
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>James Carly</h3>
@@ -875,46 +887,22 @@
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
                 <h3>Sara Oberian</h3>
               </div>
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
-                <h3>James Marly</h3>
-              </div>
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
-                <h3>Helen Wokmy</h3>
-              </div>
 
             </div>
           </div>
           <div class="swiper-slide">
             <div class="user-items">
 
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="">
-                <h3>Kyli Marly</h3>
-              </div>
               <div class="user-item">
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
                 <h3>Fred Marly</h3>
               </div>
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="">
-                <h3>James Komeron</h3>
-              </div>
 
             </div>
           </div>
           <div class="swiper-slide">
             <div class="user-items">
 
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
-                <h3>Michel Prichent</h3>
-              </div>
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
-                <h3>James Marly</h3>
-              </div>
               <div class="user-item">
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
                 <h3>Ali Rasoli</h3>
@@ -929,28 +917,12 @@
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>Maryam Marly</h3>
               </div>
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="">
-                <h3>James Liam</h3>
-              </div>
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img.webp" alt="">
-                <h3>Tomas Fredlim</h3>
-              </div>
 
             </div>
           </div>
           <div class="swiper-slide">
             <div class="user-items">
 
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="">
-                <h3>Gloria Folkhensio</h3>
-              </div>
-              <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
-                <h3>Liam Hardly</h3>
-              </div>
               <div class="user-item">
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
                 <h3>James Carly</h3>
@@ -1371,7 +1343,7 @@
         <div class="news">
 
           <div class="section-title">
-            <h2>Latest Posts</h2>
+            <h2>Latest News</h2>
             <a class="btn">
               <span>View All</span>
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">

@@ -132,54 +132,35 @@
   
       <div class="swiper blog-list-carousel">
         <div class="swiper-wrapper">
-  
-          <div class="swiper-slide">
-            <article class="blog-card-list">
-              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Farm-to-Market.webp" alt="Blog 1" class="blog-image">
-              <div class="blog-content-list">
-                <h3 class="blog-title">From Farm to Market: How to Source Sustainable Produce Without Sacrificing Profit</h3>
-                <p class="blog-excerpt">Sustainable doesn’t have to mean expensive. Learn actionable strategies to source ethically grown produce while staying competitive in pricing and margins.</p>
-              </div>
-            </article>
-          </div>
-  
-          <div class="swiper-slide">
-            <article class="blog-card-list">
-              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Agri-Trade-Forecast.webp" alt="Blog 2" class="blog-image">
-              <div class="blog-content-list">
-                <h3 class="blog-title">Agri Trade Forecast: What Exporters Need to Know in 2025</h3>
-                <p class="blog-excerpt">Planning to expand your agri business internationally? Our latest forecast reveals the top importing countries, changing trade policies, and the products they’ll be buying most.</p>
-              </div>
-            </article>
-          </div>
-  
-          <div class="swiper-slide">
-            <article class="blog-card-list">
-              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/Farming.jpg" alt="Blog 3" class="blog-image">
-              <div class="blog-content-list">
-                <h3 class="blog-title">The Future of Farming: 2025 Trends Every Supplier Should Watch</h3>
-                <p class="blog-excerpt">Climate-resilient crops, AI-powered agriculture, and changing consumer demands—these aren’t science fiction anymore. Discover the major trends shaping farming and agribusiness next year.</p>
-              </div>
-            </article>
-          </div>
-  
-          <div class="swiper-slide">
-            <article class="blog-card-list">
-              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Sustainable-Produce.webp" alt="Blog 4" class="blog-image">
-              <div class="blog-content-list">
-                <h3 class="blog-title">Inside the Shift: Why Sustainable Produce Is Driving Global Sourcing Trends</h3>
-                <p class="blog-excerpt">From eco-conscious consumers to new import regulations, sustainability isn’t just a buzzword—it’s a market force shaping the future of food trade.</p>
-              </div>
-            </article>
-          </div>
 
+          <?php
+                // WP Query to fetch latest blog posts
+            $args = array(
+              'post_type' => 'post',
+              'posts_per_page' => 6, // Change this as needed
+            );
+
+            $blog_query = new WP_Query($args);
+
+            if ($blog_query->have_posts()) :
+              while ($blog_query->have_posts()) : $blog_query->the_post(); 
+          ?>
+  
           <div class="swiper-slide">
             <article class="blog-card-list">
-              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/blog/quality/Sustainable-Produce.webp" alt="Blog 4" class="blog-image">
-              <div class="blog-content-list">
-                <h3 class="blog-title">Inside the Shift: Why Sustainable Produce Is Driving Global Sourcing Trends</h3>
-                <p class="blog-excerpt">From eco-conscious consumers to new import regulations, sustainability isn’t just a buzzword—it’s a market force shaping the future of food trade.</p>
-              </div>
+              <a href="<?php the_permalink(); ?>">
+
+                <?php if (has_post_thumbnail()) : ?>
+                  <?php the_post_thumbnail('medium', ['alt' => get_the_title()]); ?>
+                <?php else : ?>
+                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.png" alt="No image">
+                <?php endif; ?>
+
+                <div class="blog-content-list">
+                  <h3 class="blog-title"><?php the_title(); ?></h3>
+                  <p class="blog-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 10, '...'); ?></p>
+                </div>
+              </a>
             </article>
           </div>
   
