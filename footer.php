@@ -164,10 +164,12 @@
             </article>
           </div>
   
-          <?php 
-            endwhile;
-            wp_reset_postdata(); // Reset the global post data
-            endif; 
+          <?php
+              endwhile;
+              wp_reset_postdata();
+            else :
+              echo '<p>No products found</p>';
+            endif;
           ?>
 
         </div>
