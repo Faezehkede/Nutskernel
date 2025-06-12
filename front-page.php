@@ -851,84 +851,68 @@
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="User Image">
                 <h3>Gloria Folkhensio</h3>
               </div>
       
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="User Image">
                 <h3>Liam Hardly</h3>
               </div>
 
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="User Image">
                 <h3>James Carly</h3>
               </div>
 
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="User Image">
                 <h3>Sara Oberian</h3>
               </div>
 
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="User Image">
                 <h3>Fred Marly</h3>
               </div>
 
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img3.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img1.webp" alt="User Image">
                 <h3>Ali Rasoli</h3>
               </div>
 
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="User Image">
                 <h3>Maryam Marly</h3>
               </div>
 
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="user-items">
 
               <div class="user-item">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img2.webp" alt="">
+                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/user-img4.webp" alt="User Image">
                 <h3>James Carly</h3>
               </div>
 
-            </div>
           </div>
 
         </div>
