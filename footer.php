@@ -164,6 +164,12 @@
             </article>
           </div>
   
+          <?php 
+            endwhile;
+            wp_reset_postdata(); // Reset the global post data
+            endif; 
+          ?>
+
         </div>
       </div>
 
