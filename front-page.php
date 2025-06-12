@@ -920,15 +920,6 @@
     </div>
   </section>
 
-  <!-- <section class="ads-banner">
-    <div class="container">
-      <div class="row">
-        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/ads-banner.webp" alt="Ads Banner 1">
-        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/ads-banner.webp" alt="Ads Banner 2">
-      </div>
-    </div>
-  </section> -->
-
   <section class="product-grid-section">
     <div class="container">
 
