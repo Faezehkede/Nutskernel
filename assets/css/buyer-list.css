@@ -1,0 +1,26 @@
+.buyer-rfqs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+.buyer-rfqs {}
+
+.buyer-rfqs button {
+    background-color: #00a055;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+}
+
+.buyer-newsletter {
+    display: flex;
+    align-items: center;
+}
+
+.buyer-newsletter-img img {
+    width: 200px;
+    height: 200px;
+}

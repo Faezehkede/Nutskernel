@@ -3,11 +3,11 @@
 
 get_header(); ?>
 
-<div class="buyers-detail">
+<div class="buyers-detail container">
 
     <div class="buyer-rfqs">
-        <h3></h3>
-        <button></button>
+        <h3>RFQs</h3>
+        <button>Categories</button>
     </div>
 
     <div class="buyer-newsletter">
