@@ -12,6 +12,11 @@ function agrifoodz_enqueue_scripts() {
     wp_enqueue_style('agrifoodz-swiper', AGRIFOODZ_CSS . '/swiper-bundle.min.css', [], AGRIFOODZ_VERSION);
     wp_enqueue_style('agrifoodz-responsive', AGRIFOODZ_CSS . '/responsive.css', [], AGRIFOODZ_VERSION);
 
+    // Conditionally load pages.css on specific pages
+    if (is_page(['how-to-work', 'about-us', 'contact-us'])) {
+        wp_enqueue_style('agrifoodz-pages', AGRIFOODZ_CSS . '/pages.css', [], AGRIFOODZ_VERSION);
+    }
+
     // Scripts
     wp_enqueue_script('jquery'); // WordPress already has jQuery
 
