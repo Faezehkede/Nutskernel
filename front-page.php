@@ -654,7 +654,7 @@
 
   </section>
 
-  <section class="services">
+  <section class="services" id="customer-service">
     <div class="container">
 
       <div class="service">
@@ -1152,7 +1152,7 @@
     </div>
   </section>
 
-  <section class="data-analytics">
+  <section class="data-analytics" id="data-analytic">
     <div class="container">
 
 

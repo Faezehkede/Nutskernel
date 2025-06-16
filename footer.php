@@ -12,26 +12,26 @@
         <div class="footer-column">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">How To Work</a></li>
-            <li><a href="#">Customer Service</a></li>
-            <li><a href="#">Data & Analytics</a></li>
+            <li><a href="<?php echo home_url('/how-it-work'); ?>">How To Work</a></li>
+            <li><a href="<?php echo home_url('/#customer-service'); ?>">Customer Service</a></li>
+            <li><a href="<?php echo home_url('/#data-analytic'); ?>">Data & Analytics</a></li>
           </ul>
         </div>
   
         <div class="footer-column">
           <h4>Services</h4>
           <ul>
-            <li><a href="#">Sell On Agrifoodz</a></li>
-            <li><a href="#">Buy On Agrifoodz</a></li>
-            <li><a href="#">Advertise On Agrifoodz</a></li>
+            <li><a href="<?php echo home_url('/register'); ?>">Sell On Agrifoodz</a></li>
+            <li><a href="<?php echo home_url('/register'); ?>">Buy On Agrifoodz</a></li>
+            <li><a href="<?php echo home_url('/sregister'); ?>">Advertise On Agrifoodz</a></li>
           </ul>
         </div>
   
         <div class="footer-column">
           <h4>Contact Us</h4>
           <ul>
-            <li>Phone: +98 912 345 6789</li>
-            <li>Email: info@example.com</li>
+            <li><a href="tel:9123456789"> Phone: +98 912 345 6789 </a></li>
+            <li><a href="mailto:info@example.com"> Email: info@example.com </a></li>
           </ul>
           <div class="social-media">
             <div class="row">
@@ -178,8 +178,8 @@
       <div class="footer-bottom">
         <div class="row">
           <div class="site-rule">
-            <a href="#" class="privecy-policy">Privecy Policy</a> / 
-            <a href="#" class="term-of-use">Terms of Use</a>
+            <a href="<?php echo home_url('/privacy-policy'); ?>" class="privecy-policy">Privecy Policy</a> / 
+            <a href="<?php echo home_url('/terms-of-use'); ?>" class="term-of-use">Terms of Use</a>
           </div>
 
           <p class="copy-write">&copy; 2025 Nutskernel. All rights reserved.</p>

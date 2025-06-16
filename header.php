@@ -90,7 +90,7 @@
               </svg>
               Suppliers
             </a>
-            <a href="<?php echo wp_login_url(); ?>" class="buyers-btn">
+            <a href="<?php echo home_url('/register'); ?>" class="buyers-btn">
               <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                 fill="none">
                 <path data-v-fa57b318=""
