@@ -43,7 +43,7 @@
 
         <div class="col">
           <div class="header-btn">
-            <a href="<?php echo home_url('/buyer-dashboard'); ?>" class="buyers-btn">
+            <a href="<?php echo home_url('/buyer-list'); ?>" class="buyers-btn">
               <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                 fill="none">
                 <path data-v-fa57b318=""
@@ -67,7 +67,7 @@
               </svg>
               Buyers
             </a>
-            <a href="<?php echo home_url('/page-product-list'); ?>" class="buyers-btn">
+            <a href="<?php echo home_url('/product-list'); ?>" class="buyers-btn">
               <svg data-v-fa57b318="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                 fill="none">
                 <path data-v-fa57b318=""
