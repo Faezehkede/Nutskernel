@@ -12,7 +12,7 @@
         <div class="footer-column">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="<?php echo home_url('/how-it-work'); ?>">How To Work</a></li>
+            <li><a href="<?php echo home_url('/how-to-work'); ?>">How To Work</a></li>
             <li><a href="<?php echo home_url('/#customer-service'); ?>">Customer Service</a></li>
             <li><a href="<?php echo home_url('/#data-analytic'); ?>">Data & Analytics</a></li>
           </ul>
