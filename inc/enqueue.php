@@ -13,8 +13,14 @@ function agrifoodz_enqueue_scripts() {
     wp_enqueue_style('agrifoodz-responsive', AGRIFOODZ_CSS . '/responsive.css', [], AGRIFOODZ_VERSION);
 
     // Conditionally load pages.css on specific pages
-    if (is_page(['how-to-work', 'about-us', 'contact-us'])) {
+    $page_slug = get_post_field('post_name', get_post());
+
+    if (in_array($page_slug, ['how-to-work', 'about-us', 'contact-us'])) {
         wp_enqueue_style('agrifoodz-pages', AGRIFOODZ_CSS . '/pages.css', [], AGRIFOODZ_VERSION);
+    }
+
+    if (in_array($page_slug, ['register', 'register-step-two'])) {
+        wp_enqueue_style('agrifoodz-register', AGRIFOODZ_CSS . '/login-form.css', [], AGRIFOODZ_VERSION);
     }
 
     // Scripts
