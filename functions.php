@@ -25,6 +25,8 @@ function agrifoodz_theme_setup() {
 require_once AGRIFOODZ_INC . '/acf.php';
 require_once AGRIFOODZ_INC . '/enqueue.php';
 require_once AGRIFOODZ_INC . '/template-tags.php';
+require_once AGRIFOODZ_INC . '/email-login-handler.php';
+
 // require_once AGRIFOODZ_INC . '/woo/fun.php'; // شامل فایل توابع ووکامرس
 
 // پشتیبانی بیشتر ووکامرس
@@ -34,17 +36,6 @@ function agrifoodz_woocommerce_support() {
     add_theme_support('wc-product-gallery-lightbox');
     add_theme_support('wc-product-gallery-slider');
 }
-
-// فعال کردن استایل
-add_action('wp_enqueue_scripts', 'agrifoodz_enqueue_styles');
-function agrifoodz_enqueue_styles() {
-    wp_enqueue_style('agrifoodz-style', AGRIFOODZ_CSS . '/style.css', [], AGRIFOODZ_VERSION, 'all');
-}
-
-// حذف چیزهای ناخواسته
-remove_action('wp_head', 'yoast_head_json');
-remove_action('wp_head', 'wp_generator');
-// ...
 
 add_action('wp_enqueue_scripts', 'dequeue_unwanted_assets', 20);
 function dequeue_unwanted_assets() {
@@ -74,6 +65,5 @@ function agrifoodz_dequeue_home_assets() {
         wp_dequeue_script('elementor-frontend');
         wp_dequeue_script('elementor-pro-frontend');
 
-        wp_dequeue_style('yoast-seo-adminbar');
     }
 }
