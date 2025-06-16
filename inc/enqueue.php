@@ -23,6 +23,11 @@ function agrifoodz_enqueue_scripts() {
         wp_enqueue_style('agrifoodz-register', AGRIFOODZ_CSS . '/login-form.css', [], AGRIFOODZ_VERSION);
     }
 
+    if (is_page('product-list')) {
+        wp_enqueue_style('agrifoodz-product-list', AGRIFOODZ_CSS . '/product-list.css', [], AGRIFOODZ_VERSION);
+    }
+    
+
     // Scripts
     wp_enqueue_script('jquery'); // WordPress already has jQuery
 

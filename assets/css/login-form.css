@@ -90,15 +90,9 @@
 
 /* Register Step Two */
 .login-register {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-container {
-  max-width: 500px;
-  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
 }
 
 .login-register h2 {
