@@ -23,7 +23,7 @@ get_header();
             <input type="hidden" name="action" value="custom_auth">
             <label for="email">Email*</label>
             <input type="email" name="email" required placeholder="Enter your email">
-            <a href="<?php echo home_url('/register-step2'); ?>">Get Started</a>
+            <a href="<?php echo home_url('/register-step-two'); ?>">Get Started</a>
         </div>
 
         <div class="continue-google">
