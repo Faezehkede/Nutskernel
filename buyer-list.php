@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Product List */
+/* Template Name: Buyer List */
 
 get_header(); ?>
 
