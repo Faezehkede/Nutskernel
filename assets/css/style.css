@@ -266,11 +266,6 @@ p {
   text-overflow: ellipsis;
 }
 
-body:not(.home) .header-top-part {
-  display: none;
-}
-
-
 /* btn styles */
 .btn {
   position: relative;

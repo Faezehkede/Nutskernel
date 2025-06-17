@@ -1359,9 +1359,9 @@
         <div class="event-carousel">
 
           <div class="section-title">
-            <h2>Upcoming B2B Food Events</h2>
+            <h2>B2B Food Events</h2>
             <a class="btn">
-              <span>More Upcoming Events</span>
+              <span>More Events</span>
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
