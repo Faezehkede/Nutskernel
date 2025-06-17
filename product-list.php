@@ -9,7 +9,7 @@ get_header(); ?>
   <div class="product-list-header">
     <div class="breadcrumb">
       <a href="<?php echo home_url(); ?>">Home</a> 
-      <svg width="20" height="20" viewBox="-19.04 0 75.804 75.804" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+      <svg width="10" height="10" viewBox="-19.04 0 75.804 75.804" xmlns="http://www.w3.org/2000/svg" fill="#000000">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
