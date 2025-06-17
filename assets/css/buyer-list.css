@@ -1,3 +1,9 @@
+.buyer-rfqs,
+.buyer-newsletter,
+.buyer-newproduct {
+    margin-top: 30px;
+}
+
 .buyer-rfqs {
     display: flex;
     align-items: center;
@@ -5,8 +11,6 @@
     padding: 10px 20px;
     border: 1px solid #ddd;
 }
-
-.buyer-rfqs {}
 
 .buyer-rfqs button {
     background-color: #00a055;
@@ -18,9 +22,110 @@
 .buyer-newsletter {
     display: flex;
     align-items: center;
+    border: 1px solid #ddd;
+    gap: 0 30px;
+    padding-right: 40px;
 }
 
 .buyer-newsletter-img img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+}
+
+
+.buyer-newsletter-text,
+.buyer-newproduct {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+
+.buyer-newproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buyer-newsletter-text div {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.buyer-newsletter input[type="text"] {
+    width: 85%;
+    padding: 0 15px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-size: 15px;
+}
+
+.buyer-newsletter button {
+    width: 15%;
+    background-color: #b1e1ca;
+    border: 0;
+    font-size: 16px;
+}
+
+.buyer-newproduct a {
+    background-color: #00a055;
+    padding: 10px 25px;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.buyer-newsletter-img-mobile img {
+    display: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+    .buyer-newsletter {
+        gap: 0;
+        padding: 10px;
+    }
+
+    .buyer-newsletter-img img {
+        display: none;
+    }
+
+    .buyer-newsletter-text,
+    .buyer-newproduct {
+        gap: 10px;
+    }
+
+
+
+    .buyer-newsletter-img-mobile img {
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+
+    .buyer-newsletter-text p {
+        font-size: 15px;
+    }
+
+    .buyer-newsletter-text div {
+        margin-top: 10px;
+    }
+
+    .buyer-newsletter input[type="text"] {
+        width: 65%;
+        padding: 0 10px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .buyer-newsletter button {
+        width: 35%;
+        font-size: 14px;
+    }
+
 }
