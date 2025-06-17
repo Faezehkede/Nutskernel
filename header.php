@@ -22,23 +22,15 @@
         </div>
 
         <div class="col-6">
-          <div class="search-box">
-            <input type="text" placeholder="Search deals..." />
-            <button>
-              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path d="M17 17L21 21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  </path>
-                  <path
-                    d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
-                    stroke="#fff" stroke-width="2"></path>
-                </g>
-              </svg>
-              Search
-            </button>
-          </div>
+        <form method="get" action="<?php echo home_url(); ?>" class="search-box">
+          <button type="submit">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 17L21 21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#fff" stroke-width="2"></path>
+            </svg>
+            <span class="visually-hidden">Search</span>
+          </button>
+        </form>
         </div>
 
         <div class="col">
