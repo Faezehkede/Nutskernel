@@ -1058,8 +1058,8 @@ p {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
 }
 
 .product-top {
@@ -1327,4 +1327,10 @@ p {
 .analytic-btn #b path {
   stroke-width: 2px;
   stroke: #00a055;
+}
+
+/* Search Result */
+
+.search-results h1 {
+  margin: 30px 0;
 }

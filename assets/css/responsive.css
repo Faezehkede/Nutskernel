@@ -215,8 +215,9 @@
     /* Product Grid */
 
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(225px, 2fr));
-        gap: 10px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: 8px;
     }
 
     .product-card {
@@ -392,8 +393,7 @@
     /* Product Grid */
 
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-        gap: 10px;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     }
 
     .product-card {
@@ -639,8 +639,7 @@
     /* Product Grid */
 
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-        gap: 10px;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     }
 
     .product-card {
@@ -876,8 +875,7 @@
     /* Product Grid */
 
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-        gap: 10px;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 
     .product-card {
@@ -1251,8 +1249,7 @@
     /* Product Grid */
 
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-        gap: 10px;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 
     .product-card {
