@@ -50,7 +50,7 @@
     gap: 10px;
 }
 
-.buyer-newsletter-text div {
+.buyer-newsletter-text div:nth-child(2) {
     width: 100%;
     display: flex;
     margin-top: 20px;
@@ -100,7 +100,10 @@
         gap: 10px;
     }
 
-
+    .buyer-newsletter-img-mobile {
+        display: flex;
+        gap: 10px;
+    }
 
     .buyer-newsletter-img-mobile img {
         display: flex;

@@ -211,6 +211,10 @@ h6 {
   color: #222;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 h2 {
   font-size: 30px;
 }
@@ -261,6 +265,11 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+body:not(.home) .header-top-part {
+  display: none;
+}
+
 
 /* btn styles */
 .btn {

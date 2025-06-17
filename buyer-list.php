@@ -17,8 +17,10 @@ get_header(); ?>
         <div class="buyer-newsletter-text">
             <div class="buyer-newsletter-img-mobile">
                 <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/email.gif" alt="Email">
+                <div>
                 <h2>Trade smart!</h2>
                 <p>Get the top "RFQ" wholesale buyers contact list for free!</p>
+                </div>
             </div>
             <div>
                 <input type="text" placeholder="Your Email">
