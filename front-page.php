@@ -666,7 +666,7 @@
             </div>
             <div class="feature-service-item">
 
-              <a href="#">
+              <a href="<?php echo home_url('/subscription-plans'); ?>">
                 <span class="icon">
                   <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#fff">

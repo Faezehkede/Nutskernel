@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Template Name: About Us
+ * Template Name: Subscription Plans
  * Template Post Type: page
  */
 
 get_header();
 ?>
 
-<section class="pricing-section container">
+<section class="subscription-plans container">
     <h2>Your Free Membership Has Ended!</h2>
     <div class="countdown-timer">
       <span>Discount available for:</span>
