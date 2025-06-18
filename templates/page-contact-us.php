@@ -1,5 +1,8 @@
 <?php
-/* Template Name: Contact Us */
+/**
+ * Template Name: Contact Us
+ * Template Post Type: page
+ */
 
 get_header();
 ?>

@@ -1,5 +1,8 @@
 <?php
-/* Template Name: About Us */
+/**
+ * Template Name: About Us
+ * Template Post Type: page
+ */
 
 get_header();
 ?>

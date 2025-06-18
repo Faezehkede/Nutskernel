@@ -1,5 +1,8 @@
 <?php
-/* Template Name: Buyer List */
+/**
+ * Template Name: Buyer List
+ * Template Post Type: page
+ */
 
 get_header(); ?>
 

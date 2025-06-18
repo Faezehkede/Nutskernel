@@ -1,5 +1,8 @@
 <?php
-/* Template Name: Product List */
+/**
+ * Template Name: Product List
+ * Template Post Type: page
+ */
 
 get_header(); ?>
 

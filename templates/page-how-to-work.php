@@ -1,5 +1,8 @@
 <?php
-/* Template Name: How to Work */
+/**
+ * Template Name: How to Work
+ * Template Post Type: page
+ */
 
 get_header();
 ?>
