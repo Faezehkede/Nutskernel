@@ -26,7 +26,6 @@
     width: 100%;
     height: 100%;
     max-width: 320px;
-    border-radius: 10px;
 }
 
 .about-img img:first-child {
@@ -96,7 +95,6 @@
 .what-we-do-img img {
     width: 100%;
     max-width: 400px;
-    border-radius: 20px;
 }
 
 .what-we-do-img {
@@ -110,7 +108,6 @@
     gap: 10px;
     background-color: #fff;
     padding: 25px 20px 25px 40px;
-    border-radius: 10px;
     position: relative;
     width: 100%;
     /* max-width: 671px; */
@@ -132,7 +129,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     position: absolute;
     left: -20px;
     top: 50%;
@@ -180,7 +176,6 @@
 .about-content-img img {
     width: 100%;
     max-width: 600px;
-    border-radius: 10px;
 }
 
 .about-content {
@@ -427,7 +422,6 @@
     .page-banner-content {
         padding: 15px;
         margin: 30px 0;
-        border-radius: 10px;
     }
 
     .page-banner-title h2 {
@@ -499,7 +493,6 @@
         height: 410px;
         justify-content: center;
         background-image: url(../images/about-img2.webp);
-        border-radius: 10px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -589,7 +582,6 @@
     background-color: #4caf50;
     color: #fff;
     padding: 10px 30px;
-    border-radius: 5px;
     border: 0;
     margin-top: 15px;
 }
@@ -613,7 +605,6 @@
     left: 30px;
     width: 600px;
     padding: 20px;
-    border-radius: 10px;
 }
 
 .contact-form-map form {
@@ -623,7 +614,6 @@
 
 .contact-form-map iframe {
     width: 100%;
-    border-radius: 10px;
 }
 
 .contact-form-map .container {
@@ -666,7 +656,6 @@
     width: 100%;
     padding: 0.75em;
     border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 #contact-form textarea {
@@ -681,7 +670,6 @@
     background: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     grid-row: 4;
@@ -711,7 +699,6 @@ section.contact-info .row {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
     align-items: center;
     text-align: center;
     background-color: #a3c9521c;
@@ -731,7 +718,6 @@ section.contact-info .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     box-shadow: 0px 5px 5px 1px #a3c9521f;
 }
 
@@ -750,7 +736,6 @@ section.contact-info .row {
     width: 8px;
     height: 8px;
     border: 1px solid #00a055;
-    border-radius: 10px;
 }
 
 .contact-info .box-info-title {
@@ -857,7 +842,6 @@ section.contact-info .row {
 
     .page-banner-content {
         padding: 25px;
-        border-radius: 15px;
         margin: 30px 0;
     }
 
@@ -900,7 +884,6 @@ section.contact-info .row {
 
     .page-banner-content {
         padding: 15px;
-        border-radius: 10px;
         margin: 30px 0;
     }
 
@@ -953,7 +936,6 @@ section.contact-info .row {
         position: relative;
         width: 95%;
         padding: 20px;
-        border-radius: 10px;
         margin-top: -200px;
         left: 0;
         transform: translate(0);
@@ -1015,7 +997,6 @@ section.contact-info .row {
     justify-content: space-between;
     background-color: #00a0551c;
     padding: 45px;
-    border-radius: 30px;
     margin-top: 30px;
 }
 
@@ -1063,16 +1044,13 @@ section.contact-info .row {
 .how-step {
     background: #fff;
     padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    /* margin-bottom: 30px; */
+    border: 1px solid #ddd;
     transition: all 0.3s ease;
     width: 49%;
 }
 
 .how-step:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .how-step h4 {
@@ -1141,7 +1119,6 @@ section.contact-info .row {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
     padding: 25px 30px;
     display: flex;
     flex-direction: column;
@@ -1161,7 +1138,6 @@ section.contact-info .row {
     width: 23%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 10px;
 }
 
 
@@ -1169,7 +1145,6 @@ section.contact-info .row {
 
     .how-it-works-contents {
         padding: 15px;
-        border-radius: 10px;
     }
 
     .how-it-works-content {
@@ -1230,7 +1205,6 @@ section.contact-info .row {
 .subscription-plans .timer {
     background: #fff7e6;
     padding: 10px 20px;
-    border-radius: 10px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
