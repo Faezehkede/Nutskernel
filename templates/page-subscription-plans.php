@@ -42,7 +42,7 @@ get_header();
         <h3>6 Months + 1 Free Month</h3>
         <p class="price">4,399,000 Toman</p>
         <p class="original-price">8,900,000 Toman</p>
-        <span class="tagline">Top Ranking on Google</span>
+        <!-- <span class="tagline">Top Ranking on Google</span> -->
         <button>Select & Pay</button>
         <ul>
           <li>Unlimited product listings</li>
