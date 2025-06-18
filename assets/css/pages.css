@@ -63,7 +63,7 @@
 }
 
 .what-we-do {
-    background-image: url(./assets/images/about-bg.webp);
+    background-image: url(../assets/images/about-bg.webp);
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1115,7 +1115,7 @@ section.contact-info .row {
 
 .ready-to-grow {
     width: 49%;
-    background-image: url(./assets/images/assorted-nuts1.webp);
+    background-image: url(../assets/images/assorted-nuts1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
