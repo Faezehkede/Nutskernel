@@ -5,8 +5,8 @@
   
         <div class="footer-column">
           <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.png" alt="">
-          <p>Agrifoodz.com is a global B2B marketplace for sourcing and trading food and agricultural products. We
-            connect trusted suppliers and serious buyers to grow business worldwide.</p>
+          <p>Agrifoodz.com is a global B2B marketplace for sourcing and trading food and agricultural products.
+             We connect trusted suppliers and serious buyers to grow business worldwide.</p>
         </div>
   
         <div class="footer-column">
