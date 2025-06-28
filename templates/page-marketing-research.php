@@ -9,7 +9,7 @@ get_header();
 ?>
 
 
-<main class="container">
+<main class="container marketing-research">
     <section class="intro-section">
         <h1>Market Insights & Analytics for Food and Agriculture Products</h1>
         <p>At AgriFoodz, we provide reliable, data-driven insights into the global food and agriculture market to help you make informed decisions.</p>
@@ -28,7 +28,6 @@ get_header();
 
     <section class="feed-grid">
         <div class="marketing-card">
-            <img src="banana.jpg" alt="Banana">
             <div class="card-body">
                 <div class="card-title">W26 2025 Banana Weekly Update</div>
                 <div class="card-text">Exports from Ecuador rose significantly while local prices stabilized.</div>
@@ -37,7 +36,6 @@ get_header();
         </div>
 
         <div class="marketing-card">
-            <img src="rice.jpg" alt="Rice Pasta">
             <div class="card-body">
                 <div class="card-title">100% Natural Rice Pasta</div>
                 <div class="card-text">Produced without any toxic chemicals. Great for a healthy lifestyle.</div>
@@ -46,7 +44,6 @@ get_header();
         </div>
 
         <div class="marketing-card">
-            <img src="liberty-export.jpg" alt="Liberty Exports">
             <div class="card-body">
                 <div class="card-title">Liberty Exports - Quality from Farm</div>
                 <div class="card-text">Fresh produce sourced directly from farms with sustainable practices.</div>
@@ -55,7 +52,6 @@ get_header();
         </div>
 
         <div class="marketing-card">
-            <img src="wheat.jpg" alt="Wheat">
             <div class="card-body">
                 <div class="card-title">W26 2025 Wheat Weekly Update</div>
                 <div class="card-text">Recovery in global wheat production expected in the coming season.</div>

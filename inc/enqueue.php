@@ -30,6 +30,11 @@ function agrifoodz_enqueue_scripts() {
     if (is_page('buyer-list')) {
         wp_enqueue_style('agrifoodz-buyer-list', AGRIFOODZ_CSS . '/buyer-list.css', [], AGRIFOODZ_VERSION);
     }
+
+    if (is_404()) {
+        wp_enqueue_style('agrifoodz-404-style', AGRIFOODZ_CSS . '/404.css');
+    }
+    
     
 
     // Scripts

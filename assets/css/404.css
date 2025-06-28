@@ -1,0 +1,23 @@
+/* Error 404 */
+
+.page-404 {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.page-404 p {
+    font-size: 18px;
+    margin: 15px 0 35px;
+}
+
+.page-404 a {
+    background-color: green;
+    padding: 7px 23px;
+    color: #fff;
+}
+
+.page-404 img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 45px;
+}

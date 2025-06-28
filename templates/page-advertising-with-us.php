@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-  <main class="container">
+  <main class="container advertising-with-us">
     <section class="advertising-main">
       <h1>Advertise on AgriFoodz</h1>
       <p>Reach your target audience directly on one of the leading B2B platforms for food and agriculture products. Whether you're a supplier, exporter, or service provider, showcasing your brand on our website puts you in front of serious buyers and business partners from around the world.</p>

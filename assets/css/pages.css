@@ -1,3 +1,10 @@
+/* General */
+
+.marketing-research, .subscription-plans, .logistic-advising
+.advertising-with-us, .business-partnership {
+    margin: 40px auto;
+}
+
 /* About US */
 
 .popular-category,
@@ -1225,7 +1232,6 @@ section.contact-info .row {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px auto;
 }
 
 .subscription-plans .countdown-timer {
@@ -1382,14 +1388,8 @@ section.contact-info .row {
 
 .intro-section h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #1a3e34;
-}
-
-.intro-section p {
-    max-width: 700px;
-    margin: 0 auto;
-    color: #555;
 }
 
 .features-section {
@@ -1458,12 +1458,19 @@ section.contact-info .row {
 /* Business Partnership */
 
 .business-partnership section {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.business-partnership .partnership {
+    border: 0;
+    text-align: center;
 }
 
 .business-partnership p,
 .business-partnership ul {
-    color: #555;
+    color: #333;
 }
 
 .business-partnership ul {
@@ -1472,9 +1479,7 @@ section.contact-info .row {
 }
 
 .business-partnership form {
-    background: #f4f7f6;
     padding: 30px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .business-partnership form label {
@@ -1554,10 +1559,21 @@ section.contact-info .row {
     background-color: #155b45;
 }
 
+.advertise-form {
+    margin-top: 40px;
+}
+
 /*  Logistic Adviser */
 
 .logistic-advising section {
     margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.logistic-advising .logistic-header {
+    border: 0;
+    text-align: center;
 }
 
 .logistic-advising h2 {
@@ -1585,20 +1601,3 @@ section.contact-info .row {
 }
 
 
-/* Error 404 */
-
-.page-404 {
-    margin: 40px 0;
-    text-align: center;
-}
-
-.page-404 a {
-    background-color: green;
-    padding: 7px 23px;
-    color: #fff;
-}
-
-.page-404 p {
-    font-size: 18px;
-    margin: 15px 0 25px;
-}
