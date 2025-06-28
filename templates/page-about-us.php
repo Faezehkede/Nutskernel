@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: About Us
  * Template Post Type: page
@@ -11,7 +12,7 @@ get_header();
   <div class="container">
     <div class="page-banner-content">
       <div class="page-banner-title">
-        <h2>About Us</h2>
+        <h2>About Agrifoodz</h2>
       </div>
       <div class="page-banner-img">
         <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title (5).webp" alt="Page Title">
@@ -31,8 +32,8 @@ get_header();
       </div>
 
       <div class="about-text">
-        <h2>Welcome to Nutskernel – Your Trusted B2B Marketplace for Food & Agricultural Products</h2>
-        <p>At Nutskernel , we are on a mission to transform how food and agricultural businesses connect, trade, and grow.
+        <h2>Welcome to Agrifoodz – Your Trusted B2B Marketplace for Food & Agricultural Products</h2>
+        <p>At Agrifoodz , we are on a mission to transform how food and agricultural businesses connect, trade, and grow.
           As a dedicated B2B platform, we specialize in bridging the gap between verified suppliers and serious buyers across the global food and agri industry.</p>
         <h3>Who We Are</h3>
         <p>We are a team of professionals with deep expertise in digital marketing, agriculture, and international trade.
@@ -45,88 +46,90 @@ get_header();
   </div>
 </section>
 
-<section class="popular-category">
+
+<div class="join-us-box">
+  <h3>Join Us Right Now</h3>
+  <p>Become a part of our community and stay updated.</p>
+  <a href="<?php echo home_url('/register'); ?>">Join Us</a>
+</div>
+
+<!-- <section class="popular-category">
   <div class="category-section container">
-
     <div class="section-title">
-      <h2>Hight Demand</h2>
+      <h2>High Demand</h2>
     </div>
-
     <div class="swiper category-swiper">
-
       <div class="swiper-wrapper">
 
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/berry.webp" alt="Processed Fruits" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/berry.webp" alt="StrawBerry" />
             <span>StrawBerry</span>
           </div>
         </div>
-
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/bread.webp" alt="Frozen Fruits" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/bread.webp" alt="Bread" />
             <span>Bread</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/chipes.webp" alt="Dried Fruits" />
-            <span>Chipes</span>
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/chipes.webp" alt="Chips" />
+            <span>Chips</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/vegtebales.webp" alt="Nuts & Kernels" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/vegtebales.webp" alt="Vegetables" />
             <span>Vegetables</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/crunchi.webp" alt="Nuts & Kernels" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/crunchi.webp" alt="Crunchies" />
             <span>Crunchies</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cupcake.webp" alt="Nuts & Kernels" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cupcake.webp" alt="Cupcake" />
             <span>Cupcake</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/fish.webp" alt="Nuts & Kernels" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/fish.webp" alt="Fish" />
             <span>Fish</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/soda.webp" alt="Nuts & Kernels" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/soda.webp" alt="Soda" />
             <span>Soda</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/meat.webp" alt="Nuts & Kernels" />
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/meat.webp" alt="Meat" />
             <span>Meat</span>
           </div>
         </div>
         <div class="swiper-slide category-card">
           <div class="category-item">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/snacks.webp" alt="Nuts & Kernels" />
-            <span>Sanck</span>
+            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/snacks.webp" alt="Snack" />
+            <span>Snack</span>
           </div>
         </div>
 
       </div>
 
-      <div class="swiper-button swiper-button-next"></div>
-      <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next category-next" aria-hidden="true"></div>
+      <div class="swiper-button swiper-button-prev category-prev" aria-hidden="true"></div>
 
     </div>
-
   </div>
-</section>
+</section> -->
 
 <section class="what-we-do">
   <div class="container">
@@ -135,7 +138,7 @@ get_header();
         <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/about-img2.webp" alt="Why Us Image">
       </div>
       <div class="what-we-do-content">
-        <h2>What We Do At Nutskernel?</h2>
+        <h2>What We Do At Agrifoodz?</h2>
         <p>We offer a reliable and efficient marketplace where businesses can:</p>
 
         <div class="what-we-do-boxs">
@@ -174,7 +177,7 @@ get_header();
         </div>
 
         <p>From fresh and dried fruits, nuts, grains, and spices to organic and specialty products,
-          Nutskernel helps unlock new growth opportunities for businesses of all sizes.</p>
+          Agrifoodz helps unlock new growth opportunities for businesses of all sizes.</p>
 
       </div>
     </div>
@@ -201,7 +204,7 @@ get_header();
       <div class="final-part">
         <h2>Let’s Grow Together</h2>
         <p>Whether you are a grower looking to expand your reach or a buyer searching for quality products at competitive prices,
-          Nutskernel is here to support your success every step of the way.</p>
+          Agrifoodz is here to support your success every step of the way.</p>
       </div>
     </div>
     <div class="about-content-img">

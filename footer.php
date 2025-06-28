@@ -31,7 +31,7 @@
           <h4>Contact Us</h4>
           <ul>
             <li><a href="tel:9123456789"> Phone: +98 912 345 6789 </a></li>
-            <li><a href="mailto:info@example.com"> Email: info@example.com </a></li>
+            <li><a href="mailto:info@agrifoodz.com"> Email: info@agrifoodz.com </a></li>
           </ul>
           <div class="social-media">
             <div class="row">
@@ -182,7 +182,7 @@
             <a href="<?php echo home_url('/terms-of-use'); ?>" class="term-of-use">Terms of Use</a>
           </div>
 
-          <p class="copy-write">&copy; 2025 Nutskernel. All rights reserved.</p>
+          <p class="copy-write">&copy; 2025 Agrifoodz. All rights reserved.</p>
         </div>
       </div>
   

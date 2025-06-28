@@ -11,9 +11,9 @@ get_header();
     <div class="container">
         <div class="how-it-works-contents">
             <div class="how-it-works-content">
-                <h2>How It Works</h2>
+                <h2> How AgriFoodz Work</h2>
                 <p>Connecting Sellers & Buyers in Food and Agricultural Products – Made Simple</p>
-                <p>At <strong>Nutskernel</strong>, we make it easy for food and agri businesses to find the right partners, showcase their products,
+                <p>At <strong>Agrifoodz</strong>, we make it easy for food and agri businesses to find the right partners, showcase their products,
                     and close deals with confidence. Whether you're a supplier or a buyer, here’s how you can get started:</p>
             </div>
             <div class="how-it-works-img">
@@ -26,7 +26,12 @@ get_header();
             <div class="how-step">
                 <h4>✅ Step 1: Sign Up & Create Your Profile</h4>
                 <ul>
-                    <li>Register for a free account as a Seller or Buyer.</li>
+                    <li>Register for a free account as a supplier or Buyer.
+                        <ul>
+                            <li>Enter your email address</li> 
+                            <li>Receive your OPT code and insert it in the box</li>
+                        </ul>
+                    </li>
                     <li>Fill out your business profile to build trust and improve visibility.</li>
                 </ul>
                 <p>🔒 Verified profiles gain more exposure in search results.</p>
@@ -35,8 +40,8 @@ get_header();
             <div class="how-step">
                 <h4>✅ Step 2: List or Browse Products</h4>
                 <ul>
-                    <li><strong>For Sellers:</strong> Post your food or agricultural products with clear descriptions, images, pricing, and MOQ (Minimum Order Quantity).</li>
-                    <li><strong>For Buyers:</strong> Search or filter products based on category, location, price, or seller rating.</li>
+                    <li><strong>For Suppliers: </strong>Post your food or agricultural products with clear descriptions, images, pricing, and MOQ (Minimum Order Quantity).</li>
+                    <li><strong>For Buyers: </strong>Search or filter products based on category, location, price, or seller rating.</li>
                 </ul>
                 <p>📦 From dates, nuts, and dried fruits to spices, grains, and organic products – we’ve got you covered.</p>
             </div>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Contact Us
  * Template Post Type: page
@@ -24,23 +25,21 @@ get_header();
 <section class="contact-content">
     <div class="container">
         <div class="contact-part">
-            <h3>Buy Natural, sustainable and chemicalfree products from local sellers across the country.</h3>
-            <img href="#" class="cantact-img">
+            <h3>“ Global B2B for food and Agriculture products “</h3>
         </div>
-        <div class="contact-part">
+        <!-- <div class="contact-part">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie nec nisl eget scelerisque.
                 Quisque placerat suscipit eros, eu tincidunt tellus blandit vel. Donec pellentesque dapibus interdum.
                 Mauris et tellus congue, rutrum neque a, varius felis. Phasellus nibh diam, tincidunt nec risus ut, auctor gravida metus.</p>
             <button class="btn"><a href="#">Read About Us</a></button>
-        </div>
+        </div> -->
     </div>
 </section>
 
 <section class="contact-form-map">
     <div class="container">
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25931.28330310915!2d139.67201653541366!3d35.66689516149692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2sShibuya%2C%20Tokyo%2C%20Japan!5e0!3m2!1sen!2sfi!4v1747295251326!5m2!1sen!2sfi"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.3714840184!2d-123.2063040744417!3d49.25781819008981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2s!4v1751111884546!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 
@@ -71,8 +70,7 @@ get_header();
 <section class="contact-info">
     <div class="container">
         <div class="row">
-            <!-- Address Info -->
-            <div class="info-box">
+            <!-- <div class="info-box">
                 <div class="box-info-title">
                     <i class="circle"></i>
                     <i class="circle"></i>
@@ -97,8 +95,8 @@ get_header();
                         </g>
                     </svg>
                 </span>
-                <h4>About Nutskernel</h4>
-                <p>At Nutskernel, our mission is to connect global buyers with premium trusted</p>
+                <h4>About Agrifoodz</h4>
+                <p>At Agrifoodz, our mission is to connect global buyers with premium trusted</p>
             </div>
 
             <div class="info-box">
@@ -127,9 +125,8 @@ get_header();
                 </span>
                 <h4>Our Address</h4>
                 <p>3-chōme-21 Shibuya, Tokyo 150-0002, Japan</p>
-            </div>
+            </div> -->
 
-            <!-- Phone Info -->
             <div class="info-box">
                 <div class="box-info-title">
                     <i class="circle"></i>
@@ -156,11 +153,10 @@ get_header();
                     </svg>
                 </span>
                 <h4>Call Phone</h4>
-                <p>+123 456 789</p>
-                <p>+123 987 258</p>
+                <p>+1 778-806-9965</p>
+                <!-- <p>+123 987 258</p> -->
             </div>
 
-            <!-- Email Info -->
             <div class="info-box">
                 <div class="box-info-title">
                     <i class="circle"></i>
@@ -192,8 +188,8 @@ get_header();
                     </svg>
                 </span>
                 <h4>Email Us</h4>
-                <p>Info@nutskernel.com</p>
-                <p>Nutskernel@gmail.com</p>
+                <p>Info@agrifoodz.com</p>
+                <p>Support@agrifoodz.com</p>
             </div>
         </div>
     </div>

@@ -149,6 +149,7 @@
 
 .what-we-do-content h2 {
     font-size: 35px;
+    margin-bottom: 25px;
 }
 
 .what-we-do-content p {
@@ -166,7 +167,7 @@
 .about-contents h2 {
     font-size: 35px;
     color: #0b7644;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .about-content {
@@ -203,7 +204,36 @@
     justify-content: end;
 }
 
+.join-us-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
 
+.join-us-box h3 {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    color: #222;
+}
+
+.join-us-box p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.join-us-box a {
+    padding: 0 1em;
+    background: #00a055;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.join-us-box a:hover {
+    background: #005b2c;
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1318,6 +1348,242 @@ section.contact-info .row {
         font-size: 15px;
     }
 }
+
+.payment-help {
+    margin-top: 40px;
+}
+
+.help-form input,
+.help-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.help-form button {
+    background-color: #00a055;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.help-form button:hover {
+    background-color: #005b2c;
+}
+
+
+/* Marketing Research */
+.intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1a3e34;
+}
+
+.intro-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.features-section {
+    background: #f4f7f6;
+    padding: 30px;
+}
+
+.features-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #1a3e34;
+}
+
+.features-section ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.feed-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.marketing-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.marketing-card img {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a3e34;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card-tags {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .feed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Business Partnership */
+
+.business-partnership section {
+    margin-bottom: 50px;
+}
+
+.business-partnership p,
+.business-partnership ul {
+    color: #555;
+}
+
+.business-partnership ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.business-partnership form {
+    background: #f4f7f6;
+    padding: 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.business-partnership form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #1a3e34;
+}
+
+.business-partnership form input,
+.business-partnership form textarea,
+.business-partnership form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+.business-partnership form button {
+    margin-top: 20px;
+    background-color: #007940;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.business-partnership form button:hover {
+    background-color: #155b45;
+}
+
+/* Advertising with Us */
+
+.advertising-main section {
+    margin-bottom: 50px;
+}
+
+.advertising-main section p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.advertise-form form {
+    background: #f4f7f6;
+    padding: 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.advertise-form form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #1a3e34;
+}
+
+.advertise-form form input,
+.advertise-form form textarea,
+.advertise-form form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+.advertise-form form button {
+    margin-top: 20px;
+    background-color: #1a3e34;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.advertise-form form button:hover {
+    background-color: #155b45;
+}
+
+/*  Logistic Adviser */
+
+.logistic-advising section {
+    margin-bottom: 30px;
+}
+
+.logistic-advising h2 {
+    color: #004225;
+    margin-bottom: 15px;
+}
+
+.logistic-advising ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.logistic-advising .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #00703c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logistic-advising .cta:hover {
+    background-color: #005b2c;
+}
+
 
 /* Error 404 */
 

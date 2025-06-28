@@ -844,6 +844,15 @@
     </div>
   </section>
 
+  <section class="ads-banner">
+    <div class="container">
+      <div class="row ads-banner-img">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/banners-tk.jpg" alt="Ads Banner Image">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/bcm-banner.jpg" alt="Ads Banner Image">
+      </div>
+    </div>
+  </section>
+
   <section class="vip-supplier">
     <div class="container">
       <h2 class="section-title">VIP Supplier</h2>
