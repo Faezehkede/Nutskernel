@@ -79,15 +79,18 @@ get_header();
     <p>If you're having trouble with our payment options, no worries. Just fill out the form below and we’ll help you with an alternative solution.</p>
 
     <form action="/submit-help-request" method="post" class="help-form">
-      <label for="name">Full Name*</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">Email*</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="message">Your Message</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
+      <p>
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" required>
+      </p>
+      <p>
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+      </p>
+      <p>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </p>
       <button type="submit">Send Request</button>
     </form>
 

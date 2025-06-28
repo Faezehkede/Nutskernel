@@ -216,20 +216,12 @@
     border: 1px solid #ddd;
 }
 
-.join-us-box h3 {
-    margin-bottom: 0.5em;
-    font-weight: 600;
-    color: #222;
-}
-
 .join-us-box p {
-    font-size: 0.9rem;
-    color: #333;
-    margin-bottom: 1em;
+    margin-bottom: 25px;
 }
 
 .join-us-box a {
-    padding: 0 1em;
+    padding: 5px 40px;
     background: #00a055;
     border: none;
     color: white;
@@ -603,7 +595,9 @@
 }
 
 .contact-part {
-    width: 45%;
+    width: 100%;
+    text-align: center;
+    /* align-items: center; */
 }
 
 .contact-content h3 {
@@ -730,7 +724,7 @@ section.contact-info .row {
 }
 
 .contact-info .info-box {
-    width: 23%;
+    width: 45%;
     height: 200px;
     border: 1px solid #A3C952;
     display: flex;
@@ -1378,6 +1372,47 @@ section.contact-info .row {
 .help-form button:hover {
     background-color: #005b2c;
 }
+
+.help-form {
+    margin-top: 35px;
+    display: grid;
+    gap: 15px 30px;
+}
+
+.help-form p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.help-form p:first-child {
+    grid-row: 1;
+    grid-column: 1 / 2;
+}
+.help-form p:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2 / 2;
+}
+
+.help-form p:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1 / 3;
+}
+
+.help-form button {
+    grid-row: 3;
+    grid-column: 1 / 3;
+}
+
+.payment-help p a {
+    color: #00a055;
+}
+
+
 
 
 /* Marketing Research */

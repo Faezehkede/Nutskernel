@@ -711,7 +711,7 @@
                 </span>
                 <span> Subscription Plans</span>
               </a>
-              <a href="#">
+              <a href="<?php echo home_url('/marketing-research'); ?>">
                 <span class="icon"><svg fill="#fff" viewBox="0 0 256 256" id="Layer_1" version="1.1" xml:space="preserve"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#fff">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -729,7 +729,7 @@
                   </svg></span>
                 <span> Marketing Research</span>
               </a>
-              <a href="#">
+              <a href="<?php echo home_url('/business-partnership'); ?>">
                 <span class="icon"><svg fill="#fff" version="1.1" id="Layer_1_1_" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" xml:space="preserve" stroke="#fff">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -752,7 +752,7 @@
                   </svg></span>
                 <span> Business Partnership</span>
               </a>
-              <a href="#">
+              <a href="<?php echo home_url('/advertising-with-us'); ?>">
                 <span class="icon"><svg viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Layer_1" version="1.1"
                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     fill="#fff" stroke="#fff">
@@ -817,7 +817,7 @@
                   </svg></span>
                 <span> Advertising with Us</span>
               </a>
-              <a href="#">
+              <a href="<?php echo home_url('/logistic-advising'); ?>">
                 <span class="icon"><svg viewBox="0 -2 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

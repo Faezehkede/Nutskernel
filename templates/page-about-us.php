@@ -47,7 +47,7 @@ get_header();
 </section>
 
 
-<div class="join-us-box">
+<div class="join-us-box container">
   <h3>Join Us Right Now</h3>
   <p>Become a part of our community and stay updated.</p>
   <a href="<?php echo home_url('/register'); ?>">Join Us</a>
