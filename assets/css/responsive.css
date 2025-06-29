@@ -1404,6 +1404,13 @@
         line-height: 18px;
     }
 
+    .blog-card-list img {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100px !important;
+        object-fit: cover;
+    }
+
     .footer-bottom {
         padding: 10px;
     }
