@@ -1369,6 +1369,7 @@ p {
 .sidebar-area {
   position: sticky;
   top: 20px;
+  margin-top: 30px;
 }
 
 .widget ul {
