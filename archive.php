@@ -2,16 +2,16 @@
 
 <main id="primary" class="archive-page container">
 
+    <header class="page-header">
+        <h1 class="page-title"><?php the_archive_title(); ?></h1>
+        <?php the_archive_description('<div class="archive-description">', '</div>'); ?>
+    </header>
+
     <div class="row">
         <div class="col-9">
             <div class="content-area">
 
                 <?php if (have_posts()) : ?>
-
-                    <header class="page-header">
-                        <h1 class="page-title"><?php the_archive_title(); ?></h1>
-                        <?php the_archive_description('<div class="archive-description">', '</div>'); ?>
-                    </header>
 
                     <div class="post-grid">
 

@@ -1339,6 +1339,10 @@ p {
 }
 
 /* Archive */
+.archive-page .row {
+  align-items: unset;
+  gap: 30px;
+}
 
 .post-grid {
   display: grid;
@@ -1347,8 +1351,29 @@ p {
   margin-top: 2rem;
 }
 
+.page-header {
+  background-color: #00a05526;
+  height: 150px;
+  border: 1px solid #38572d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page-title {
+  color: #38572d;
+  margin-bottom: 0;
+}
+
+.sidebar-area {
+  position: sticky;
+  top: 20px;
+}
+
 .widget ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
