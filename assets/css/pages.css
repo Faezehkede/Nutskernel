@@ -1422,7 +1422,6 @@ section.contact-info .row {
 }
 
 .intro-section h1 {
-    font-size: 2rem;
     margin-bottom: 15px;
     color: #1a3e34;
 }
@@ -1433,7 +1432,6 @@ section.contact-info .row {
 }
 
 .features-section h2 {
-    font-size: 1.3rem;
     margin-bottom: 20px;
     color: #1a3e34;
 }
@@ -1546,6 +1544,18 @@ section.contact-info .row {
 .business-partnership form button:hover {
     background-color: #155b45;
 }
+
+@media (max-width: 300px) and (max-width: 768px){
+    .business-partnership form {
+        padding: 0px;
+    }
+
+    .business-partnership form label, .advertise-form form label {
+        font-size: 14px;
+    }
+}
+
+
 
 /* Advertising with Us */
 
