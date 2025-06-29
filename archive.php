@@ -3,7 +3,7 @@
 <main id="primary" class="archive-page container">
 
     <div class="row">
-        <div class="col-3">
+        <div class="col-9">
             <div class="content-area">
 
                 <?php if (have_posts()) : ?>
@@ -145,7 +145,7 @@
             </div>
         </div>
 
-        <div class="col-9">
+        <div class="col-3">
 
             <aside class="sidebar-area">
                 <?php get_sidebar(); ?>
