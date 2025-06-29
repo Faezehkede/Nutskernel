@@ -235,6 +235,16 @@
         justify-content: end;
     }
 
+    /* blog list in footer */
+
+    .blog-title {
+        margin-bottom: 0;
+    }
+
+    .blog-excerpt {
+        line-height: 18px;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
