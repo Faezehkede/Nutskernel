@@ -36,7 +36,7 @@ function agrifoodz_enqueue_scripts() {
     }
 
     if ( is_single() ) {
-        wp_enqueue_style('agrifoodz-single-style', AGRIFOODZ_CSS . '/single.css');
+        wp_enqueue_style('agrifoodz-single-style', AGRIFOODZ_CSS . '/single-post.css');
     }
     
     
