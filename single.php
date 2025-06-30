@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div class="container single-post">
+<div class="container single-posts">
     <div class="row">
 
         <!-- Main Content -->
@@ -13,31 +13,20 @@
                     <article id="post-<?php the_ID(); ?>" <?php post_class('single-post-content'); ?>>
 
                         <header class="entry-header">
-                            <h1 class="entry-title"><?php the_title(); ?></h1>
-                            <div class="entry-meta">
-                                <span class="date">on <?php echo get_the_date(); ?></span>
-                                <span class="categories">
-                                    in <?php the_category(', '); ?>
-                                </span>
-                                <span class="comments">
-                                    <?php comments_number('No Comments', '1 Comment', '% Comments'); ?>
-                                </span>
-                            </div>
-                        </header>
-
+                            
                         <?php if (has_post_thumbnail()) : ?>
                             <div class="post-thumbnail">
                                 <?php the_post_thumbnail('large'); ?>
                             </div>
                         <?php endif; ?>
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
+
+                        </header>
 
                         <div class="entry-content">
                             <?php the_content(); ?>
                         </div>
 
-                        <footer class="entry-footer">
-                            <?php the_tags('<div class="tags">Tags: ', ', ', '</div>'); ?>
-                        </footer>
 
                     </article>
 
@@ -50,7 +39,19 @@
 
         <!-- Sidebar -->
         <div class="col-3">
+            <div class="post-sidebar">
+            <div class="entry-meta">
+                                <span class="date">on <?php echo get_the_date(); ?></span>
+                                <span class="categories">
+                                    in <?php the_category(', '); ?>
+                                </span>
+                                <span class="comments">
+                                    <?php comments_number('No Comments', '1 Comment', '% Comments'); ?>
+                                </span>
+                            </div>
+            
             <?php get_sidebar(); ?>
+            </div>
         </div>
 
     </div>
