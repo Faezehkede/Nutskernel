@@ -50,7 +50,7 @@ get_header();
             </div>
 
             <button type="submit" class="submit-btn" disabled><a href="./supplier-dashboard.html">Create account</a></button>
-            <small>By creating account, you agree to our <a href="#">Privacy Policy</a>.</small>
+            <small>By creating account, you agree to our <a href="<?php echo home_url('/privacy-policy'); ?>">Privacy Policy</a>.</small>
         </form>
     </div>
 </div>

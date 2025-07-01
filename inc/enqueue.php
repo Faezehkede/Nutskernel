@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 defined('ABSPATH') || exit;
 // بارگذاری استایل و اسکریپت‌ها
-function agrifoodz_enqueue_scripts() {
+function agrifoodz_enqueue_scripts()
+{
     // استایل اصلی
     wp_enqueue_style('agrifoodz-style', get_stylesheet_uri());
 
@@ -15,7 +16,8 @@ function agrifoodz_enqueue_scripts() {
     // Conditionally load pages.css on specific pages
     $page_slug = get_post_field('post_name', get_post());
 
-    if (in_array($page_slug, ['how-to-work', 'about-us', 'contact-us', 'subscription-plans', 'marketing-research', 'logistic-advising', 'business-partnership', 'advertising-with-us'])) {
+    if (in_array($page_slug, ['how-to-work', 'about-us', 'contact-us', 'subscription-plans', 'marketing-research', 'logistic-advising', 'business-partnership', 'advertising-with-us',
+     'term-of-use', 'privecy-policy'])) {
         wp_enqueue_style('agrifoodz-pages', AGRIFOODZ_CSS . '/pages.css', [], AGRIFOODZ_VERSION);
     }
 
@@ -26,7 +28,7 @@ function agrifoodz_enqueue_scripts() {
     if (is_page('product-list')) {
         wp_enqueue_style('agrifoodz-product-list', AGRIFOODZ_CSS . '/product-list.css', [], AGRIFOODZ_VERSION);
     }
-    
+
     if (is_page('buyer-list')) {
         wp_enqueue_style('agrifoodz-buyer-list', AGRIFOODZ_CSS . '/buyer-list.css', [], AGRIFOODZ_VERSION);
     }
@@ -35,16 +37,15 @@ function agrifoodz_enqueue_scripts() {
         wp_enqueue_style('agrifoodz-404-style', AGRIFOODZ_CSS . '/404.css');
     }
 
-    if ( is_single() ) {
+    if (is_single()) {
         wp_enqueue_style('agrifoodz-single-style', AGRIFOODZ_CSS . '/single-post.css');
     }
-    
+
 
     // Scripts
     wp_enqueue_script('jquery'); // WordPress already has jQuery
 
     wp_enqueue_script('agrifoodz-swiper', AGRIFOODZ_JS . '/swiper-bundle.min.js', [], AGRIFOODZ_VERSION, true);
     wp_enqueue_script('agrifoodz-script', AGRIFOODZ_JS . '/script.js', ['jquery', 'agrifoodz-swiper'], AGRIFOODZ_VERSION, true);
-
 }
 add_action('wp_enqueue_scripts', 'agrifoodz_enqueue_scripts');

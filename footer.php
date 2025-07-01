@@ -178,7 +178,7 @@
       <div class="footer-bottom">
         <div class="row">
           <div class="site-rule">
-            <a href="<?php echo home_url('/privacy-policy'); ?>" class="privecy-policy">Privecy Policy</a> / 
+            <a href="<?php echo home_url('/privacy-policy'); ?>" class="privecy-policy">Privacy Policy</a> / 
             <a href="<?php echo home_url('/terms-of-use'); ?>" class="term-of-use">Terms of Use</a>
           </div>
 
