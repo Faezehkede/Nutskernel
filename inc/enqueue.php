@@ -39,7 +39,6 @@ function agrifoodz_enqueue_scripts() {
         wp_enqueue_style('agrifoodz-single-style', AGRIFOODZ_CSS . '/single-post.css');
     }
     
-    
 
     // Scripts
     wp_enqueue_script('jquery'); // WordPress already has jQuery
