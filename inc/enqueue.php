@@ -16,8 +16,18 @@ function agrifoodz_enqueue_scripts()
     // Conditionally load pages.css on specific pages
     $page_slug = get_post_field('post_name', get_post());
 
-    if (in_array($page_slug, ['how-to-work', 'about-us', 'contact-us', 'subscription-plans', 'marketing-research', 'logistic-advising', 'business-partnership', 'advertising-with-us',
-     'term-of-use', 'privecy-policy'])) {
+    if (in_array($page_slug, [
+        'how-to-work',
+        'about-us',
+        'contact-us',
+        'subscription-plans',
+        'marketing-research',
+        'logistic-advising',
+        'business-partnership',
+        'advertising-with-us',
+        'terms-of-use',
+        'privacy-policy',
+    ])) {
         wp_enqueue_style('agrifoodz-pages', AGRIFOODZ_CSS . '/pages.css', [], AGRIFOODZ_VERSION);
     }
 
