@@ -12,7 +12,7 @@ get_header();
   <div class="container">
     <div class="page-banner-content">
       <div class="page-banner-title">
-        <h2>About Agrifoodz</h2>
+        <h1>About Agrifoodz</h1>
       </div>
       <div class="page-banner-img">
         <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title (5).webp" alt="Page Title">

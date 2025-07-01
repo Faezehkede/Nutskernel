@@ -11,7 +11,7 @@ get_header();
     <div class="container">
         <div class="how-it-works-contents">
             <div class="how-it-works-content">
-                <h2> How AgriFoodz Work</h2>
+                <h1> How AgriFoodz Work</h1>
                 <p>Connecting Sellers & Buyers in Food and Agricultural Products – Made Simple</p>
                 <p>At <strong>Agrifoodz</strong>, we make it easy for food and agri businesses to find the right partners, showcase their products,
                     and close deals with confidence. Whether you're a supplier or a buyer, here’s how you can get started:</p>

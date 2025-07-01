@@ -30,7 +30,7 @@
         <div class="footer-column">
           <h4>Contact Us</h4>
           <ul>
-            <li><a href="tel:9123456789"> Phone: +98 912 345 6789 </a></li>
+            <li><a href="tel:17788069965"> Phone: +1 778-806-9965 </a></li>
             <li><a href="mailto:info@agrifoodz.com"> Email: info@agrifoodz.com </a></li>
           </ul>
           <div class="social-media">
