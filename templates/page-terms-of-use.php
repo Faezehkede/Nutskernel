@@ -78,26 +78,33 @@ get_header();
     </div>
 
     <div class="terms-box">
-        <ul>Limited Access Policy</ul>
+        <ul>Limited Access Policy
         <li>Each account is limited to one active session. Multiple logins may cause session terminations.</li>
+        </ul>
 
-        <ul>Accuracy of Data</ul>
+        <ul>Accuracy of Data
         <li>We strive to keep information accurate, but we do not guarantee completeness or currentness. Content may change without notice.</li>
+        </ul>
 
-        <ul>Disclaimer of Warranties</ul>
+        <ul>Disclaimer of Warranties
         <li>Services are provided “as is.” We do not guarantee uninterrupted access or data security. We are not liable for actions or content from third parties.</li>
+        </ul>
 
-        <ul>Indemnification</ul>
+        <ul>Indemnification
         <li>You agree to indemnify AgriFoodz and its affiliates against any claims or losses resulting from your use of the Site or Services, including disputes with other users.</li>
+        </ul>
 
-        <ul>Severability</ul>
+        <ul>Severability
         <li>If any provision of these Terms is deemed invalid, the remaining sections will remain in full force.</li>
+        </ul>
 
-        <ul>Updates to the Terms</ul>
+        <ul>Updates to the Terms
         <li>We may update these Terms at any time. Continued use of the Site implies acceptance of the new terms.</li>
+        </ul>
 
-        <ul>Contact Us</ul>
+        <ul>Contact Us
         <li>For questions or account deletion, contact: <a href="mailto:support@agrifoodz.com">support@agrifoodz.com</a></li>
+        </ul>
     </div>
 
 </div>

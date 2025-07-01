@@ -10,10 +10,22 @@ get_header();
 
 
 <main class="container marketing-research">
-    <section class="intro-section">
-        <h1>Market Insights & Analytics for Food and Agriculture Products</h1>
-        <p>At AgriFoodz, we provide reliable, data-driven insights into the global food and agriculture market to help you make informed decisions.</p>
-    </section>
+
+<section class="page-banner">
+  <div class="container">
+    <div class="page-banner-content">
+      <div class="page-banner-title">
+      <h1>Market Insights & Analytics for Food and Agriculture Products</h1>
+      <p>At AgriFoodz, we provide reliable, data-driven insights into the global food and agriculture market to help you make informed decisions.</p>
+
+      </div>
+      <div class="page-banner-img">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title3.webp" alt="Page Title">
+      </div>
+
+    </div>
+  </div>
+</section> 
 
     <section class="features-section">
         <h2>What You’ll Find Here</h2>

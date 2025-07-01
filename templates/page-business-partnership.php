@@ -9,8 +9,22 @@ get_header();
 ?>
 
   <main class="container business-partnership">
-    <section class="partnership">
+
+  <section class="page-banner">
+  <div class="container">
+    <div class="page-banner-content">
+      <div class="page-banner-title">
       <h1>Find Business Partner – Connect with Trusted Suppliers & Buyers Worldwide</h1>
+      </div>
+      <div class="page-banner-img">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title2.webp" alt="Page Title">
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+    <section class="partnership">
       <p>At AgriFoodz, we understand that finding the right business partner is essential for long-term success in the food and agriculture industry. That’s why we’ve launched our “Find Business Partner” service — a dedicated solution for companies and brokers who are actively seeking reliable suppliers, producers, exporters, or distributors across the globe.</p>
       <p>Whether you're a buyer looking for Medjool date producers in North Africa, a supplier searching for international distribution channels, or a trader aiming to expand into new markets, our platform helps you connect with verified, trusted, and strategically matched partners.</p>
     </section>

@@ -14,7 +14,8 @@
           <ul>
             <li><a href="<?php echo home_url('/how-to-work'); ?>">How To Work</a></li>
             <li><a href="<?php echo home_url('/#customer-service'); ?>">Customer Service</a></li>
-            <li><a href="<?php echo home_url('/#data-analytic'); ?>">Data & Analytics</a></li>
+            <li><a href="<?php echo home_url('/about-us'); ?>">About Us</a></li>
+            <li><a href="<?php echo home_url('/contact-us'); ?>">Contact Us</a></li>
           </ul>
         </div>
   
@@ -24,6 +25,7 @@
             <li><a href="<?php echo home_url('/register'); ?>">Sell On Agrifoodz</a></li>
             <li><a href="<?php echo home_url('/register'); ?>">Buy On Agrifoodz</a></li>
             <li><a href="<?php echo home_url('/sregister'); ?>">Advertise On Agrifoodz</a></li>
+            <li><a href="<?php echo home_url('/#data-analytic'); ?>">Data & Analytics</a></li>
           </ul>
         </div>
   

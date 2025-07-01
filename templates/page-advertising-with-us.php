@@ -8,9 +8,23 @@
 get_header();
 ?>
 
+<section class="page-banner">
+  <div class="container">
+    <div class="page-banner-content">
+      <div class="page-banner-title">
+      <h1>Advertise on AgriFoodz</h1>
+      </div>
+      <div class="page-banner-img">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title4.webp" alt="Page Title">
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <main class="container advertising-with-us">
     <section class="advertising-main">
-      <h1>Advertise on AgriFoodz</h1>
+      
       <p>Reach your target audience directly on one of the leading B2B platforms for food and agriculture products. Whether you're a supplier, exporter, or service provider, showcasing your brand on our website puts you in front of serious buyers and business partners from around the world.</p>
       <p>Submit your request today to display your company name, banner, or promotional link and grow your visibility in a trusted industry network.</p>
       <p><strong>👉 Contact us now to get started!</strong></p>

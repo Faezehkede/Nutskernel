@@ -13,7 +13,7 @@
 
     .btn {
         height: 35px;
-        width: 120px;
+        width: 170px;
     }
 
     .product-grid-wrapper h2,
@@ -127,6 +127,23 @@
     .first-section .hero-content p {
         font-size: 16px;
         text-align: center;
+    }
+
+    .overlay {
+        width: 99%;
+        height: 450px;
+    }
+
+    .mega-menu {
+        margin-bottom: 20px;
+    }
+
+    .category-nav {
+        padding: 15px 20px;
+    }
+
+    .category-list {
+        gap: 15px;
     }
 
     /* Category carousel */
@@ -443,6 +460,13 @@
         width: 50px;
     }
 
+    /* Ads */
+
+    .ads-banner img {
+        max-width: 580px;
+    }
+
+
     /* Product Grid */
 
     .product-grid {
@@ -666,6 +690,12 @@
         width: 190px;
     }
 
+    /* Ads */
+
+    .ads-banner img {
+        max-width: 480px;
+    }
+
     /* Analytics */
 
     .data-analytics .row {
@@ -727,11 +757,11 @@
     /* Footer */
 
     .footer-column {
-        width: 33%;
+        width: 20%;
     }
 
     .footer-column:last-child {
-        width: 33%;
+        width: 25%;
         margin-top: 0px;
     }
 
@@ -955,6 +985,17 @@
 
     .services p {
         font-size: 18px;
+    }
+
+    /* Ads */
+
+    .ads-banner-img {
+        flex-direction: column;
+    }
+
+    .ads-banner img {
+
+        max-width: unset;
     }
 
     /* VIP supplier */

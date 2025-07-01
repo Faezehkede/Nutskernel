@@ -1657,26 +1657,134 @@ section.contact-info .row {
 
 /* Privacy Policy */
 
-.privacy-policy p,
-.privacy-policy ul {
-    margin-bottom: 1rem;
+.page-template-page-privacy-policy .page-banner-img img {
+    max-width: 250px;
+    margin: -70px 100px -105px 0;
+    transform: rotate(15deg);
+}
+
+.privacy-policy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 0;
+    justify-content: space-between;
+}
+
+.privacy-policy>p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.privacy-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-left: 3px solid #00a055;
+    width: 49%;
 }
 
 .privacy-policy ul {
-    padding-left: 1.25rem;
+    padding-left: 2.25rem;
+    list-style: circle;
+    margin-bottom: 0;
+}
+
+.privacy-policy ul li {
+    line-height: 25px;
 }
 
 .privacy-policy address {
     font-style: normal;
+    line-height: 25px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .page-template-page-privacy-policy .page-banner-img img {
+        max-width: 170px;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .page-template-page-privacy-policy .page-banner-img img{
+        max-width: 160px;
+        margin: -40px 0 -60px;
+        transform: rotate(10deg);
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .privacy-box {
+        width: 100%;
+    }
+
+    .page-template-page-privacy-policy .page-banner-img img {
+        transform: rotate(0deg);
+        max-width: 125px;
+        margin: -30px 0 -50px;
+    }
 }
 
 /* Terms Of Use */
 
-.terms-of-use p,
-.terms-of-use ul {
-    margin-bottom: 1rem;
+.terms-of-use {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
 }
 
-.terms-of-use ul {
-    padding-left: 1.25rem;
+.terms-of-use>p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.terms-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-left: 3px solid #00a055;
+    width: 49%;
+}
+
+.terms-box ul {
+    padding-left: 2.25rem;
+    list-style: circle;
+    margin-bottom: 0;
+}
+
+.terms-box ul li {
+    line-height: 25px;
+}
+
+.terms-of-use .terms-box:last-child {
+    width: 100%
+}
+
+.terms-of-use .terms-box:last-child ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.terms-of-use .terms-box:last-child li {
+    margin-left: 2.5rem;
+    list-style: circle;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .terms-box {
+        padding: 10px;
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .terms-box {
+        padding: 15px;
+        width: 100%;
+    }
 }

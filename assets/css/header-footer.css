@@ -307,9 +307,8 @@
 
 .footer-column p {
   margin: 0;
-  width: 100%;
-  /* max-width: 350px; */
-  font-size: 15px;
+  width: 80%;
+  font-size: 16px;
   margin-top: 10px;
   line-height: 1.4;
 }
@@ -366,6 +365,10 @@
   justify-content: flex-start;
 }
 
+.social-media {
+  margin-top: 10px;
+}
+
 .social-link {
   display: flex;
 }
@@ -406,6 +409,7 @@
 .blog-title {
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .blog-excerpt {

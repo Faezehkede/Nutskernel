@@ -8,15 +8,23 @@
 get_header();
 ?>
 
-
-  <header>
-    
-  </header>
-
   <main class="container logistic-advising">
 
+  <section class="page-banner">
+  <div class="container">
+    <div class="page-banner-content">
+      <div class="page-banner-title">
+      <h1>Logistic Adviser – Smart Shipping Guidance for Global Trade</h1>
+      </div>
+      <div class="page-banner-img">
+        <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/page-title1.webp" alt="Page Title">
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <section class="logistic-header">
-        <h1>Logistic Adviser – Smart Shipping Guidance for Global Trade</h1>
         <p>Navigate shipping costs, timelines, and trade routes with confidence.</p>
     </section>
 
