@@ -1500,6 +1500,17 @@ section.contact-info .row {
     border: 1px solid #ddd;
 }
 
+.page-template-page-business-partnership .page-banner {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.page-template-page-business-partnership .page-banner-img img {
+    width: 100%;
+    max-width: 250px;
+    margin: -85px 0;
+}
+
 .business-partnership .partnership {
     border: 0;
     text-align: center;
@@ -1561,8 +1572,12 @@ section.contact-info .row {
 }
 
 
-
 /* Advertising with Us */
+.page-template-page-advertising-with-us .page-banner-img img {
+    width: 100%;
+    max-width: 250px;
+    margin: -65px 0 -130px;
+}
 
 .advertising-main section {
     margin-bottom: 50px;
@@ -1617,12 +1632,29 @@ section.contact-info .row {
     margin-top: 40px;
 }
 
-/*  Logistic Adviser */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .page-template-page-advertising-with-us .page-banner-img img {
+        max-width: 130px;
+        margin: -40px 0 -75px;
+    }
+}
 
+/*  Logistic Adviser */
 .logistic-advising section {
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid #ddd;
+}
+
+.page-template-page-logistic-advising .page-banner {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.page-template-page-logistic-advising .page-banner-img img {
+    width: 100%;
+    max-width: 250px;
+    margin: -85px 0 -105px;
 }
 
 .logistic-advising .logistic-header {
