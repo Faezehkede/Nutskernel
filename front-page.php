@@ -1368,7 +1368,7 @@
         <div class="event-carousel">
 
           <div class="section-title">
-            <h2>B2B Food Events</h2>
+            <h2>Food Events & Exhibitions</h2>
             <a class="btn">
               <span>More Events</span>
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
