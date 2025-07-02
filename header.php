@@ -10,7 +10,7 @@
 <header class="header">
     <div class="container">
       <div class="row header-top-part">
-        <p>Not a member of AgriFoodz yet? Sign up now to connect with global agri-food buyers and suppliers!</p>
+        <p>free sign up for 15 days</p>
         <a href="<?php echo home_url('/register'); ?>" class="signup">Join Us Now</a>
       </div>
       <div class="row">

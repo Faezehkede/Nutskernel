@@ -51,6 +51,27 @@ function agrifoodz_enqueue_scripts()
         wp_enqueue_style('agrifoodz-single-style', AGRIFOODZ_CSS . '/single-post.css');
     }
 
+    // Events
+
+    if (is_post_type_archive('events')) {
+        wp_enqueue_style('theme-events-archive', AGRIFOODZ_CSS . '/events-archive.css');
+    }
+    
+    if (is_singular('b2b-event')) {
+        wp_enqueue_style('theme-single-events', AGRIFOODZ_CSS . '/single-events.css');
+    }
+
+    // Archive page
+    if (is_post_type_archive('b2b-event')) {
+        wp_enqueue_style('b2b-event-archive-style', gAGRIFOODZ_CSS . '/event-archive.css', [], '1.0');
+    }
+
+    // Single event page
+    if (is_singular('b2b-event')) {
+        wp_enqueue_style('b2b-event-single-style', AGRIFOODZ_CSS . '/b2b-event-single.css', [], '1.0');
+    }
+    
+
 
     // Scripts
     wp_enqueue_script('jquery'); // WordPress already has jQuery
