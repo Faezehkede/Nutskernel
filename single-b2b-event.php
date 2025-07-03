@@ -4,16 +4,47 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
             <div class="event container">
-                <div class="event-image">
-                    <?php if (has_post_thumbnail()) : ?>
-                        <div class="event-thumb"><?php the_post_thumbnail(); ?></div>
-                    <?php endif; ?>
+
+                <div class="top-event-info">
+                    <div class="event-image">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <div class="event-thumb"><?php the_post_thumbnail(); ?></div>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="event-title">
+
+                        <?php if (function_exists('yoast_breadcrumb')) : ?>
+                            <div class="breadcrumb">
+                                <?php yoast_breadcrumb('<p id="breadcrumbs">', '</p>'); ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <h1><?php the_title(); ?></h1>
+
+                        <div class="event-meta">
+                            <span class="event-date">
+                                <?php echo get_the_date(); ?>
+                            </span>
+                            <span class="event-categories">
+                                <?php
+                                $terms = get_the_terms(get_the_ID(), 'category');
+                                if ($terms && !is_wp_error($terms)) {
+                                    $term_links = array_map(function ($term) {
+                                        return '<a href="' . get_term_link($term) . '">' . esc_html($term->name) . '</a>';
+                                    }, $terms);
+                                    echo implode(', ', $term_links);
+                                }
+                                ?>
+                            </span>
+                        </div>
+
+                    </div>
                 </div>
+
+
                 <div class="event-details">
                     <div>
-                        <div class="event-title">
-                            <h1><?php the_title(); ?></h1>
-                        </div>
 
                         <div class="event-info">
                             <?php if (function_exists('get_field')): ?>
@@ -34,6 +65,7 @@
                         <a href="#" class="cta-button">Request Your Invitation</a>
                     </div>
                 </div>
+                
             </div>
 
     <?php endwhile;
