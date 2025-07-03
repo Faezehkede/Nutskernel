@@ -63,7 +63,7 @@ function agrifoodz_enqueue_scripts()
 
     // Archive page
     if (is_post_type_archive('b2b-event')) {
-        wp_enqueue_style('b2b-event-archive-style', gAGRIFOODZ_CSS . '/event-archive.css', [], '1.0');
+        wp_enqueue_style('b2b-event-archive-style', AGRIFOODZ_CSS . '/event-archive.css', [], '1.0');
     }
 
     // Single event page

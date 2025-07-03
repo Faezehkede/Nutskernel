@@ -18,7 +18,7 @@
                                 <?php if (has_post_thumbnail()) : ?>
                                     <?php the_post_thumbnail('medium_large'); ?>
                                 <?php else : ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/no-image.jpg" alt="No image">
+                                    <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/no-image.jpg" alt="No image">
                                 <?php endif; ?>
                             </div>
                             <div class="event-info">
