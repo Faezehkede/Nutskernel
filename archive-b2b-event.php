@@ -23,7 +23,7 @@
 
                         <div class="event-content">
                             <h3 class="event-title"><?php the_title(); ?></h3>
-                            <div class="event-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?></div>
+                            <div class="event-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?></div>
                             <div class="event-meta">
 
                                 <?php if (function_exists('get_field')): ?>
