@@ -18,20 +18,20 @@
       </div>
       <div class="row">
 
-        <?php
-        $header_info = get_field('header_info', 'option');
-        ?>
+      <?php
+$header_info = get_field('header_info', 'option');
+?>
 
-        <div class="col">
-          <a href="<?php echo home_url(); ?>">
-            <?php
-            if ($header_info && $header_info['main_logo']) {
-              $main_logo = $header_info['main_logo'];
-              echo '<img src="' . esc_url($main_logo['url']) . '" alt="' . esc_attr($main_logo['alt']) . '" class="logo" />';
-            }
-            ?>
-          </a>
-        </div>
+<div class="col">
+  <a href="<?php echo home_url(); ?>">
+    <?php
+    if ($header_info && $header_info['main_logo']) {
+      $main_logo = $header_info['main_logo'];
+      echo '<img src="' . esc_url($main_logo['url']) . '" alt="' . esc_attr($main_logo['alt']) . '" class="logo" />';
+    }
+    ?>
+  </a>
+</div>
 
         <div class="col-6">
           <form method="get" action="<?php echo home_url(); ?>" class="search-box">
