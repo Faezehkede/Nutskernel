@@ -342,7 +342,7 @@ p {
   height: 40px;
   background: #ffffff;
   border: 1px solid #00a055;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   padding-left: 15px;

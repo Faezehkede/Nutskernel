@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const input = document.querySelector("#live-search");
     const resultsBox = document.querySelector("#search-results");
+    const loader = document.querySelector("#loader");
   
     let timeout;
   
@@ -9,27 +10,36 @@ document.addEventListener("DOMContentLoaded", function () {
   
       if (query.length < 3) {
         resultsBox.innerHTML = "";
+        loader.style.display = "none";
         return;
       }
   
       clearTimeout(timeout);
       timeout = setTimeout(() => {
+        loader.style.display = "block";
         fetch(`${my_ajax.ajax_url}?action=ajax_search&s=${encodeURIComponent(query)}`)
           .then((res) => res.json())
           .then((data) => {
-            let html = "";
+            loader.style.display = "none";
+  
             if (data.length) {
-              html = "<ul class='live-results'>";
+              let html = "<div class='live-grid'>";
               data.forEach((item) => {
-                html += `<li><a href="${item.link}">${item.title}</a></li>`;
+                html += `
+                  <div class="live-item">
+                    <a href="${item.link}">
+                      <img src="${item.image}" alt="${item.title}" />
+                      <span>${item.title}</span>
+                    </a>
+                  </div>`;
               });
-              html += "</ul>";
+              html += "</div>";
+              resultsBox.innerHTML = html;
             } else {
-              html = "<p>No results found</p>";
+              resultsBox.innerHTML = "<p>No results found</p>";
             }
-            resultsBox.innerHTML = html;
           });
-      }, 300); // debounce
+      }, 300);
     });
   });
   

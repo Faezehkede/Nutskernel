@@ -16,7 +16,7 @@ function ajax_live_search() {
     $search_term = sanitize_text_field($_GET['s']);
 
     $args = array(
-        'post_type' => 'product', // Change if you're searching other content
+        'post_type' => 'product',
         's' => $search_term,
         'posts_per_page' => 10,
     );
@@ -29,6 +29,7 @@ function ajax_live_search() {
             $results[] = array(
                 'title' => get_the_title($post),
                 'link'  => get_permalink($post),
+                'image' => get_the_post_thumbnail_url($post->ID, 'thumbnail') ?: wc_placeholder_img_src(),
             );
         }
     }
@@ -36,6 +37,4 @@ function ajax_live_search() {
     wp_send_json($results);
 }
 
-add_action('wp_ajax_ajax_search', 'ajax_live_search');
-add_action('wp_ajax_nopriv_ajax_search', 'ajax_live_search');
 
