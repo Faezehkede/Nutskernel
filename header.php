@@ -12,26 +12,40 @@
 
   <header class="header">
     <div class="container">
-      <div class="row header-top-part">
-        <p>free sign up for 15 days</p>
-        <a href="<?php echo home_url('/register'); ?>" class="signup">Join Us Now</a>
-      </div>
-      <div class="row">
 
       <?php
-$header_info = get_field('header_info', 'option');
-?>
+      $header_info = get_field('header_info', 'option');
+      ?>
 
-<div class="col">
-  <a href="<?php echo home_url(); ?>">
-    <?php
-    if ($header_info && $header_info['main_logo']) {
-      $main_logo = $header_info['main_logo'];
-      echo '<img src="' . esc_url($main_logo['url']) . '" alt="' . esc_attr($main_logo['alt']) . '" class="logo" />';
-    }
-    ?>
-  </a>
-</div>
+      <div class="row header-top-part">
+        <?php if ($header_info): ?>
+          <?php if (!empty($header_info['invitation_text'])): ?>
+            <p><?php echo esc_html($header_info['invitation_text']); ?></p>
+          <?php endif; ?>
+
+          <?php if (!empty($header_info['invitation_link'])):
+            $link = $header_info['invitation_link']; ?>
+            <a href="<?php echo esc_url($link['url']); ?>"
+              class="signup"
+              target="<?php echo esc_attr($link['target'] ?: '_self'); ?>">
+              <?php echo esc_html($link['title']); ?>
+            </a>
+          <?php endif; ?>
+        <?php endif; ?>
+      </div>
+
+      <div class="row">
+
+        <div class="col">
+          <a href="<?php echo home_url(); ?>">
+            <?php
+            if ($header_info && $header_info['main_logo']) {
+              $main_logo = $header_info['main_logo'];
+              echo '<img src="' . esc_url($main_logo['url']) . '" alt="' . esc_attr($main_logo['alt']) . '" class="logo" />';
+            }
+            ?>
+          </a>
+        </div>
 
         <div class="col-6">
           <form method="get" action="<?php echo home_url(); ?>" class="search-box">
