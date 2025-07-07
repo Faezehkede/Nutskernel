@@ -19,18 +19,23 @@
 
       <div class="row header-top-part">
         <?php if ($header_info): ?>
+
           <?php if (!empty($header_info['invitation_text'])): ?>
             <p><?php echo esc_html($header_info['invitation_text']); ?></p>
           <?php endif; ?>
 
-          <?php if (!empty($header_info['invitation_link'])):
-            $link = $header_info['invitation_link']; ?>
+          <?php if (!empty($header_info['invitation_btn_link'])):
+            $link = $header_info['invitation_btn_link'];
+            $btn_text = $header_info['invitation_btn_text']; ?>
+
             <a href="<?php echo esc_url($link['url']); ?>"
               class="signup"
               target="<?php echo esc_attr($link['target'] ?: '_self'); ?>">
-              <?php echo esc_html($link['title']); ?>
+              <?php echo esc_html($btn_text ?: $link['title']); ?>
             </a>
+
           <?php endif; ?>
+
         <?php endif; ?>
       </div>
 
