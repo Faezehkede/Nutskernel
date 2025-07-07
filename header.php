@@ -19,21 +19,17 @@
       <div class="row">
 
         <?php
-        $header = get_field('header_part', 'option'); // or 'page ID' if not in Options Page
-
-        if ($header && isset($header['logo'])) {
-          $logo_url = $header['logo']['url']; // ACF Image field returns an array
-          $logo_alt = $header['logo']['alt'];
-        }
+        $header_info = get_field('header_info', 'option');
         ?>
 
         <div class="col">
           <a href="<?php echo home_url(); ?>">
-            <?php if (!empty($logo_url)) : ?>
-              <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($logo_alt); ?>" class="logo">
-            <?php else : ?>
-              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.webp" alt="Logo" class="logo">
-            <?php endif; ?>
+            <?php
+            if ($header_info && $header_info['logo']) {
+              $logo = $header_info['logo'];
+              echo '<img src="' . esc_url($logo['url']) . '" alt="' . esc_attr($logo['alt']) . ' . class="logo" />';
+            }
+            ?>
           </a>
         </div>
 
