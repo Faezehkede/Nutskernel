@@ -575,38 +575,12 @@ p {
   overflow: visible !important;
 }
 
-.category-card .category-item {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #ddd;
-  padding: 15px;
-}
 
-.category-card .category-item img {
-  position: relative;
-  width: 100px;
-}
 
-.category-card .category-item span {
-  font-size: 16px;
-  text-align: left;
-  position: relative;
-}
 
-.category-card .category-item span::before {
-  content: "";
-  position: absolute;
-  background-color: #00a05524;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  top: -120px;
-  right: 45%;
-  transform: translateX(55%);
-  z-index: -1;
-}
+
+
+
 
 .category-swiper .swiper-button {
   background-color: #fff;
