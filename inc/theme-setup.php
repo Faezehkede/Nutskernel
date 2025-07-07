@@ -19,22 +19,25 @@ function ajax_live_search() {
         wp_send_json([]);
     }
 
-    // Use WooCommerce product query
     $args = array(
-        'limit'  => 10,
-        'status' => 'publish',
-        'search' => $search_term,
+        'post_type' => 'product',
+        's' => $search_term,
+        'posts_per_page' => 10,
+        'post_status' => 'publish',
+        'suppress_filters' => false, // Important for multilingual or custom filters
     );
 
-    $products = wc_get_products($args);
+    $query = new WP_Query($args);
     $results = array();
 
-    foreach ($products as $product) {
-        $results[] = array(
-            'title' => $product->get_name(),
-            'link'  => get_permalink($product->get_id()),
-            'image' => get_the_post_thumbnail_url($product->get_id(), 'thumbnail') ?: wc_placeholder_img_src(),
-        );
+    if ($query->have_posts()) {
+        foreach ($query->posts as $post) {
+            $results[] = array(
+                'title' => get_the_title($post),
+                'link'  => get_permalink($post->ID),
+                'image' => get_the_post_thumbnail_url($post->ID, 'thumbnail') ?: wc_placeholder_img_src(),
+            );
+        }
     }
 
     wp_send_json($results);
