@@ -65,6 +65,10 @@ function agrifoodz_enqueue_scripts()
     if ( is_singular('product') ) {
         wp_enqueue_style('product-style', AGRIFOODZ_CSS . '/product.css');
     }
+
+    if ( is_singular('product') ) {
+        wp_enqueue_script('product-single-script', AGRIFOODZ_JS . '/products.js', array('jquery'), null, true);
+    }
     
 
 
