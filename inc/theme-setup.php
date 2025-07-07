@@ -15,26 +15,33 @@ add_action('after_setup_theme', 'agrifoodz_setup');
 function ajax_live_search() {
     $search_term = sanitize_text_field($_GET['s']);
 
+    if (empty($search_term)) {
+        wp_send_json([]);
+    }
+
+    // Use WooCommerce product query
     $args = array(
-        'post_type' => 'product',
-        's' => $search_term,
-        'posts_per_page' => 10,
+        'limit'  => 10,
+        'status' => 'publish',
+        'search' => $search_term,
     );
 
-    $query = new WP_Query($args);
+    $products = wc_get_products($args);
     $results = array();
 
-    if ($query->have_posts()) {
-        foreach ($query->posts as $post) {
-            $results[] = array(
-                'title' => get_the_title($post),
-                'link'  => get_permalink($post),
-                'image' => get_the_post_thumbnail_url($post->ID, 'thumbnail') ?: wc_placeholder_img_src(),
-            );
-        }
+    foreach ($products as $product) {
+        $results[] = array(
+            'title' => $product->get_name(),
+            'link'  => get_permalink($product->get_id()),
+            'image' => get_the_post_thumbnail_url($product->get_id(), 'thumbnail') ?: wc_placeholder_img_src(),
+        );
     }
 
     wp_send_json($results);
 }
+
+add_action('wp_ajax_ajax_search', 'ajax_live_search');
+add_action('wp_ajax_nopriv_ajax_search', 'ajax_live_search');
+
 
 

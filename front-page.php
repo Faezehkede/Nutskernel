@@ -803,210 +803,69 @@
 
     <div class="product-grid">
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-            <span class="badge discount">-15%</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★☆</span>
-            <span class="rating">(4.0)</span>
-          </div>
-          <h3 class="product-title">Almonds Supreme</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$9.99</span>
-              <span class="old-price">$11.99</span>
-            </div> -->
-        </a>
-      </div>
+      <?php
+      $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => 8,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+      );
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-            <span class="badge discount">-10%</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★★</span>
-            <span class="rating">(5.0)</span>
-          </div>
-          <h3 class="product-title">Raw Cashew Delight</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$12.99</span>
-              <span class="old-price">$14.50</span>
-            </div> -->
-        </a>
-      </div>
+      $query = new WP_Query($args);
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★☆☆</span>
-            <span class="rating">(3.5)</span>
-          </div>
-          <h3 class="product-title">Hazelnut Crunch</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$8.75</span>
-              <span class="old-price">$9.50</span>
-            </div> -->
-        </a>
-      </div>
+      if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★☆</span>
-            <span class="rating">(4.2)</span>
-          </div>
-          <h3 class="product-title">Roasted Pistachios</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$10.99</span>
-              <span class="old-price">$12.25</span>
-            </div> -->
-        </a>
-      </div>
+          $product = wc_get_product(get_the_ID());
+          if (!$product) continue;
+      ?>
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/walnut.webp" alt="Golden Walnuts">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★★</span>
-            <span class="rating">(5.0)</span>
-          </div>
-          <h3 class="product-title">Golden Walnuts</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$11.50</span>
-              <span class="old-price">$13.00</span>
-            </div> -->
-        </a>
-      </div>
+          <div class="product-card">
+            <a href="<?php the_permalink(); ?>">
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-            <span class="badge discount">-20%</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Macadamia.webp" alt="Macadamia Bliss">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★☆</span>
-            <span class="rating">(4.3)</span>
-          </div>
-          <h3 class="product-title">Macadamia Bliss</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$14.99</span>
-              <span class="old-price">$18.50</span>
-            </div> -->
-        </a>
-      </div>
+              <div class="product-top">
+                <?php
+                $categories = wc_get_product_category_list($product->get_id());
+                if ($categories) {
+                  echo '<span class="badge category">' . strip_tags($categories) . '</span>';
+                }
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-            <span class="badge discount">-15%</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/almonds.webp" alt="Almonds Supreme">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★☆</span>
-            <span class="rating">(4.0)</span>
-          </div>
-          <h3 class="product-title">Almonds Supreme</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$9.99</span>
-              <span class="old-price">$11.99</span>
-            </div> -->
-        </a>
-      </div>
+                if ($product->is_on_sale()) {
+                  $regular_price = $product->get_regular_price();
+                  $sale_price = $product->get_sale_price();
+                  if ($regular_price > 0) {
+                    $discount = round((($regular_price - $sale_price) / $regular_price) * 100);
+                    echo '<span class="badge discount">-' . $discount . '%</span>';
+                  }
+                }
+                ?>
+              </div>
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-            <span class="badge discount">-10%</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/cashew.webp" alt="Raw Cashew Delight">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★★</span>
-            <span class="rating">(5.0)</span>
-          </div>
-          <h3 class="product-title">Raw Cashew Delight</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$12.99</span>
-              <span class="old-price">$14.50</span>
-            </div> -->
-        </a>
-      </div>
+              <div class="product-image">
+                <?php echo $product->get_image(); ?>
+              </div>
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
-          </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Fandoq.webp" alt="Hazelnut Crunch">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★☆☆</span>
-            <span class="rating">(3.5)</span>
-          </div>
-          <h3 class="product-title">Hazelnut Crunch</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$8.75</span>
-              <span class="old-price">$9.50</span>
-            </div> -->
-        </a>
-      </div>
+              <div class="product-rating">
+                <?php
+                $average = $product->get_average_rating();
+                echo '<span class="stars">' . wc_get_rating_html($average) . '</span>';
+                echo '<span class="rating">(' . number_format($average, 1) . ')</span>';
+                ?>
+              </div>
 
-      <div class="product-card">
-        <a href="./product.php">
-          <div class="product-top">
-            <span class="badge category">Nuts</span>
+              <h3 class="product-title"><?php the_title(); ?></h3>
+              <p class="available_quantity">Available Quantity: <?php the_field('available_quantity'); ?></p>
+
+            </a>
           </div>
-          <div class="product-image">
-            <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/product/quality/Pistachio.webp" alt="Roasted Pistachios">
-          </div>
-          <div class="product-rating">
-            <span class="stars">★★★★☆</span>
-            <span class="rating">(4.2)</span>
-          </div>
-          <h3 class="product-title">Roasted Pistachios</h3>
-          <!-- <div class="product-price">
-              <span class="new-price">$10.99</span>
-              <span class="old-price">$12.25</span>
-            </div> -->
-        </a>
-      </div>
+
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      else :
+        echo '<p>No products found.</p>';
+      endif;
+      ?>
 
     </div>
 

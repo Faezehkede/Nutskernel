@@ -83,6 +83,5 @@ function agrifoodz_enqueue_scripts()
     wp_localize_script('agrifoodz-live-search', 'my_ajax', array(
         'ajax_url' => admin_url('admin-ajax.php')
     ));
-    
 }
 add_action('wp_enqueue_scripts', 'agrifoodz_enqueue_scripts');

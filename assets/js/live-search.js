@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
               resultsBox.innerHTML = "<p>No results found</p>";
             }
+          })
+          .catch(() => {
+            loader.style.display = "none";
+            resultsBox.innerHTML = "<p>Something went wrong.</p>";
           });
       }, 300);
     });

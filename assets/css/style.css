@@ -378,6 +378,53 @@ p {
   background-color: #00894a;
 }
 
+#search-results {
+  position: absolute;
+  top: 135%;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  z-index: 99;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.live-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.live-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #eee;
+  padding: 5px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.live-item:hover {
+  background: #f1f1f1;
+}
+
+.live-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#loader {
+  position: absolute;
+  top: 50%;
+  right: 120px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #38572d;
+}
+
 /* page baner */
 .page-banner-content {
   display: flex;
