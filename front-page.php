@@ -246,12 +246,22 @@
 
       <div class="swiper-wrapper">
         <?php
-        // Get the products selected via ACF
-        $high_demand_products = get_field('high_demand_products');
+        $args = [
+          'post_type' => 'product',
+          'posts_per_page' => 10,
+          'meta_query' => [
+            [
+              'key' => 'high_demand',
+              'value' => '1', // true
+              'compare' => '='
+            ]
+          ]
+        ];
 
-        if ($high_demand_products) :
-          foreach ($high_demand_products as $post) :
-            setup_postdata($post);
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) :
+          while ($query->have_posts()) : $query->the_post();
             global $product;
         ?>
             <div class="swiper-slide category-card">
@@ -267,10 +277,10 @@
               </div>
             </div>
         <?php
-          endforeach;
+          endwhile;
           wp_reset_postdata();
         else :
-          echo '<p>No High Demand products selected.</p>';
+          echo '<p>No high demand products found.</p>';
         endif;
         ?>
 
