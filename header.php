@@ -17,7 +17,7 @@
         <a href="<?php echo home_url('/register'); ?>" class="signup">Join Us Now</a>
       </div>
       <div class="row">
-
+        
         <?php
         $header_info = get_field('header_info', 'option');
         ?>
@@ -27,7 +27,7 @@
             <?php
             if ($header_info && $header_info['logo']) {
               $logo = $header_info['logo'];
-              echo '<img src="' . esc_url($logo['url']) . '" alt="' . esc_attr($logo['alt']) . ' . class="logo" />';
+              echo '<img src="' . esc_url($logo['url']) . '" alt="' . esc_attr($logo['alt']) . '" class="logo" />';
             }
             ?>
           </a>
