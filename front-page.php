@@ -56,66 +56,45 @@
         <div class="swiper hero-swiper">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="overlay">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide6.webp" alt="Slide 1" class="swiper-img">
-                <div class="main-content">
-                  <h3>Global B2B platform for Food & Agriculture Products</h3>
-                  <p>Join a worldwide network of buyers and suppliers in the agri-food industry.<br>
-                    Access thousands of verified products across global markets.</p>
-                  <a href="#" class="main-btn">Explore Global Products</a>
-                </div>
-              </div>
-            </div>
+            <?php
+            $hero_section = get_field('hero_section', 'option');
 
-            <div class="swiper-slide">
-              <div class="overlay">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide5.webp" class="swiper-img">
-                <div class="main-content">
-                  <h3>Streamline your agri-trade operations with our B2B platform</h3>
-                  <p>Manage sourcing, negotiations, and logistics all in one place.<br>
-                    Our smart tools make agri-trade faster, easier, and more efficient.</p>
-                  <a href="#" class="main-btn">Simplify Your Trade Today</a>
-                </div>
-              </div>
-            </div>
+            if ($hero_section):
+              foreach ($hero_section as $slide):
+                $image = $slide['hero_image'];
+                $title = $slide['hero_text'];
+                $paragraph = $slide['hero_paragraph'];
+                $button_text = $slide['hero_button'];
+                $button_link = $slide['hero_button_link'];
+            ?>
+                <div class="swiper-slide">
+                  <div class="overlay">
+                    <?php if ($image): ?>
+                      <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="swiper-img">
+                    <?php endif; ?>
+                    <div class="main-content">
+                      <?php if ($title): ?>
+                        <h3><?php echo esc_html($title); ?></h3>
+                      <?php endif; ?>
 
-            <div class="swiper-slide">
-              <div class="overlay">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide2.webp" alt="Slide 1" class="swiper-img">
-                <div class="main-content">
-                  <h3>Connecting Global Buyers with Trusted Agri-Food Suppliers</h3>
-                  <p>Find certified suppliers and grow your agri-business with confidence.<br>
-                    We bridge the gap between demand and reliable supply.</p>
-                  <a href="#" class="main-btn">Find Reliable Suppliers</a>
-                </div>
-              </div>
-            </div>
+                      <?php if ($paragraph): ?>
+                        <p><?php echo esc_html($paragraph); ?></p>
+                      <?php endif; ?>
 
-            <div class="swiper-slide">
-              <div class="overlay">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide1.webp" alt="Slide 1" class="swiper-img">
-                <div class="main-content">
-                  <h3>From Farm to Market — Smarter B2B for Agri-Food Trade</h3>
-                  <p>Digitize your supply chain from field to shelf.<br>
-                    Make smarter trade decisions with real-time insights and tools.</p>
-                  <a href="#" class="main-btn">Start Smarter Trading</a>
+                      <?php if ($button_link && $button_text): ?>
+                        <a href="<?php echo esc_url($button_link['url']); ?>"
+                          class="main-btn"
+                          target="<?php echo esc_attr($button_link['target'] ?: '_self'); ?>">
+                          <?php echo esc_html($button_text); ?>
+                        </a>
+                      <?php endif; ?>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="overlay">
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/slide9.webp" alt="Slide 1" class="swiper-img">
-                <div class="main-content">
-                  <h3>Trusted Gateway to Wholesale Food & Agriculture Markets</h3>
-                  <p>Access a vetted marketplace built for bulk agri-food trade.<br>
-                    Connect with trusted wholesalers, exporters, and importers worldwide.</p>
-                  <a href="#" class="main-btn">Enter the Marketplace</a>
-                </div>
-              </div>
-            </div>
-
+            <?php
+              endforeach;
+            endif;
+            ?>
 
           </div>
 

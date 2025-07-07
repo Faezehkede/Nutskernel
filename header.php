@@ -16,11 +16,7 @@
       <?php
       $header_info = get_field('header_info', 'option');
       ?>
-
-<pre>
-<?php print_r($header_info); ?>
-</pre>
-
+      
       <div class="row header-top-part">
         <?php if ($header_info): ?>
 
