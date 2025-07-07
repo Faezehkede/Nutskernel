@@ -62,14 +62,14 @@ function agrifoodz_enqueue_scripts()
     }
 
     // Single product
-    if ( is_singular('product') ) {
+    if (is_singular('product')) {
         wp_enqueue_style('product-style', AGRIFOODZ_CSS . '/product.css');
     }
 
-    if ( is_singular('product') ) {
+    if (is_singular('product')) {
         wp_enqueue_script('product-single-script', AGRIFOODZ_JS . '/products.js', array('jquery'), null, true);
     }
-    
+
 
 
     // Scripts
@@ -77,5 +77,12 @@ function agrifoodz_enqueue_scripts()
 
     wp_enqueue_script('agrifoodz-swiper', AGRIFOODZ_JS . '/swiper-bundle.min.js', [], AGRIFOODZ_VERSION, true);
     wp_enqueue_script('agrifoodz-script', AGRIFOODZ_JS . '/script.js', ['jquery', 'agrifoodz-swiper'], AGRIFOODZ_VERSION, true);
+
+    // Live Search Script
+    wp_enqueue_script('agrifoodz-live-search', AGRIFOODZ_JS . '/live-search.js', array('jquery'), AGRIFOODZ_VERSION, true);
+    wp_localize_script('agrifoodz-live-search', 'my_ajax', array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    ));
+    
 }
 add_action('wp_enqueue_scripts', 'agrifoodz_enqueue_scripts');
