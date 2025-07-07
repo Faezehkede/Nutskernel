@@ -379,6 +379,7 @@ p {
 }
 
 #search-results {
+  display: none;
   position: absolute;
   top: 135%;
   left: 0;

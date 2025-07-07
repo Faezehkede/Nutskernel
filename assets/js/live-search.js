@@ -8,8 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     input.addEventListener("keyup", function () {
       const query = input.value.trim();
   
+      // Hide box if input is too short
       if (query.length < 3) {
         resultsBox.innerHTML = "";
+        resultsBox.style.display = "none";
         loader.style.display = "none";
         return;
       }
@@ -17,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         loader.style.display = "block";
+        resultsBox.style.display = "block"; // show it while loading
+  
         fetch(`${my_ajax.ajax_url}?action=ajax_search&s=${encodeURIComponent(query)}`)
           .then((res) => res.json())
           .then((data) => {
@@ -35,13 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
               });
               html += "</div>";
               resultsBox.innerHTML = html;
+              resultsBox.style.display = "block"; // show with results
             } else {
               resultsBox.innerHTML = "<p>No results found</p>";
+              resultsBox.style.display = "block"; // still show "no results"
             }
           })
           .catch(() => {
             loader.style.display = "none";
             resultsBox.innerHTML = "<p>Something went wrong.</p>";
+            resultsBox.style.display = "block";
           });
       }, 300);
     });
