@@ -268,11 +268,15 @@
               <div class="category-item">
                 <a href="<?php the_permalink(); ?>">
                   <?php if (has_post_thumbnail()) : ?>
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php the_title_attribute(); ?>" />
+                    <div class="image-wrapper">
+                      <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php the_title_attribute(); ?>" />
+                    </div>
                   <?php else : ?>
-                    <img src="<?php echo wc_placeholder_img_src(); ?>" alt="Placeholder" />
-                  <?php endif; ?>
-                  <span><?php the_title(); ?></span>
+                    <div class="image-wrapper">
+                      <img src="<?php echo wc_placeholder_img_src(); ?>" alt="Placeholder" />
+                    </div>
+                    <?php endif; ?>
+                    <span><?php the_title(); ?></span>
                 </a>
               </div>
             </div>
