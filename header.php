@@ -28,6 +28,10 @@
             $link = $header_info['invitation_btn_link'];
             $btn_text = $header_info['invitation_btn_text']; ?>
 
+<pre>
+<?php print_r($header_info); ?>
+</pre>
+
             <a href="<?php echo esc_url($link['url']); ?>"
               class="signup"
               target="<?php echo esc_attr($link['target'] ?: '_self'); ?>">
