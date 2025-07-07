@@ -53,22 +53,17 @@ function agrifoodz_enqueue_scripts()
 
     // Events
 
-    if (is_post_type_archive('events')) {
-        wp_enqueue_style('theme-events-archive', AGRIFOODZ_CSS . '/events-archive.css');
-    }
-    
-    if (is_singular('b2b-event')) {
-        wp_enqueue_style('theme-single-events', AGRIFOODZ_CSS . '/single-events.css');
-    }
-
-    // Archive page
     if (is_post_type_archive('b2b-event')) {
         wp_enqueue_style('b2b-event-archive-style', AGRIFOODZ_CSS . '/event-archive.css', [], '1.0');
     }
 
-    // Single event page
     if (is_singular('b2b-event')) {
         wp_enqueue_style('b2b-event-single-style', AGRIFOODZ_CSS . '/single-event.css', [], '1.0');
+    }
+
+    // Single product
+    if ( is_singular('product') ) {
+        wp_enqueue_style('product-style', AGRIFOODZ_CSS . '/product.css');
     }
     
 
