@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <?php wp_head(); // This pulls in all necessary head content ?>
+  <?php wp_head(); // This pulls in all necessary head content 
+  ?>
 </head>
+
 <body <?php body_class(); ?>>
 
-<header class="header">
+  <header class="header">
     <div class="container">
       <div class="row header-top-part">
         <p>free sign up for 15 days</p>
@@ -15,23 +18,36 @@
       </div>
       <div class="row">
 
+        <?php
+        $header = get_field('header_part', 'option'); // or 'page ID' if not in Options Page
+
+        if ($header && isset($header['logo'])) {
+          $logo_url = $header['logo']['url']; // ACF Image field returns an array
+          $logo_alt = $header['logo']['alt'];
+        }
+        ?>
+
         <div class="col">
-            <a href="<?php echo home_url(); ?>">    
-                <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.webp" alt="Logo" class="logo">
-            </a>
+          <a href="<?php echo home_url(); ?>">
+            <?php if (!empty($logo_url)) : ?>
+              <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($logo_alt); ?>" class="logo">
+            <?php else : ?>
+              <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/main-logo.webp" alt="Logo" class="logo">
+            <?php endif; ?>
+          </a>
         </div>
 
         <div class="col-6">
-        <form method="get" action="<?php echo home_url(); ?>" class="search-box">
-          <input type="text" name="s" placeholder="Search deals.." />
-          <button type="submit">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 17L21 21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#fff" stroke-width="2"></path>
-            </svg>
-            <span class="visually-hidden">Search</span>
-          </button>
-        </form>
+          <form method="get" action="<?php echo home_url(); ?>" class="search-box">
+            <input type="text" name="s" placeholder="Search deals.." />
+            <button type="submit">
+              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 17L21 21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#fff" stroke-width="2"></path>
+              </svg>
+              <span class="visually-hidden">Search</span>
+            </button>
+          </form>
         </div>
 
         <div class="col">
