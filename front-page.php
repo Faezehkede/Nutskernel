@@ -24,23 +24,24 @@
 
               if (!empty($categories) && !is_wp_error($categories)) :
                 foreach ($categories as $category) :
-                  // Get the thumbnail ID
                   $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
                   $image_url = wp_get_attachment_url($thumbnail_id);
+                  $category_link = get_term_link($category);
               ?>
                   <li>
-                    <?php if ($image_url): ?>
-                      <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($category->name); ?>" width="20" height="20">
-                    <?php else: ?>
-                      <img src="<?php echo wc_placeholder_img_src(); ?>" alt="No Image" width="20" height="20">
-                    <?php endif; ?>
-                    <p><?php echo esc_html($category->name); ?></p>
+                    <a href="<?php echo esc_url($category_link); ?>" class="category-link">
+                      <?php if ($image_url): ?>
+                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($category->name); ?>" width="32" height="32">
+                      <?php else: ?>
+                        <img src="<?php echo wc_placeholder_img_src(); ?>" alt="No Image" width="32" height="32">
+                      <?php endif; ?>
+                      <p><?php echo esc_html($category->name); ?></p>
+                    </a>
                   </li>
               <?php
                 endforeach;
               endif;
               ?>
-
 
             </ul>
           </div>
