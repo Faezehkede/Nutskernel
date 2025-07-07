@@ -25,8 +25,8 @@
         <div class="col">
           <a href="<?php echo home_url(); ?>">
             <?php
-            if ($header_info && $header_info['main-logo']) {
-              $main_logo = $header_info['main-logo'];
+            if ($header_info && $header_info['main_logo']) {
+              $main_logo = $header_info['main_logo'];
               echo '<img src="' . esc_url($main_logo['url']) . '" alt="' . esc_attr($main_logo['alt']) . '" class="logo" />';
             }
             ?>
