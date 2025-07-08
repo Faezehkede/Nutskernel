@@ -118,8 +118,12 @@ $category = ($terms && ! is_wp_error($terms)) ? $terms[0] : null;
                             <?php echo apply_filters('the_content', $product->get_description()); ?>
                         </div>
                         <div class="tab-content review">
-                            <p>No reviews yet. Be the first to write one!</p>
+                            <?php
+                            // Load template for existing reviews
+                            comments_template('/woocommerce/single-product-reviews.php');
+                            ?>
                         </div>
+
                     </div>
                 </div>
 
@@ -160,12 +164,12 @@ $category = ($terms && ! is_wp_error($terms)) ? $terms[0] : null;
                         <div class="offer-title">
                             <h2>Popular Organic Discount</h2>
                         </div>
-                        <div class="timer" id="countdown">
+                        <!-- <div class="timer" id="countdown">
                             <p><span id="days"></span> Days </p>
                             <p><span id="hours"></span> Hours </p>
                             <p><span id="minutes"></span> Minutes </p>
                             <p><span id="seconds"></span> Seconds </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="product-grid">

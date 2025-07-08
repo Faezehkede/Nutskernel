@@ -73,7 +73,7 @@
 }
 
 .what-we-do {
-    background-image: url(../assets/images/about-bg.webp);
+    background-image: url(../images/about-bg.webp);
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1080,7 +1080,7 @@ section.contact-info .row {
     padding: 25px 30px;
     border: 1px solid #ddd;
     transition: all 0.3s ease;
-    width: 49%;
+    width: 100%;
 }
 
 .how-step:hover {
@@ -1140,6 +1140,7 @@ section.contact-info .row {
 
 .how-steps {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
@@ -1148,14 +1149,15 @@ section.contact-info .row {
 }
 
 .ready-to-grow {
-    width: 49%;
-    background-image: url(../assets/images/assorted-nuts1.webp);
+    width: 100%;
+    background-image: url(../images/assorted-nuts1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 25px 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     color: #fff;
 }
@@ -1688,6 +1690,7 @@ section.contact-info .row {
 
 
 /* Privacy Policy */
+/* Privacy Policy */
 
 .page-template-page-privacy-policy .page-banner-img img {
     max-width: 250px;
@@ -1695,24 +1698,14 @@ section.contact-info .row {
     transform: rotate(15deg);
 }
 
-.privacy-policy {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px 0;
-    justify-content: space-between;
+.privacy-policy h2 {
+    margin-top: 35px;
 }
 
 .privacy-policy>p {
     width: 100%;
     font-size: 18px;
     font-weight: 900;
-}
-
-.privacy-box {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-left: 3px solid #00a055;
-    width: 49%;
 }
 
 .privacy-policy ul {
@@ -1759,24 +1752,13 @@ section.contact-info .row {
 
 /* Terms Of Use */
 
-.terms-of-use {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between;
+..terms-of-use h2 {
+    margin-top: 35px;
 }
-
 .terms-of-use>p {
     width: 100%;
     font-size: 18px;
     font-weight: 900;
-}
-
-.terms-box {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-left: 3px solid #00a055;
-    width: 49%;
 }
 
 .terms-box ul {

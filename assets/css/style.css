@@ -1103,10 +1103,14 @@ p {
 
 /* Ads Banner */
 
+.ads-banner-img {
+  flex-wrap: wrap;
+}
+
 .ads-banner img {
-  width: 100%;
+  width: 49%;
   height: 100%;
-  max-width: 655px;
+  /* max-width: 655px; */
 }
 
 /* product grid */

@@ -987,6 +987,15 @@
         font-size: 18px;
     }
 
+    .services::before {
+        width: 210px;
+    }
+
+    .services::after {
+        width: 145px;
+        height: 145px;
+    }
+
     /* Ads */
 
     .ads-banner-img {
@@ -1319,18 +1328,22 @@
         min-height: 190px;
         max-height: 200px;
         gap: 5px;
-        padding: 0 0 0 35px;
+        padding: 0;
         border: 0;
         position: relative;
     }
 
+    .feature-service .section-title {
+        margin-bottom: 0px;
+    }
+
     .services h3 {
-        font-size: 16px;
-        margin-bottom: 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .services p {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .feature-service-item {
@@ -1346,12 +1359,12 @@
     }
 
     .feature-service-item svg {
-        width: 18px;
-        height: 18px;
+        width: 15px;
+        height: 15px;
     }
 
     .feature-service-item span {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .service-singup {
@@ -1366,8 +1379,8 @@
     }
 
     .services::after {
-        width: 100px;
-        height: 100px;
+        width: 55px;
+        height: 55px;
     }
 
     .services::before {
