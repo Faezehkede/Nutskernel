@@ -97,11 +97,12 @@ function agrifoodz_enqueue_scripts()
     ));
 
     // Category Selector Script
-    wp_enqueue_script('agrifoodz-categories-selector', AGRIFOODZ_JS . '/category-selector.js', array('jquery'), AGRIFOODZ_VERSION, true);
-    wp_localize_script('agrifoodz-category-selector', 'ajax_object', array(
-        'ajax_url' => admin_url('admin-ajax.php')
-    ));
-    
+    wp_enqueue_script(
+        'agrifoodz-category-selector', AGRIFOODZ_JS  . '/category-selector.js', array('jquery'), '1.0.0', true);
+
+    // 🟩 Localize it to pass ajax_url
+    wp_localize_script('agrifoodz-category-selector', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+
     // Page-specific JS
     if ($page_slug === 'supplier-dashboard') {
         wp_enqueue_script('agrifoodz-supplier', AGRIFOODZ_JS . '/supplier.js', ['jquery'], AGRIFOODZ_VERSION, true);
