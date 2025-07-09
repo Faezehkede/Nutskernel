@@ -1,11 +1,11 @@
 function openCategoryModal() {
     jQuery('#category-modal').show();
-    loadCategories(0); // load root
+    jQuery('#category-levels').html(''); // reset
+    loadCategories(0); // Load top-level
 }
 
 function closeCategoryModal() {
     jQuery('#category-modal').hide();
-    jQuery('#category-levels').html('');
 }
 
 function loadCategories(parentId) {
@@ -25,18 +25,19 @@ function loadCategories(parentId) {
 
 function renderCategories(categories, parentId) {
     if (!categories.length) {
-        // No children — this is the selected category
+        // No children — final selection
+        const selectedText = jQuery(`#cat-title-${parentId}`).text();
         jQuery('#selected_category_id').val(parentId);
-        jQuery('#category_name').val(jQuery('#cat-title-' + parentId).text());
+        jQuery('#category_name').val(selectedText);
         closeCategoryModal();
         return;
     }
 
-    const levelDiv = jQuery('<div class="category-level"></div>');
+    const level = jQuery('<div class="category-level"></div>');
     categories.forEach(cat => {
-        const catItem = jQuery(`<div class="category-item" id="cat-title-${cat.id}" onclick="loadCategories(${cat.id})">${cat.name}</div>`);
-        levelDiv.append(catItem);
+        const item = jQuery(`<div class="category-item" id="cat-title-${cat.id}" onclick="loadCategories(${cat.id})">${cat.name}</div>`);
+        level.append(item);
     });
 
-    jQuery('#category-levels').append(levelDiv);
+    jQuery('#category-levels').append(level);
 }

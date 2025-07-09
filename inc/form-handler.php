@@ -33,9 +33,8 @@ add_action('admin_post_nopriv_handle_request_form', 'handle_request_form');
 add_action('admin_post_handle_request_form', 'handle_request_form');
 
 // AJAX to Load Child Categories
-function ajax_get_child_categories()
-{
-    $parent_id = intval($_POST['parent_id']);
+function ajax_get_child_categories() {
+    $parent_id = isset($_POST['parent_id']) ? intval($_POST['parent_id']) : 0;
 
     $terms = get_terms(array(
         'taxonomy' => 'request_category',
@@ -43,7 +42,7 @@ function ajax_get_child_categories()
         'parent' => $parent_id,
     ));
 
-    $data = array_map(function ($term) {
+    $data = array_map(function($term) {
         return array(
             'id' => $term->term_id,
             'name' => $term->name
@@ -55,3 +54,6 @@ function ajax_get_child_categories()
 }
 add_action('wp_ajax_get_child_categories', 'ajax_get_child_categories');
 add_action('wp_ajax_nopriv_get_child_categories', 'ajax_get_child_categories');
+
+
+

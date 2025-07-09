@@ -101,7 +101,7 @@ function agrifoodz_enqueue_scripts()
     wp_localize_script('agrifoodz-category-selector', 'ajax_object', array(
         'ajax_url' => admin_url('admin-ajax.php')
     ));
-
+    
     // Page-specific JS
     if ($page_slug === 'supplier-dashboard') {
         wp_enqueue_script('agrifoodz-supplier', AGRIFOODZ_JS . '/supplier.js', ['jquery'], AGRIFOODZ_VERSION, true);

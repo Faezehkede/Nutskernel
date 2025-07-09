@@ -167,25 +167,10 @@
   </div>
 </section>
 
-<!-- <section class="section third-section form-section">
+<section class="section third-section form-section">
   <div class="container">
     <div class="inner-wrapper">
-      <div class="form-wrapper">
-        <h2>Send one request, receive multiple offers!</h2>
-        <p>Connect with thousands of suppliers and compare the best prices.</p>
-        <form action="submit_form.php" method="POST">
-          <label>Product Category: *</label>
-          <input type="text" name="category" required placeholder='Example: "Strawberries"' />
-
-          <label>Product Type:</label>
-          <input type="text" name="type" placeholder='Example: "Camarosa"' />
-
-          <label>Required Quantity (kg): *</label>
-          <input type="text" name="quantity" required placeholder='Example: "50,000"' />
-
-          <button class="btn" type="submit">Contact Supplier</button>
-        </form>
-      </div>
+      <?php get_template_part('template-parts/form', 'request'); ?>
 
       <div class="list-product">
         <p>
@@ -220,8 +205,8 @@
       </div>
     </div>
   </div>
-</section> -->
-<?php get_template_part('template-parts/form', 'request'); ?>
+</section>
+
 
 <section class="section product-carousel-section">
   <div class="container">
