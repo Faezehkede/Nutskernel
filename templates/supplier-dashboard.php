@@ -1,3 +1,12 @@
+<?php
+
+/**
+ * Template Name: Supplier Dashboard
+ * Template Post Type: page
+ */
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
