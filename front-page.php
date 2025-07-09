@@ -227,7 +227,7 @@
 
     <div class="section-title">
       <h2>Newest Products</h2>
-      <a href="#" class="btn">
+      <a href="<?php echo home_url('/shop'); ?>" class="btn">
         <span>View All</span>
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -786,7 +786,7 @@
 
     <div class="section-title">
       <h2>Explore Our Products</h2>
-      <a href="#" class="btn">
+      <a href="<?php echo home_url('/shop'); ?>" class="btn">
         <span>View All</span>
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -1070,7 +1070,7 @@
         </div>          
 
     </div>
-  </section>-->
+</section>-->
 
 <section class="events-section">
   <div class="container">
@@ -1080,7 +1080,7 @@
 
         <div class="section-title">
           <h2>Food Events & Exhibitions</h2>
-          <a class="btn">
+          <a href="<?php echo home_url('/events'); ?>" class="btn">
             <span>More Events</span>
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -1098,84 +1098,41 @@
         <div class="swiper event-swiper">
           <div class="swiper-wrapper event-wrapper">
 
-            <div class="swiper-slide">
-              <div class="event-item">
-                <div class="event-img">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img4.webp" alt="Event Image">
+            <?php
+            $args = array(
+              'post_type' => 'b2b-event',
+              'posts_per_page' => 8 // You can limit this if needed
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) :
+              while ($query->have_posts()) : $query->the_post();
+                // ACF fields
+                $event_img = get_the_post_thumbnail_url(get_the_ID(), 'full'); // Use Featured Image
+                $event_date = get_field('event-date');
+                $event_location = get_field('event-location');
+                $event_time = get_field('event-time'); // If needed
+                $event_note = get_field('event-note');
+            ?>
+                <div class="swiper-slide">
+                  <div class="event-item">
+                    <div class="event-img">
+                      <img src="<?php echo esc_url($event_img); ?>" alt="<?php the_title_attribute(); ?>">
+                    </div>
+                    <div class="event-content">
+                      <h3><?php the_title(); ?></h3>
+                      <p class="event-date"><strong>Date:</strong> <?php echo esc_html($event_date); ?></p>
+                      <p class="event-location"><strong>Location:</strong> <?php echo esc_html($event_location); ?></p>
+                      <p class="event-note"><?php echo esc_html($event_note); ?></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="event-content">
-                  <h3>Future Food-Tech London</h3>
-                  <p class="event-date"><strong>Date:</strong> Sept 24–25, 2025</p>
-                  <p class="event-location"><strong>Location:</strong> London, UK</p>
-                  <p class="event-note">Networking summit for food innovation & B2B collaboration.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="event-item">
-                <div class="event-img">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img5.webp" alt="Event Image">
-                </div>
-                <div class="event-content">
-                  <h3>IFT First Expo</h3>
-                  <p class="event-date"><strong>Date:</strong> July 14–17, 2025</p>
-                  <p class="event-location"><strong>Location:</strong> Chicago, USA</p>
-                  <p class="event-note">Science-based food innovation and supplier interaction.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="event-item">
-                <div class="event-img">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img2.jpg" alt="Event Image">
-                </div>
-                <div class="event-content">
-                  <h3>Asia-Pacific Agri-Food Summit</h3>
-                  <p class="event-date"><strong>Date:</strong> Nov 4–5, 2025</p>
-                  <p class="event-location"><strong>Location:</strong> Singapore</p>
-                  <p class="event-note">Targeted agri-food B2B matchmaking and innovation exchange.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="event-item">
-                <div class="event-img">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img1.webp" alt="Event Image">
-                </div>
-                <div class="event-content">
-                  <h3>Anuga FoodTec</h3>
-                  <p class="event-date"><strong>Date:</strong> March 19–22, 2027</p>
-                  <p class="event-location"><strong>Location:</strong> Cologne, Germany</p>
-                  <p class="event-note">Tech & automation trade fair for global food suppliers.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="event-item">
-                <div class="event-img">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img3.webp" alt="Asiafruit Congress">
-                </div>
-                <div class="event-content">
-                  <h3>Asia Fruit Congress</h3>
-                  <p class="event-date"><strong>Date:</strong> Sept 3–5, 2025</p>
-                  <p class="event-location"><strong>Location:</strong> Hong Kong, China</p>
-                  <p class="event-note">Premier fresh produce event in Asia connecting buyers, growers & tech leaders.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="event-item">
-                <div class="event-img">
-                  <img src="<?php echo AGRIFOODZ_ASSETS; ?>/images/events/quality/event-img6.webp" alt="Global Organic Expo">
-                </div>
-                <div class="event-content">
-                  <h3>Global Organic Expo 2025</h3>
-                  <p class="event-date"><strong>Date:</strong> Nov 20–22, 2025</p>
-                  <p class="event-location"><strong>Location:</strong> New Delhi, India</p>
-                  <p class="event-note">Showcase of organic innovations, certifications, and international trade opportunities.</p>
-                </div>
-              </div>
-            </div>
+            <?php
+              endwhile;
+              wp_reset_postdata();
+            endif;
+            ?>
 
           </div>
         </div>
