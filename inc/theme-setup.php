@@ -62,5 +62,19 @@ function register_request_post_type() {
 }
 add_action('init', 'register_request_post_type');
 
+// Custom Taxonomy for Categories
+function register_request_category_taxonomy() {
+    register_taxonomy('request_category', 'request', array(
+        'labels' => array(
+            'name' => 'Request Categories',
+            'singular_name' => 'Request Category',
+        ),
+        'hierarchical' => true,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'rewrite' => array('slug' => 'request-category'),
+    ));
+}
+add_action('init', 'register_request_category_taxonomy');
 
 

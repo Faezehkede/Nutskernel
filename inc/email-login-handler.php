@@ -25,28 +25,3 @@
 // }
 
 
-// Form Submission
-function handle_request_form() {
-    $category = sanitize_text_field($_POST['category']);
-    $type = sanitize_text_field($_POST['type']);
-    $quantity = sanitize_text_field($_POST['quantity']);
-
-    // Create post
-    $post_id = wp_insert_post(array(
-        'post_type' => 'request',
-        'post_title' => $category . ' Request',
-        'post_status' => 'publish',
-    ));
-
-    if ($post_id) {
-        update_field('product_category', $category, $post_id);
-        update_field('product_type', $type, $post_id);
-        update_field('quantity', $quantity, $post_id);
-    }
-
-    // Redirect (optional)
-    wp_redirect(home_url('/thank-you/'));
-    exit;
-}
-add_action('admin_post_nopriv_handle_request_form', 'handle_request_form');
-add_action('admin_post_handle_request_form', 'handle_request_form');
