@@ -40,9 +40,7 @@
 
     <div class="space-line">
       <div class="row">
-        <hr>
         <span>Last Articles</span>
-        <hr>
         <a href="<?php echo home_url('/events'); ?>">View All</a>
       </div>
     </div>
