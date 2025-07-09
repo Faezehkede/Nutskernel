@@ -97,7 +97,7 @@ function agrifoodz_enqueue_scripts()
     ));
 
     // Category Selector Script
-    wp_enqueue_script('agrifoodz-category-selector', AGRIFOODZ_JS . '/category-selector.js', array('jquery'), AGRIFOODZ_VERSION, true);
+    wp_enqueue_script('agrifoodz-categories-selector', AGRIFOODZ_JS . '/category-selector.js', array('jquery'), AGRIFOODZ_VERSION, true);
     wp_localize_script('agrifoodz-category-selector', 'ajax_object', array(
         'ajax_url' => admin_url('admin-ajax.php')
     ));

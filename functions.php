@@ -25,6 +25,7 @@ function agrifoodz_theme_setup() {
 require_once AGRIFOODZ_INC . '/acf.php';
 require_once AGRIFOODZ_INC . '/enqueue.php';
 require_once AGRIFOODZ_INC . '/theme-setup.php';
+require_once AGRIFOODZ_INC . '/form-handler.php';
 // require_once AGRIFOODZ_INC . '/widgets.php';
 require_once AGRIFOODZ_INC . '/template-tags.php';
 require_once AGRIFOODZ_INC . '/email-login-handler.php';
