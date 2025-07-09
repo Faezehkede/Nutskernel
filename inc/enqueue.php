@@ -45,7 +45,7 @@ function agrifoodz_enqueue_scripts()
     }
 
     if (in_array($page_slug, ['supplier-dashboard', 'buyer-dashboard'])) {
-        wp_enqueue_style('agrifoodz-dashboard', AGRIFOODZ_CSS . '/account.css', [], AGRIFOODZ_VERSION);
+        wp_enqueue_style('agrifoodz-dashboards', AGRIFOODZ_CSS . '/account.css', [], AGRIFOODZ_VERSION);
     }
 
     // 
