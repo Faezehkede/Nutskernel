@@ -23,11 +23,14 @@
 
 
 <div id="category-modal" class="category-modal" style="display:none;">
-    <div class="category-modal-content">
-        <span class="close-modal" onclick="closeCategoryModal()">&times;</span>
-        <h3>Select Category</h3>
-        <div id="category-levels">
-            <!-- JS will populate categories here -->
-        </div>
+  <div class="category-modal-content">
+    <span class="close-modal" onclick="closeCategoryModal()">×</span>
+    <h3>Select Category</h3>
+
+    <input type="text" id="category-search" placeholder="Search categories..." onkeyup="filterCategories(this.value)" />
+
+    <div id="category-levels">
+      <p class="loading-message">Loading...</p>
     </div>
+  </div>
 </div>
