@@ -167,7 +167,7 @@
   </div>
 </section>
 
-<section class="section third-section form-section">
+<!-- <section class="section third-section form-section">
   <div class="container">
     <div class="inner-wrapper">
       <div class="form-wrapper">
@@ -220,7 +220,8 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+<?php get_template_part('template-parts/form', 'request'); ?>
 
 <section class="section product-carousel-section">
   <div class="container">

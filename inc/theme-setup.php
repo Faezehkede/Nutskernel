@@ -46,5 +46,21 @@ function ajax_live_search() {
 add_action('wp_ajax_ajax_search', 'ajax_live_search');
 add_action('wp_ajax_nopriv_ajax_search', 'ajax_live_search');
 
+// Custom Post Type
+function register_request_post_type() {
+    register_post_type('request', array(
+        'labels' => array(
+            'name' => __('Requests'),
+            'singular_name' => __('Request'),
+        ),
+        'public' => false,
+        'has_archive' => false,
+        'show_ui' => true,
+        'menu_icon' => 'dashicons-feedback',
+        'supports' => ['title'],
+    ));
+}
+add_action('init', 'register_request_post_type');
+
 
 
