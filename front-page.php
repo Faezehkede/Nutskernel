@@ -502,7 +502,7 @@
         <div class="section-title">
           <h2>Featured Services</h2>
         </div>
-        <div class="feature-service-item">
+        <!-- <div class="feature-service-item">
 
           <a href="<?php echo home_url('/subscription-plans'); ?>">
             <span class="icon">
@@ -550,7 +550,8 @@
             <span> Subscription Plans</span>
           </a>
           <a href="<?php echo home_url('/marketing-research'); ?>">
-            <span class="icon"><svg fill="#fff" viewBox="0 0 256 256" id="Layer_1" version="1.1" xml:space="preserve"
+            <span class="icon">
+              <svg fill="#fff" viewBox="0 0 256 256" id="Layer_1" version="1.1" xml:space="preserve"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#fff">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -564,11 +565,13 @@
                     </path>
                   </g>
                 </g>
-              </svg></span>
+              </svg>
+            </span>
             <span> Marketing Research</span>
           </a>
           <a href="<?php echo home_url('/business-partnership'); ?>">
-            <span class="icon"><svg fill="#fff" version="1.1" id="Layer_1_1_" xmlns="http://www.w3.org/2000/svg"
+            <span class="icon">
+              <svg fill="#fff" version="1.1" id="Layer_1_1_" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" xml:space="preserve" stroke="#fff">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -587,11 +590,13 @@
                       width="2" height="2.828"></rect>
                   </g>
                 </g>
-              </svg></span>
+              </svg>
+            </span>
             <span> Business Partnership</span>
           </a>
           <a href="<?php echo home_url('/advertising-with-us'); ?>">
-            <span class="icon"><svg viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Layer_1" version="1.1"
+            <span class="icon">
+              <svg viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Layer_1" version="1.1"
                 xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 fill="#fff" stroke="#fff">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -652,11 +657,13 @@
                     </g>
                   </g>
                 </g>
-              </svg></span>
+              </svg>
+            </span>
             <span> Advertising with Us</span>
           </a>
           <a href="<?php echo home_url('/logistic-advising'); ?>">
-            <span class="icon"><svg viewBox="0 -2 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+            <span class="icon">
+              <svg viewBox="0 -2 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
@@ -664,11 +671,32 @@
                     d="M440.618,340.924A.994.994,0,0,1,440,340V308a5.005,5.005,0,0,1,5-5h1v-1a5.005,5.005,0,0,1,5-5h32a5.005,5.005,0,0,1,5,5v22a5.005,5.005,0,0,1-5,5h-1v1a5.005,5.005,0,0,1-5,5H447.414l-5.707,5.707A.994.994,0,0,1,441,341,.981.981,0,0,1,440.618,340.924ZM442,308v29.586l4.293-4.292A1,1,0,0,1,447,333h30a3,3,0,0,0,3-3V308a3,3,0,0,0-3-3H445A3,3,0,0,0,442,308Zm5-6v1h30a5.005,5.005,0,0,1,5,5v20h1a4,4,0,0,0,4-4V302a4,4,0,0,0-4-4H451A4,4,0,0,0,447,302Zm4,21a1,1,0,0,1,0-2h20a1,1,0,0,1,0,2Zm0-6a1,1,0,1,1,0-2h20a1,1,0,0,1,0,2Z"
                     transform="translate(-440 -297)" fill="#fff"></path>
                 </g>
-              </svg></span>
+              </svg>
+            </span>
             <span> Logistic Advising</span>
           </a>
 
+        </div> -->
+
+        <div class="feature-service-item">
+          <?php if (have_rows('featured_services', 'option')) : ?>
+            <?php while (have_rows('featured_services', 'option')) : the_row();
+              $link = get_sub_field('featured_services_link');
+              $name = get_sub_field('featured_services_name');
+              $icon = get_sub_field('featured_services_image'); // assuming it returns the URL
+            ?>
+              <a href="<?php echo esc_url($link); ?>">
+                <span class="icon">
+                  <?php if ($icon): ?>
+                    <img src="<?php echo esc_url($icon); ?>" alt="<?php echo esc_attr($name); ?>" />
+                  <?php endif; ?>
+                </span>
+                <span><?php echo esc_html($name); ?></span>
+              </a>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
+
 
       </div>
 

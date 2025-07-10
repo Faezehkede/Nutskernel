@@ -43,10 +43,9 @@ $category = ($terms && ! is_wp_error($terms)) ? $terms[0] : null;
 
             <div class="left-side product-details">
                 <!-- Product Section -->
-                <div class="grid items-start">
+                <div class="row items-start">
 
-                    <!-- Product Image -->
-                    <div class="product-image">
+                    <div class="col-3 product-image">
 
                         <?php echo $product->get_image('full', ['class' => 'rounded-xl shadow']); ?>
 
@@ -68,8 +67,7 @@ $category = ($terms && ! is_wp_error($terms)) ? $terms[0] : null;
 
                     </div>
 
-                    <!-- Product Info -->
-                    <div class="product-info">
+                    <div class="col-9 product-info">
                         <!-- Review Stars -->
                         <div class="product-rating">
                             <?php echo wc_get_rating_html($average); ?>
