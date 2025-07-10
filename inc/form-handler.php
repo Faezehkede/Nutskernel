@@ -34,38 +34,49 @@ add_action('admin_post_handle_request_form', 'handle_request_form');
 
 // AJAX to Load Child Categories
 function ajax_get_child_categories() {
+    $taxonomy = 'request_category'; // ✅ Make sure this matches your taxonomy
     $parent_id = isset($_POST['parent_id']) ? intval($_POST['parent_id']) : 0;
-    $search_term = isset($_POST['search']) ? sanitize_text_field($_POST['search']) : '';
+    $search = isset($_POST['search']) ? sanitize_text_field($_POST['search']) : '';
 
     $args = array(
-        'taxonomy' => 'request_category',
+        'taxonomy' => $taxonomy,
         'hide_empty' => false,
     );
 
-    if (!empty($search_term)) {
-        $args['name__like'] = $search_term;
+    if (!empty($search)) {
+        $args['name__like'] = $search;
     } else {
         $args['parent'] = $parent_id;
     }
 
     $terms = get_terms($args);
 
-    $data = array_map(function($term) {
-        $children = get_terms(array(
-            'taxonomy' => 'request_category',
+    if (is_wp_error($terms)) {
+        echo json_encode(['categories' => []]);
+        wp_die();
+    }
+
+    $data = array_map(function($term) use ($taxonomy) {
+        $has_children = get_terms(array(
+            'taxonomy' => $taxonomy,
             'parent' => $term->term_id,
             'hide_empty' => false
         ));
+
         return array(
             'id' => $term->term_id,
             'name' => $term->name,
-            'has_children' => !empty($children)
+            'has_children' => !empty($has_children)
         );
     }, $terms);
 
     echo json_encode(array('categories' => $data));
     wp_die();
 }
+add_action('wp_ajax_get_child_categories', 'ajax_get_child_categories');
+add_action('wp_ajax_nopriv_get_child_categories', 'ajax_get_child_categories');
+
+
 
 
 

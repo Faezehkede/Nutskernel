@@ -15,6 +15,7 @@ function closeCategoryModal() {
 }
 
 function loadCategories(parentId, label = 'Top Level') {
+  console.log('⏳ Requesting categories for parent_id:', parentId);
   jQuery('#category-levels').html('<p class="loading-message">Loading...</p>');
   jQuery('#back-button').toggle(categoryStack.length > 0);
 
@@ -74,6 +75,7 @@ jQuery('#category-search').on('input', function () {
           search: value
         },
         success: function (response) {
+          console.log('✅ AJAX Response:', response);
           const data = JSON.parse(response);
           jQuery('#back-button').hide();
           categoryStack = [];

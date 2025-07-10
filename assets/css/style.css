@@ -794,15 +794,16 @@ p {
 
 /* popup modal */
 #category-modal {
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   padding: 20px;
   border: 1px solid #ddd;
-  /* top: 50%; */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
   height: auto;
+  z-index: 9999;
 }
 
 .category-modal-content h3 {
