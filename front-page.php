@@ -684,11 +684,13 @@
               $link = get_sub_field('featured_services_link');
               $name = get_sub_field('featured_services_name');
               $icon = get_sub_field('featured_services_image'); // assuming it returns the URL
+              $icon_url = is_array($icon) ? $icon['url'] : $icon; // handle both cases
+
             ?>
               <a href="<?php echo esc_url($link); ?>">
                 <span class="icon">
                   <?php if ($icon): ?>
-                    <img src="<?php echo esc_url($icon); ?>" alt="<?php echo esc_attr($name); ?>" />
+                    <img src="<?php echo esc_url($icon_url); ?>" alt="<?php echo esc_attr($name); ?>" />
                   <?php endif; ?>
                 </span>
                 <span><?php echo esc_html($name); ?></span>
