@@ -39,6 +39,12 @@
 
     <div id="back-button" class="back-button" style="display:none;" onclick="goBack()">← Back</div>
 
+    <div id="loading-indicator" style="display:none; text-align:center; margin: 20px 0;">
+      <span class="dot dot1">.</span>
+      <span class="dot dot2">.</span>
+      <span class="dot dot3">.</span>
+    </div>
+
     <div id="category-levels">
       <p class="loading-message">Loading...</p>
     </div>

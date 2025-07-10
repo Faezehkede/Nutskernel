@@ -37,10 +37,22 @@ function renderCategories(categories, parentId, label) {
   jQuery('#category-levels').empty();
 
   if (!categories.length) {
+    // Push the final selected category
     categoryStack.push({ id: parentId, label: label });
-    const tree = categoryStack.map(item => item.label).join(' > ');
+  
+    // Remove unwanted levels (Top Level, Search Results)
+    const cleanStack = categoryStack.filter(item =>
+      item.label !== 'Top Level' && item.label !== 'Search results'
+    );
+  
+    // Create the breadcrumb text
+    const tree = cleanStack.map(item => item.label).join(' > ');
+  
+    // Set the selected category ID and name (breadcrumb) to the inputs
     jQuery('#selected_category_id').val(parentId);
     jQuery('#category_name').val(tree);
+  
+    // Close the modal
     closeCategoryModal();
     return;
   }
@@ -63,9 +75,20 @@ function goBack() {
 
 let searchTimeout = null;
 jQuery('#category-search').on('input', function () {
-  const value = jQuery(this).val();
+  const value = jQuery(this).val().trim();
+
   clearTimeout(searchTimeout);
+
+  if (value.length === 0) {
+    // ⏪ Reset to top-level
+    categoryStack = [];
+    jQuery('#back-button').hide();
+    loadCategories(0);
+    return;
+  }
+
   if (value.length >= 3) {
+    jQuery('#loading-indicator').show(); // show dots
     searchTimeout = setTimeout(() => {
       jQuery.ajax({
         url: ajax_object.ajax_url,
@@ -75,13 +98,17 @@ jQuery('#category-search').on('input', function () {
           search: value
         },
         success: function (response) {
-          console.log('✅ AJAX Response:', response);
           const data = JSON.parse(response);
+          jQuery('#loading-indicator').hide(); // hide dots
           jQuery('#back-button').hide();
           categoryStack = [];
           renderCategories(data.categories, 0, 'Search results');
+        },
+        error: function () {
+          jQuery('#loading-indicator').hide();
         }
       });
     }, 300);
   }
 });
+

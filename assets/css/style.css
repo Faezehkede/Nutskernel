@@ -848,7 +848,7 @@ border-bottom: 1px solid #f1f1f1;
 background-color: #f9f9f9;
 }
 
-.category-item::before {
+.category-item.parent::before {
   content: '';
   position: absolute; 
   width: 10px;
@@ -882,6 +882,22 @@ color: #777;
   text-decoration: underline;
 }
 
+.dot {
+  animation: blink 1.5s infinite;
+  font-size: 32px;
+  color: #666;
+  display: inline-block;
+}
+.dot1 { animation-delay: 0s; }
+.dot2 { animation-delay: 0.2s; }
+.dot3 { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+/* listed product */
 
 .list-product {
   background-color: #fff;
