@@ -1129,7 +1129,7 @@ color: #777;
   display: flex;
 }
 
-.feature-service-item svg {
+.feature-service-item .icon img {
   width: 25px;
   height: 25px;
 }
