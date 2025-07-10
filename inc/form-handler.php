@@ -35,25 +35,38 @@ add_action('admin_post_handle_request_form', 'handle_request_form');
 // AJAX to Load Child Categories
 function ajax_get_child_categories() {
     $parent_id = isset($_POST['parent_id']) ? intval($_POST['parent_id']) : 0;
+    $search_term = isset($_POST['search']) ? sanitize_text_field($_POST['search']) : '';
 
-    $terms = get_terms(array(
+    $args = array(
         'taxonomy' => 'request_category',
         'hide_empty' => false,
-        'parent' => $parent_id,
-    ));
+    );
+
+    if (!empty($search_term)) {
+        $args['name__like'] = $search_term;
+    } else {
+        $args['parent'] = $parent_id;
+    }
+
+    $terms = get_terms($args);
 
     $data = array_map(function($term) {
+        $children = get_terms(array(
+            'taxonomy' => 'request_category',
+            'parent' => $term->term_id,
+            'hide_empty' => false
+        ));
         return array(
             'id' => $term->term_id,
-            'name' => $term->name
+            'name' => $term->name,
+            'has_children' => !empty($children)
         );
     }, $terms);
 
     echo json_encode(array('categories' => $data));
     wp_die();
 }
-add_action('wp_ajax_get_child_categories', 'ajax_get_child_categories');
-add_action('wp_ajax_nopriv_get_child_categories', 'ajax_get_child_categories');
+
 
 
 
